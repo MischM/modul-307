@@ -4,7 +4,7 @@
 > 
 > PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 > 
-> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015)[18] und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites, Tendenz steigend. Zudem ist sie bei den meisten Webhostern vorinstalliert.
+> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites, Tendenz steigend. Zudem ist sie bei den meisten Webhostern vorinstalliert.
 
 [https://de.wikipedia.org/wiki/PHP](Wikipedia)
 
@@ -15,8 +15,29 @@ Ein PHP-Code-Block wird mit `<?php` geöffnet und mit `?>` geschlossen. Folgt hi
 ```php
 <?php
 // Dein PHP-Script
+// ...
+// Schliessendes Tag ist optional
+?>
+```
 
-?> <!-- Schliessendes Tag ist optional -->
+Jede Anweisung in einem Script muss durch ein Semikolon `;` beendet werden.
+
+```php
+<?php
+anweisung1;
+anweisung2;
+anweisung3;
+?>
+```
+
+Um eine Ausgabe zu machen, kann das Sprachkonstrukt `echo` verwendet werden.
+
+```php
+<?php
+
+echo 'Hallo Welt!';
+
+?>
 ```
 
 ## Ausführung
@@ -41,38 +62,284 @@ Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Var
 Ein gültiger Variablen-Name beginnt mit einem Buchstaben oder einem Unterstrich, gefolgt von einer beliebigen Anzahl von Buchstaben, Zahlen oder Unterstrichen.
 
 ```php
-$variable;        // Gültig
-$_variable;       // Gültig
+$variable;              // Gültig
+$_variable;             // Gültig
 
-$4ever;           // Ungültig
-$sonder!zeichen;  // Ungültig
+$4ever;                 // Ungültig
+$sonder!zeichen;        // Ungültig
 
-$variable_mit_umläut;  // Gültig, jedoch nicht empfohlen
+$variable_mit_umläut;   // Gültig, jedoch nicht empfohlen
 ```
 
 
-### Boolean
+### Booleans
+
+Dies ist der einfachste Typ. Ein boolean Ausdruck ist ein Wahrheitswert der entweder TRUE (wahr) oder FALSE (falsch) sein kann.
+
+```php
+$ichBinWahr = true;
+$ichBinFalsch = false;
+```
 
 ### Integer
 
+Als `Integer` werden natürliche Zahlen bezeichnet.
+
+```php
+$alter = 17;
+```
+
 ### Float
+
+Eine Gleitkommazahl bezeichnen wir als `Float`.
+
+```php
+$einViertel = 0.25;
+$mwst = 8.0;
+```
 
 ### String
 
+Ein String stellt eine Kette von Zeichen dar. Ein String muss mit doppelten `"`oder einfachen Anführungszeichen `'` umschlossen werden.
+
+```php
+echo 'Ein einfacher String';
+echo "Ein einfacher String";
+```
+
 #### Konkatenation
+
+Strings können konkateniert (=verkettet) werden. Dafür verwenden wir den `.` Operator.
+
+```php
+echo 'Ein' . ' verketteter ' . 'String';
+
+// Verkettungen sind auch über mehrere Zeilen möglich
+echo 'Ein sehr langer unleserlicher '
+   . 'und deshalb über mehrere Zeilen verketteter '
+   . 'String als Beispiel.';
+```
+
+Es ist auch möglich, Variablen zu verketten.
+
+```php
+$popstar = 'Justin Bieber';
+
+echo 'Ich liebe die Musik von ' . $popstar;
+// Ich liebe die Musik von Justin Bieber
+```
 
 #### Parsing von Variablen
 
+Variablen können direkt in einen String eingefügt werden, sofern dieser mit `"` deklariert wird.
+
+```php
+$popstar = 'Justin Bieber';
+
+echo "Ich liebe die Musik von $popstar";
+// Ich liebe die Musik von Justin Bieber
+
+echo 'Ich liebe die Musik von $popstar';
+// Ich liebe die Musik von $popstar
+```
+
+
 ### Arrays
+
+In einem Array können mehrere Werte in einer Variable gespeichert werden. Um ein Array zu definieren, verwenden wir `[...]`.
+
+```php
+$edelmetalle = ['Gold', 'Platin', 'Iridium', 'Silber'];
+
+// Vor PHP 5.4 wurden arrays durch das array() Konstrukt definiert.
+// Diese Methode wird heute teilweise noch verwendet, um mit alten 
+// PHP-Versionen kompatibel zu bleiben. Wenn möglich sollte aufgrund
+// der besseren Lesbarkeit aber die Kurzschreibweise verwendet werden.
+$edelmetalle = array('Gold', 'Platin', 'Iridium', 'Silber');
+```
+
+Um auf ein spezifisches Element eines Array zuzugreifen, kann der gewünschte Schlüssel in `[]` hinter der Variable angegeben werden. Gezählt wird ab 0.
+
+```php
+echo $edelmetalle[0];  // Gold
+echo $edelmetalle[1];  // Platin
+```
+
+#### Array-Schlüssel
+
+Zusätzlich zu jedem Wert, kann ein spezifischer Schlüssel vergeben werden. 
+
+Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel (wie in vorherigem Beispiel). 
+
+```php
+$wochentage = [
+    'mo' => 'Montag',
+    'di' => 'Dienstag',
+    'mi' => 'Mittwoch',
+    'do' => 'Donnerstag',
+    'fr' => 'Freitag',
+    'sa' => 'Samstag',
+    'so' => 'Sonntag',       // Letztes Komma kann stehen gelassen werden
+];
+```
+
+#### Ausgabe von Arrays
+
+Ein komplettes Arrays kann nicht mit `echo` ausgegeben werden, nur spezifische Elemente. Um alle Elemente eines Arrays auszugeben, kann die Funktion `print_r` verwendet werden.
+
+```php
+$edelmetalle = ['Gold', 'Platin', 'Iridium', 'Silber'];
+
+echo $edelmetalle;
+// Array
+
+print_r($edelmetalle);
+// Array
+// (
+//     [0] => Gold
+//     [1] => Platin
+//     [2] => Iridium
+//     [3] => Silber
+// )
+
+
+$wochentage = [
+    'mo' => 'Montag',
+    'di' => 'Dienstag',
+    'mi' => 'Mittwoch',
+    'do' => 'Donnerstag',
+    'fr' => 'Freitag',
+    'sa' => 'Samstag',
+    'so' => 'Sonntag',
+];
+
+print_r($wochentage);
+// Array
+// (
+//     [mo] => Montag
+//     [di] => Dienstag
+//     [mi] => Mittwoch
+//     [do] => Donnerstag
+//     [fr] => Freitag
+//     [sa] => Samstag
+//     [so] => Sonntag
+// )
+
+
+```
+
+## Funktionen
+
+In PHP steht eine grosse Auswahl an internen Funktionen zur Verfügung. Auf diese werden wir in einem separaten Teil genauer eingehen. 
+
+Zusätzlich zu den eingebauten Funktionen könne wir auch eigene definieren.
+
+Eine Funktion kann wie folgt definiert werden:
+
+```php
+function funktionsname($argument1, $argument2) {
+    // Tu' was...
+}
+
+// Funktion aufrufen
+funktionsname('test', 'aufruf');
+```
+
+Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
+
+Einer Funktion können Argumente mitgegeben werden, auf die innerhabl der Funktion zugegriffen werden kann.
+
+### Rückgabewerte
+
+Eine Funktion kann über das `return` Konstrukt einen Wert zurückgeben.
+
+```php
+function sagwas($wort1, $wort2) {
+    return $wort1 . ' ' . $wort2;
+}
+
+echo sagwas('Hallo', 'Welt');
+// Hallo Welt
+
+$wert = sagwas('Hallo', 'ÜK');
+echo $wert;
+// Hallo ÜK;
+```
+
+### Type-Hints
+
+Seit PHP 7 können für die Funktionsargumente sowie für den Rückgabewert einer Funktion Typen definiert werden.
+
+```php
+function addiere(int $zahl1, int $zahl2): int {
+    return $zahl1 + $zahl2;
+}
+
+$resultat = addiere(3, 7);
+var_dump($resultat);
+// int(10)
+```
+
+### Geltungsbereich von Variablen
+
+Der Geltungsbereich einer Variablen ergibt sich aus dem Zusammenhang, in dem sie definiert wurde. Anders ausgedrückt: Globale Variabeln sind in Funktionen nicht zugänglich. Variablen die in Funktionen definiert wurden, sind ausserhalb der Funktion nicht zugänglich.
+
+```php
+$zahl = 20; // Global
+
+function demo() {
+    return $zahl;
+}
+
+echo demo();
+// PHP Notice:  Undefined variable: zahl
+
+
+function demo() {
+    $zahl = 20; // In Funktion, aber nicht zurückgegeben via return
+    echo $zahl;
+}
+demo();
+// 20
+
+echo $zahl;
+// PHP Notice:  Undefined variable: zahl
+
+```
+
+#### Das `global`-Schlüsselwort
+
+Über das `global` Schlüsselwort können Variablen aus dem globalen Geltungsbereich in einer Funktion zugänglich gemacht werden.
+
+```php
+$zahl = 20; // Global
+
+function demo() {
+    
+    global $zahl;
+
+    return $zahl;
+}
+
+echo demo();
+// 20
+```
+
+
 
 ## Sprachkonstrukte
 
+Zusätzlich zu den Funktionen in PHP gibt es noch zahlreiche weitere «Sprachkonstrukte», welche wir verwenden können.
+
 ### Script-Einbinung
+
+Über die Sprachkonstrukte `include` und `require` haben wir die Möglichkeit, eine Script aus einer anderen Datei in unser Script einzubinden.
+
+```php
+
+```
 
 include, require, require_once, include_once
 
-### Bedingte Anweisungen und Verzweigungen
+### Konstrollstrukturen
 
-### Schleifen
-
-## Funktionen
