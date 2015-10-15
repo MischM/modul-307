@@ -333,13 +333,86 @@ Zusätzlich zu den Funktionen in PHP gibt es noch zahlreiche weitere «Sprachkon
 
 ### Script-Einbinung
 
-Über die Sprachkonstrukte `include` und `require` haben wir die Möglichkeit, eine Script aus einer anderen Datei in unser Script einzubinden.
+Über die Sprachkonstrukte `include` und `require` haben wir die Möglichkeit, ein Script aus einer anderen Datei in unser Script einzubinden.
 
 ```php
+// echo.php
+echo 'Ich bin eingebunden!';
 
+// index.php
+include 'echo.php';
+// Ich bin eingebunden!
 ```
 
-include, require, require_once, include_once
+#### Unterschiede zwischen `require` / `include`
+
+| Schlüsselwort |                                                   Bedeutung                                                    |
+|---------------|----------------------------------------------------------------------------------------------------------------|
+| include       | Wenn die eingebundene Datei nicht existiert, wird ein E_WARNING produziert. Die Skriptausführung läuft weiter. |
+| require       | Wenn die eingebundene Datei nicht existiert, wird ein E_COMPILE_ERROR produziert. Die Skriptausführung stoppt. |
+
+
+### Operatoren
+
+#### Vergleichs-Operatoren
+
+Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen von `true` oder `false` zurück.
+
+|  Beispiel |       Name      |                                     Ergebnis                                     |
+|-----------|-----------------|----------------------------------------------------------------------------------|
+| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist                                        |
+| $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind        |
+| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist                                      |
+| $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind |
+|           |                 |                                                                                  |
 
 ### Konstrollstrukturen
 
+#### if
+
+Das if-Konstrukt ist eines der wichtigsten Features vieler Programmiersprachen, so auch in PHP, denn es ermöglicht die bedingte Ausführung von Kodefragmenten. 
+
+```php
+if(ausdruck) {
+    anweisung;
+}
+```
+
+Nur wenn `ausdruck` den Wert `true` ergibt, wird `anweisung` ausgeführt. 
+
+```php
+if($a > $b) {
+    echo '$a ist grösser als $b';
+}
+```
+
+#### else
+
+Oft will man eine Anweisung ausführen, wenn eine bestimmte Bedingung erfüllt ist, und eine andere Anweisung, wenn dies nicht der Fall ist. Dies ist der Einsatzzweck von `else`.
+
+```php
+if($a > $b) {
+    echo '$a ist grösser als $b';
+} else {
+    echo '$a ist nicht grösser als $b';
+}
+```
+
+#### elseif
+
+`elseif`, wie der Name schon sagt, ist eine Kombination aus if und else. Wie else erweitert es eine `if`-Kontrollstruktur, um alternative Befehle auszuführen, wenn die ursprüngliche if-Bedingung nicht zutrifft.
+
+
+```php
+if($a > $b) {
+    echo '$a ist grösser als $b';
+} elseif($a == $b) {
+    echo '$a ist gleich gross wie $b';
+} else {
+    echo '$a ist nicht grösser als $b';
+}
+```
+
+#### while
+#### for
+#### foreach
