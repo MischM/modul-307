@@ -185,7 +185,7 @@ $wochentage = [
 
 #### Ausgabe von Arrays
 
-Ein komplettes Arrays kann nicht mit `echo` ausgegeben werden, nur spezifische Elemente. Um alle Elemente eines Arrays auszugeben, kann die Funktion `print_r` verwendet werden.
+Es können nur spezifische Array-Elemente mit `echo` ausgegeben werden. Um alle Elemente eines Arrays auszugeben, kann die Funktion `print_r` verwendet werden.
 
 ```php
 $edelmetalle = ['Gold', 'Platin', 'Iridium', 'Silber'];
@@ -232,7 +232,7 @@ print_r($wochentage);
 
 In PHP steht eine grosse Auswahl an internen Funktionen zur Verfügung. Auf diese werden wir in einem separaten Teil genauer eingehen. 
 
-Zusätzlich zu den eingebauten Funktionen könne wir auch eigene definieren.
+Zusätzlich zu den internen Funktionen, können wir auch eigene definieren.
 
 Eine Funktion kann wie folgt definiert werden:
 
@@ -247,7 +247,7 @@ funktionsname('test', 'aufruf');
 
 Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
 
-Einer Funktion können Argumente mitgegeben werden, auf die innerhabl der Funktion zugegriffen werden kann.
+Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden kann.
 
 ### Rückgabewerte
 
@@ -338,7 +338,9 @@ Zusätzlich zu den Funktionen in PHP gibt es noch zahlreiche weitere «Sprachkon
 ```php
 // echo.php
 echo 'Ich bin eingebunden!';
+```
 
+```php
 // index.php
 include 'echo.php';
 // Ich bin eingebunden!
@@ -364,7 +366,7 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 | $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind        |
 | $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist                                      |
 | $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind |
-|           |                 |                                                                                  |
+| a          |                 |                                                                                  |
 
 ### Konstrollstrukturen
 
