@@ -360,13 +360,43 @@ include 'echo.php';
 
 Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen von `true` oder `false` zurück.
 
-|  Beispiel |       Name      |                                     Ergebnis                                     |
-|-----------|-----------------|----------------------------------------------------------------------------------|
-| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist                                        |
-| $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind        |
-| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist                                      |
+|  Beispiel |       Name      |                                      Ergebnis                                     |
+|-----------|-----------------|-----------------------------------------------------------------------------------|
+| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist                                         |
+| $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind         |
+| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist                                       |
 | $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind |
-| a          |                 |                                                                                  |
+| $a < $b   | Kleiner als     | Gibt `true` zurück, wenn $a kleiner als $b ist                                    |
+| $a > $b   | Grösser als     | Gibt `true` zurück, wenn $a grösser als $b ist                                    |
+| $a <= $b  | Kleiner Gleich  | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist                            |
+| $a >= $b  | Grösser Gleich  | Gibt `true` zurück, wenn $a grösser oder gleich $b ist                            |
+
+##### Typenschwache und typenstarke Vergleiche
+
+In PHP können typschenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen (`==`) wird der Wert der Variablen unabhängig von ihren Typen verglichen. 
+Bei typenstarken Vergleichen (`===`) müssen Wert und Typ einer Variable identisch sein.
+
+```php
+$a = 1;     // Integer
+$b = "1";   // String
+
+var_dump($a == $b);
+// true
+
+var_dump($a === $b);
+// false
+
+$c = true;  // Boolean
+
+var_dump($a == $c);    // 1 == true
+// true
+
+var_dump($a === $c);   // 1 === true
+// false
+```
+
+
+[Tabelle zu Typenvergleichen in PHP](https://secure.php.net/manual/de/types.comparisons.php)
 
 ### Konstrollstrukturen
 
@@ -402,7 +432,7 @@ if($a > $b) {
 
 #### elseif
 
-`elseif`, wie der Name schon sagt, ist eine Kombination aus if und else. Wie else erweitert es eine `if`-Kontrollstruktur, um alternative Befehle auszuführen, wenn die ursprüngliche if-Bedingung nicht zutrifft.
+`elseif`, wie der Name schon sagt, ist eine Kombination aus `if` und `else`. Wie `else` erweitert es eine `if`-Kontrollstruktur, um alternative Befehle auszuführen, wenn die ursprüngliche `if`-Bedingung nicht zutrifft.
 
 
 ```php
@@ -416,5 +446,15 @@ if($a > $b) {
 ```
 
 #### while
+
+Die Bedeutung einer `while`-Schleife ist simpel. Die Schleife weist PHP an, die untergeordnete Anweisung wiederholt auszuführen, solange die `while`-Bedingung zutrifft. Die Bedingung wird jedes Mal am Anfang der Schleife überprüft.
+
+```php
+$zahl = 1;
+while ($zahl <= 10) {
+    echo $zahl++; // Wert ausgeben, dann um 1 erhöhen
+}
+```
+
 #### for
 #### foreach
