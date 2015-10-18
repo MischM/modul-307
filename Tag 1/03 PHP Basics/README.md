@@ -450,6 +450,7 @@ if($a > $b) {
 Die Bedeutung einer `while`-Schleife ist simpel. Die Schleife weist PHP an, die untergeordnete Anweisung wiederholt auszuführen, solange die `while`-Bedingung zutrifft. Die Bedingung wird jedes Mal am Anfang der Schleife überprüft.
 
 ```php
+// Zahlen von 1 bis 10 ausgeben
 $zahl = 1;
 while ($zahl <= 10) {
     echo $zahl++; // Wert ausgeben, dann um 1 erhöhen
@@ -457,4 +458,26 @@ while ($zahl <= 10) {
 ```
 
 #### for
+
+`for`-Schleifen sind die komplexesten Schleifen in PHP. Die Syntax einer `for`-Schleife ist:
+
+```php
+for (ausdruck1; ausdruck2; ausdruck3) {
+    anweisung;
+}
+```
+
+`ausdruck1` wird **vor** Ausführung der Schleife ausgeführt.
+
+`ausdruck2` wird **am Anfang jedes Schleifendurchlaufs** ausgeführt. Wenn diese `true` ergibt, wird die Schleife fortgesetzt. Ergibt sie `false`, wird die Ausführung der Schleife abgebrochen.
+
+`ausdruck3` wird **am Ende jedes Schleifendurchlaufs** ausgeführt.
+
+```php
+// Zahlen von 1 bis 10 ausgeben
+for ($i = 1; $i <= 10; $i++) {
+    echo $i;
+}
+```
+
 #### foreach
