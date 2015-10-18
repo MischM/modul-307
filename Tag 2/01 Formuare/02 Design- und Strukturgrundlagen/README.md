@@ -76,4 +76,7 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 
 ##### Nachrichten
 
-* __Fehlermeldungen richtig anzeigen.__
+* __Fehlermeldungen richtig anzeigen.__ Diese zeigt dem Benutzer, dass ein Fehler gefunden wurde. Erst nach der Behebung dieses Fehlers kann das Formular beendet oder weitergeführt werden. Die Errormeldungen müssen klar ersichtlich sein, der Benutzer muss wissen _WAS_ er falsch g emacht hat, _WO_ er es falsch gemacht hat und _WIE_ er den Fehler beheben kann. Typographische Grundsätze sind: Rote Schrift, klare Symbole, gut sichtbar, grosse Schrift.
+
+
+* __Erfolgsmeldungen richtig anzeigen.__ Die Erfolgsmeldung gibt dem Benutzer darüber Auskunft, dass das Formular richtig ausgefüllt und versendet wurde. Lässt man diese Nachricht weg, bleibt bei vielen Benutzern ein gewisses Misstrauen ob das Formular wirklich versendet wurde. Wie bei den Fehlermeldungen sollte die Erfolgsmeldung gut ersichtlich sein.
