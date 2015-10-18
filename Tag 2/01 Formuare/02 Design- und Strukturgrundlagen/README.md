@@ -1,0 +1,79 @@
+# Design- und Strukturgrundlagen
+
+### User Experience
+
+> «User experience» encompasses all aspects of the end-user's interaction with the company, its services, and its products.
+
+[http://nngroup.com/](http://www.nngroup.com/articles/definition-user-experience/)
+
+### UX in Formularen besonders wichtig!
+
+Die User Experience bei Formularen ist wichtig, da zwischen dem Ziel des Benutzers (Kaufen, Beitreten, Bloggen) und dem Ziel des Unternehmen (Verkaufen, hohe Mitgliederzahl, mehr Content) oft ein Formualar steht.
+
+* Ein __Formular__ macht somit eine Website __nutzbar__.
+* Ein __Formular__ muss somit __nützlich__ sein.
+
+### Die drei Komkonenten eines Webformulars
+
+Jedes Webformular besteht grundsätzlich aus drei Komponenten. Um eine positive User Experience zu schaffen muss sich die positive Erfahrung bei der Interaktion mit dem Formular durch sämtliche drei Ebenen ziehen.
+
+1. __Beziehung__ - Formulare ermöglichen eine Beziehung zwischen Benutzer und Unternehmen.
+
+2. __Dialog__ - Formulare ermögilchen eine Konversation zwischen Benutzern und Unternehmen.
+
+3. __Aussehen__ - Erst mit dem richtigen Aussehen und einer logischen Struktur ermöglichen sie den Aufbau einer Beziehung und eines Dialogs.
+
+#### Beziehung
+Ein formular kann die Beziehung zwischen Benutzer und Unternehmen aufbauen und verstärken. Dies bedeutet jedoch auch, dass eine schlechtes Formular eine Beziehung beendeten oder schwächen kann.
+
+* __Eine Beziehung basiert auf Vertrauen.__ Somit muss das Formular vertrauenswürdig sein. Dies kann durch das allgemeine Design, Logo, Fotos, Farben, Typographie oder wordig erreicht werden. Der Benutzer muss sofort wissen, dass das Formular von einer seriösen Firma kommt.
+
+* __Jede Beziehung hat ein Ziel.__ Ob in einer romatischen Beziehung oder bei Businesspartnern, jede Beziehung hat ein Ziel. Was hat dein Formular für ein Ziel?
+
+* __Passt der Name des Formulars zum Inhalt?__ Die Frage ist hier ob der Inhalt (Formularfelder) mit den Erwartungen des Benutzers übereinstimmen. Die Erwartungen des Benutzers werden im Link, Titel, Email etc. aufgebaut, mit dem er auf das Formular gelangt ist.
+
+* __Passt das Formular zu meiner Zielgruppe?__ Es ist wichtig zu wissen, wer das Formular ausfüllt und was für Besonderheiten sich daraus schliessen lassen.
+
+* __Die Grenzen des Formulars kennen.__ Das Formular darf keine Fragen enthalten, welche über den Sinn des Formulars hinausgehen. Ansonsten wird der Benutzer misstrauisch.
+
+* __Menschen lieben Konstanz.__ Darum ist es wichtig keine plötzlichen Änderungen in der Struktur und im Aussehen des Formulars einzubauen. Der Benutzer darf nicht in seinem Flow unterbrochen werden.
+
+#### Dialoge
+Ein Formular ist keine einseitige Kommunikation sondern ein Gespräch zwischen mehreren Parteien - ein Dialog. Somit muss immer im Hinterkopf behalten werden, dass der Benutzer ein Formlar ausfüllt um ein Gespräch mit dem Unternehmen zu beginnen.
+
+* __Ein Formular ist somit ein Gespräch und kein Verhör.__ Aggressives und herrscherisches Wording lösen beim Benutzer eine Abwerhaltung aus.
+
+* __Dem logischen Aufbau einer Konversation folgen.__ Ein Formular muss einen logischen Aufbau aufweisen. Du würdest doch auch nicht nach dem Kennenlernen gleich nach dem Namen die Telefonnummer erfragen? Als Grundsatz gilt: Das Formular geht von den allgemeine Fragen (low Involvement) langsam über zu spezifischen Fragen (high Involvlement).
+
+* __Formular nach Themen sortieren.__ Menschen denken in Cluster: Fragt ein Formular beispielsweise nach Informationen über das Auto des Benutzers ruft dieser das Cluster «Auto» in seine Gedanken. Nun kann er sämtliche Informationen über sein Auto schnell abrufen und das Formular ausfüllen.
+
+* __Pausen einbauen.__ Viele Benutzer fühlen sich vor allem von grossen Formularen überrumpelt. Dem kann entgegengewirkt werden indem gezielt Abstände oder Seitenumbrüche in das Formular eingebaut werden.
+
+* __Ablenkungen entfernen.__ Wie bei einem richtigen Dialog, stören Ablenkungen den Gesprächsfluss. Darum ist es wichtig den Fokus auf das Formular zu setzen und unnötige Ablenkungen zu eliminieren.
+
+#### Aussehen
+Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit eines Formulars. Es gibt verschiedene Grundsätze und Tipps um das Aussehen eines Formulars zu gestalten:
+
+##### Label
+
+* __Wörter vs. Sätze.__ Sätze machen es dem Benutzer bei komplexeren Fragestellungen einfacher das Feld auszufüllen. Hingegen kann der Benutzer sich bei einfachen Wörtern besser orientieren. Damit gibt es hier keine Grundregel, sondern das Label muss je nach Situation angepasst werden.
+
+* __Position des Labels.__ Auch hier gibt es keine abschliessende Regel und die unterschiedlichen Positionen des Labels bieten verschiedene Vor- und Nachteile. Hier findest du eine kleine Übersicht über die verschiedenen Positionen des Labels: [Überblick über Label-Positionierung](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-alignment.jpg)
+
+* __Nur eine Kolonne.__ Der Aufbau eines Formulars sollte sich nicht über mehrere Spalten ziehen sondern klar dem Verlauf von oben nach unten folgen.
+
+##### Formularfelder
+
+* __Feldtypen richtig einsetzen.__ Beim Erstellen eines Formularfeldes sollte ein wichtiger Gedanke immer sein, welches Feld sich am besten für diese Information eignet. 
+
+* __Gestaltung der Formularfelder.__ HTML5 und CSS3 bieten eine Vielfalt von verschiedenen Varianten um ein Formularfeld zu gestalten. Diese sollten jedoch nur beschränkt eingesetzt werden. Es ist wichtiger dem Benutzer eine einfache und intuitive Oberfläche zu bieten, als ein schön gestaltetes aber benutzerunfreundliches Formular zu designen (Beispiel Pflichtfeld mit *).
+
+##### Aktionen
+
+* __Primäre und Sekundäre Aktionen unterscheiden.__ Die primäre und die sekundäre Aktion eines Formulares müssen optisch klar unterschieden werden. So wird der Button für das Versenden des Formulars anders dargestellt als der Button für das Abbrechen.
+
+* __Aktionen bennenen.__ Aktionen wie «Submit» oder «Reset» sollten nach den eigentlichen Aktionen beschriftet werden. Beispielsweise «Registrieren», «Anfrage senden» etc.
+
+##### Nachrichten
+
+* __Fehlermeldungen richtig anzeigen.__
