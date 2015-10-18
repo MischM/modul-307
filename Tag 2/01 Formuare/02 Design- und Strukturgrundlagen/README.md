@@ -1,5 +1,8 @@
 # Design- und Strukturgrundlagen
 
+[Zum Einstieg ein kleines Video wieso User Experience und User Design wichtig sind.](https://www.youtube.com/watch?v=2HdIflrLSLg)
+
+
 ### User Experience
 
 > «User experience» encompasses all aspects of the end-user's interaction with the company, its services, and its products.
