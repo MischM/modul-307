@@ -143,6 +143,12 @@ echo 'Ich liebe die Musik von $popstar';
 // Ich liebe die Musik von $popstar
 ```
 
+Es können auch die alternativen Schreibweisen mit geschweiften Klammern verwendet werden.
+
+```php
+echo "Ich liebe die Musik von ${popstar}";
+echo "Ich liebe die Musik von {$popstar}";
+```
 
 ### Arrays
 
