@@ -2,7 +2,7 @@
 for ($beers = 99; $beers >= 0; $beers--) {
 
     $oneLess = $beers - 1;
-    $bottles      = $beers === 1 ? 'bottle' : 'bottles';
+    $bottles = $beers === 1 ? 'bottle' : 'bottles';
 
     if ($beers > 0) {
         echo "${beers} ${bottles} of beer on the wall, ${beers} ${bottles} of beer.\n"
