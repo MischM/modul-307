@@ -398,6 +398,11 @@ var_dump($a === $c);   // 1 === true
 
 [Tabelle zu Typenvergleichen in PHP](https://secure.php.net/manual/de/types.comparisons.php)
 
+
+#### Null coalescing operator
+
+TBD
+
 ### Konstrollstrukturen
 
 #### if
@@ -427,6 +432,22 @@ if($a > $b) {
     echo '$a ist grösser als $b';
 } else {
     echo '$a ist nicht grösser als $b';
+}
+```
+
+##### Ternärer Operator
+
+Um eine einfache `if/else`-Bedingung zu erstellen, kann auch der `Ternäre Operator` verwendet werden. Dies ist besonders bei der Zuweisung von bedingten Werten an eine Variable eine leserliche Alternative.
+
+```php
+// (if) ? then : else;
+$text = ($alter >= 18) ? 'Volljährig' : 'Minderjährig';
+
+// Entspricht
+if($alter >= 18) {
+    $text = 'Volljährig';
+} else {
+    $text = 'Minderjährig';
 }
 ```
 
