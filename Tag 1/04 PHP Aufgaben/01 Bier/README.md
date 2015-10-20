@@ -14,8 +14,12 @@ Entwickle das Script immer nur soweit, bis einer dieser Punkte erfüllt wird. Er
 
 1. Das Script soll einen Vers für alle 99 Flaschen ausgeben.
    Nach der ersten Zeile soll ein Zeilenumbruch ausgegeben werden. Nach der zweiten Zeile sollen zwei Zeilenumbrüche folgen.
-3. Wenn nur noch eine Flasche übrig ist, soll das Wort `bottles` in der Einzahl als `bottle` ausgegeben werden.
-4. Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
+2. Wenn nur noch eine Flasche übrig ist, soll das Wort `bottles` in der Einzahl als `bottle` ausgegeben werden.
+3. Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 
 > No more bottles of beer on the wall, no more bottles of beer. 
 Go to the store and buy some more, 99 bottles of beer on the wall.
+
+## Lösung
+
+Du findest die Lösungen zu allen drei Schritten im `src` Verzeichnis.
