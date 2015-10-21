@@ -1,5 +1,7 @@
 # 99 Bottles of Beer
 
+![](res/beers.gif)
+
 ## Aufgabenstellung
 
 Schreibe ein PHP-Script, welches den Songtext des Liedes «99 Bottles of Beer» ausgibt: http://www.99-bottles-of-beer.net/lyrics.html
