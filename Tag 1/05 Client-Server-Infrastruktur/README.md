@@ -1,11 +1,12 @@
 # Server-Client-Infrastruktur
 
-#### Client und Server
+### Client und Server
 > Ein __Server__ ist ein Programm, das mit einem anderen Programm, dem Client, kommuniziert, um ihm Zugang zu einem Dienst zu verschaffen. Hierbei muss abgrenzend beachtet werden, dass es sich bei «Server» um eine Rolle handelt, nicht um einen Computer an sich. Ein Computer kann nämlich ein Server und Client zugleich sein.
 
 > Ein __Client__ kann einen Dienst bei dem Server anfordern, welcher diesen Dienst bereitstellt.
 
-#### Kommunikationsprotokoll HTTP
+### Kommunikationsprotokoll HTTP
+
 > Hyper Text Transfer Protocol (HTTP) ist ein Protokoll für den Transfer von Daten, in unserem Fall Websites (wie die Website, welche du gerade betrachtest). Ein Protokoll ist nichts anders als ein Standard etwas zu tun.
 
 > Angenommen du trifft den Präsident der Vereinigten Staaten oder die Queen, in diesem Fall gibt es bestimmte Prozeduren, welchen du befolgen musst. Du kannst nicht einfach zu dieser Person hin laufen und sagen «Hey Alter!». Es gibt bestimmte Vorschriften beim Gehen, beim Sprechen, bei der Begrüssung und auch bei der Verabschiedung.
@@ -24,34 +25,34 @@
 
 #### Erweiterter Ablauf mit HTML, JavaScript und PHP
 
-1. Wie bereits erwähnt besteht ein Aufruf immer aus einem __Server__ und einem __Client__
+Wie bereits erwähnt besteht ein Aufruf immer aus einem __Server__ und einem __Client__
 
 ![Szene 1](src/01.jpg)
 
-2. Der __Server__ und der __Client__ kommunizieren mit dem HTTP Protokoll untereinander. Damit ist es für den __Client__ möglich Anfragen an den __Server__ zu senden und die Antwort darauf zu erhalten.
+Der __Server__ und der __Client__ kommunizieren mit dem HTTP Protokoll untereinander. Damit ist es für den __Client__ möglich Anfragen an den __Server__ zu senden und die Antwort darauf zu erhalten.
 
 ![Szene 2](src/02.jpg)
 
-3. Der __Client__ und __Server__ müssen keine getrennten Harware-Systeme sein, sondern können auf dem gleichen Rechner installiert werden. Dabei besteht der __Client__ aus dem Browser und der __Server__ aus einem Weberver.
+Der __Client__ und __Server__ müssen keine getrennten Harware-Systeme sein, sondern können auf dem gleichen Rechner installiert werden. Dabei besteht der __Client__ aus dem Browser und der __Server__ aus einem Webserver.
 
 ![Szene 3](src/03.jpg)
 
-4. Der __Client__ schickt einen HTTP-Request `http://google.ch` [1].
+Der __Client__ schickt einen HTTP-Request `http://google.ch` [1].
 
 ![Szene 4](src/04.jpg)
 
-5. Der __Server__ empfängt den Request und stellt darauf die Daten bereit, sprich den Sourcecode [2]. Diese Daten schickt er anschliessend dem __Client__ zurück [3].
+Der __Server__ empfängt den Request und stellt darauf die Daten bereit, sprich den Sourcecode [2]. Diese Daten schickt er anschliessend dem __Client__ zurück [3].
 
 ![Szene 5](src/05.jpg)
 
-6. Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcode in eine für den Menschen lesbare Form ums, die Website [4].
+Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcode in eine für den Menschen lesbare Form um, die Website [4].
 
 ![Szene 6](src/06.jpg)
 
-7. Bestimmte Code-Schnippel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Intepretator Ausschau nach PHP-Code, um diesen auszuführen.
+Bestimmte Code-Schnippel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Interpretator Ausschau nach PHP-Code, um diesen auszuführen.
 
 ![Szene 7](src/07.jpg)
 
-8. Das gleiche passiert nach der Übertragung zum __Client__ durch den JavaScript-Intepretator.
+Das gleiche passiert nach der Übertragung zum __Client__ durch den JavaScript-Interpretator.
 
 ![Szene 8](src/08.jpg)
