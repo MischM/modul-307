@@ -10,11 +10,14 @@ Definition gemäss ISO 13407 (1999).
 
 ### Ziele von UCD
 
+![Not Sure if user is stupid, or design is just bad](src/ux-fry-meme.jpg)
+
 Das Ziel oder der Grund um mit der Methode des User Centred Design zu arbeiten ist es, eine benutzerfreundliche Oberfläche zu gestalten. Dabei steht nicht der technologische oder der Design Aspekt im Vordergrund, sondern die Benutzerfreundlichkeit.
 
 > Ein benutzerfreundliche Oberfläche ist einfach zu lernen, intuitiv bedienbar, unterstützt den die Aufgaben und Ziele des Benutzers effektiv und effizient und ist motivierend und kurzweilig zum Bedienen.
 
 Freie Übersetzung von [www.usabilityfirst.com](www.usabilityfirst.com)
+
 
 ### Merkmale des UCD
 
