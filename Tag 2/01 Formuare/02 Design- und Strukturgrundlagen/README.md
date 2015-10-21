@@ -73,7 +73,3 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 * __Primäre und Sekundäre Aktionen unterscheiden.__ Die primäre und die sekundäre Aktion eines Formulares müssen optisch klar unterschieden werden. So wird der Button für das Versenden des Formulars anders dargestellt als der Button für das Abbrechen.
 
 * __Aktionen bennenen.__ Aktionen wie «Submit» oder «Reset» sollten nach den eigentlichen Aktionen beschriftet werden. Beispielsweise «Registrieren», «Anfrage senden» etc.
-
-##### Nachrichten
-
-* __Fehlermeldungen richtig anzeigen.__
