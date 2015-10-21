@@ -1,6 +1,6 @@
 # Design- und Strukturgrundlagen
 
-[Zum Einstieg ein kleines Video wieso User Experience und User Design wichtig sind.](https://www.youtube.com/watch?v=2HdIflrLSLg)
+Zum Einstieg ein kleines Video wieso User Experience und User Design wichtig sind: [User Experience beim SBB-Automaten.](https://www.youtube.com/watch?v=2HdIflrLSLg)
 
 
 ### User Experience
@@ -13,9 +13,9 @@
 
 Die User Experience bei Formularen ist wichtig, da zwischen dem Ziel des Benutzers (Kaufen, Beitreten, Bloggen) und dem Ziel des Unternehmen (Verkaufen, hohe Mitgliederzahl, mehr Content) oft ein Formualar steht.
 
-http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-objectives.jpg
+![Gebrauch von Formularen.](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-objectives.jpg)
 
-Gebraucht von Formularen, auf [Smashing Magazine](http://www.smashingmagazine.com), gemäss [Luke Wroblewski](http://www.lukew.com/resources/web_form_design.asp).
+<sup>Gebraucht von Formularen, auf [Smashing Magazine](http://www.smashingmagazine.com), gemäss [Luke Wroblewski](http://www.lukew.com/resources/web_form_design.asp).</sup>
 
 * Ein __Formular__ macht somit eine Website __nutzbar__.
 * Ein __Formular__ muss somit __nützlich__ sein.
@@ -41,9 +41,9 @@ Ein formular kann die Beziehung zwischen Benutzer und Unternehmen aufbauen und v
 
 * __Passt das Formular zu meiner Zielgruppe?__ Es ist wichtig zu wissen, wer das Formular ausfüllt und was für Besonderheiten sich daraus schliessen lassen.
 
-Bild: 01.jpg
+![Differenzierte Formulare für unterschiedliche Zielgruppen](src/01.jpg)
 
-Anmeldeformular auf [www.debenhams.com](www.debenhams.com) - die Bereiche für die unterschiedlichen Zielgruppen sind klar differenzierbar.
+<sup>Anmeldeformular auf [www.debenhams.com](www.debenhams.com) - die Bereiche für die unterschiedlichen Zielgruppen sind klar differenzierbar.</sup>
 
 * __Die Grenzen des Formulars kennen.__ Das Formular darf keine Fragen enthalten, welche über den Sinn des Formulars hinausgehen. Ansonsten wird der Benutzer misstrauisch.
 
@@ -54,21 +54,21 @@ Ein Formular ist keine einseitige Kommunikation sondern ein Gespräch zwischen m
 
 * __Ein Formular ist somit ein Gespräch und kein Verhör.__ Aggressives und herrscherisches Wording lösen beim Benutzer eine Abwerhaltung aus.
 
-* __Dem logischen Aufbau einer Konversation folgen.__ Ein Formular muss einen logischen Aufbau aufweisen. Du würdest doch auch nicht nach dem Kennenlernen gleich nach dem Namen die Telefonnummer erfragen? Als Grundsatz gilt: Das Formular geht von den allgemeine Fragen (low Involvement) langsam über zu spezifischen Fragen (high Involvlement).
+* __Dem logischen Aufbau einer Konversation folgen.__ Ein Formular muss einen logischen Aufbau aufweisen. Du würdest doch auch nicht nach dem Kennenlernen gleich nach dem Namen die Telefonnummer erfragen? Als Grundsatz gilt: Das Formular geht von den allgemeine Fragen (low Involvement) langsam über zu spezifischen Fragen (high Involvement).
 
 * __Formular nach Themen sortieren.__ Menschen denken in Cluster: Fragt ein Formular beispielsweise nach Informationen über das Auto des Benutzers ruft dieser das Cluster «Auto» in seine Gedanken. Nun kann er sämtliche Informationen über sein Auto schnell abrufen und das Formular ausfüllen.
 
-Bild: 02.jpg
+![Formulare nach Themen sortieren.](src/02.jpg)
 
-Formularstruktur auf [www.comparis.ch](www.comparis.ch) - Die Informationsgruppen sind optisch und inhaltlich klar untertrennt.
+<sup>Formularstruktur auf [www.comparis.ch](www.comparis.ch) - Die Informationsgruppen sind optisch und inhaltlich klar untertrennt.</sup>
 
 * __Pausen einbauen.__ Viele Benutzer fühlen sich vor allem von grossen Formularen überrumpelt. Dem kann entgegengewirkt werden indem gezielt Abstände oder Seitenumbrüche in das Formular eingebaut werden.
 
 * __Ablenkungen entfernen.__ Wie bei einem richtigen Dialog, stören Ablenkungen den Gesprächsfluss. Darum ist es wichtig den Fokus auf das Formular zu setzen und unnötige Ablenkungen zu eliminieren.
 
-Bild: 03.jpg
+![Reduce to the Max - Damit sich der Besucher orientieren kann.](src/03.jpg)
 
-Anmeldeformular für Unternehmen auf [www.dropbox.com](www.dropbox.com) - Die gesamte Seite wirkt sehr reduziert. So ist es möglich den Fokus komplett auf des Kaufformular zu konzentrieren.
+<sup>Anmeldeformular für Unternehmen auf [www.dropbox.com](www.dropbox.com) - Die gesamte Seite wirkt sehr reduziert. So ist es möglich den Fokus komplett auf des Kaufformular zu konzentrieren.</sup>
 
 #### Aussehen
 Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit eines Formulars. Es gibt verschiedene Grundsätze und Tipps um das Aussehen eines Formulars zu gestalten:
@@ -77,17 +77,17 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 
 * __Wörter vs. Sätze.__ Sätze machen es dem Benutzer bei komplexeren Fragestellungen einfacher das Feld auszufüllen. Hingegen kann der Benutzer sich bei einfachen Wörtern besser orientieren. Damit gibt es hier keine Grundregel, sondern das Label muss je nach Situation angepasst werden.
 
-Bild: 04.jpg
+![Anmeldung mit Sätzen bei Amazone.](src/04.jpg)
 
-Anmeldeformular bei Amazone [www.amazone.ch](www.amazone.ch) - Die Anmeldeseite von Amazone nutzt ganze Sätze, obwohl einzelne Wörter absolut ausreichend sind.
+<sup>Anmeldeformular bei Amazone [www.amazone.ch](www.amazone.ch) - Die Anmeldeseite von Amazone nutzt ganze Sätze, obwohl einzelne Wörter absolut ausreichend sind.</sup>
 
 * __Position des Labels.__ Auch hier gibt es keine abschliessende Regel und die unterschiedlichen Positionen des Labels bieten verschiedene Vor- und Nachteile. Hier findest du eine kleine Übersicht über die verschiedenen Positionen des Labels: [Überblick über Label-Positionierung](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-alignment.jpg)
 
 * __Nur eine Kolonne.__ Der Aufbau eines Formulars sollte sich nicht über mehrere Spalten ziehen sondern klar dem Verlauf von oben nach unten folgen.
 
-Bild: 05.jpg
+![Zweispaltige Layouts sind eher ungeeignet.](src/05.jpg)
 
-Zweispaltiges Layout für Kontaktfomular [www.steinegger-elektro.ch](http://www.steinegger-elektro.ch/)
+<sup>Zweispaltiges Layout für Kontaktfomular [www.steinegger-elektro.ch](http://www.steinegger-elektro.ch/)</sup>
 
 ##### Formularfelder
 
@@ -95,24 +95,24 @@ Zweispaltiges Layout für Kontaktfomular [www.steinegger-elektro.ch](http://www.
 
 * __Gestaltung der Formularfelder.__ HTML5 und CSS3 bieten eine Vielfalt von verschiedenen Varianten um ein Formularfeld zu gestalten. Diese sollten jedoch nur beschränkt eingesetzt werden. Es ist wichtiger dem Benutzer eine einfache und intuitive Oberfläche zu bieten, als ein schön gestaltetes aber benutzerunfreundliches Formular zu designen (Beispiel Pflichtfeld mit *).
 
-Bild: 06.jpg
+![Da hat es jemand zu gut gemeint.](src/06.jpg)
 
-Ein zu kreatives Kontaktfomular [www.2advanced.com](http://www.2advanced.com/). Kreativität ist super, ist jedoch immer der Funktionalität unterzuordnen.
+<sup>Ein zu kreatives Kontaktfomular [www.2advanced.com](http://www.2advanced.com/). Kreativität nie vor Funktionalität.</sup>
 
 
 ##### Aktionen
 
 * __Primäre und Sekundäre Aktionen unterscheiden.__ Die primäre und die sekundäre Aktion eines Formulares müssen optisch klar unterschieden werden. So wird der Button für das Versenden des Formulars anders dargestellt als der Button für das Abbrechen.
 
-Bild: 07.jpg
+![Unterscheiden der Aktionen.](src/07.jpg)
 
-Unterscheiden der Aktionen [www.hooklinemusic.de](http://www.hooklinemusic.de/). Die Aktionen auf den Buttons sind nicht in eine primäre und eine sekundäre Aktion differenzierbar.
+<sup>Unterscheiden der Aktionen [www.hooklinemusic.de](http://www.hooklinemusic.de/). Die Aktionen auf den Buttons sind nicht in eine primäre und eine sekundäre Aktion differenzierbar.</sup>
 
 * __Aktionen bennenen.__ Aktionen wie «Submit» oder «Reset» sollten nach den eigentlichen Aktionen beschriftet werden. Beispielsweise «Registrieren», «Anfrage senden» etc.
 
-Bild: 08.jpg
+![Aktionen benennen.](src/08.jpg)
 
-Aktionen klar benennen [www.adwords-freelancer.ch](http://www.adwords-freelancer.ch/). Der normale Benutzer kann sich unter «Submit» keine Aktion vorstellen.
+<sup>Aktionen klar benennen [www.adwords-freelancer.ch](http://www.adwords-freelancer.ch/). Der normale Benutzer kann sich unter «Submit» keine Aktion vorstellen.</sup>
 
 ##### Nachrichten
 
@@ -121,6 +121,6 @@ Aktionen klar benennen [www.adwords-freelancer.ch](http://www.adwords-freelancer
 
 * __Erfolgsmeldungen richtig anzeigen.__ Die Erfolgsmeldung gibt dem Benutzer darüber Auskunft, dass das Formular richtig ausgefüllt und versendet wurde. Lässt man diese Nachricht weg, bleibt bei vielen Benutzern ein gewisses Misstrauen ob das Formular wirklich versendet wurde. Wie bei den Fehlermeldungen sollte die Erfolgsmeldung gut ersichtlich sein.
 
-Bild: 09.jpg
+![Erfolgsmeldungen kommunizieren.](src/09.jpg)
 
-Auch ein Erfolg muss kommuniziert werden [www.guidle.com](http://www.guidle.com/). Dies kann auch mit Hilfe eines "Kopie an mich senden"-Buttons erfolgen.
+<sup>Auch ein Erfolg muss kommuniziert werden [www.guidle.com](http://www.guidle.com/). Dies kann auch mit Hilfe eines «Kopie an mich senden»-Buttons erfolgen.</sup>
