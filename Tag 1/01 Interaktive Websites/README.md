@@ -2,10 +2,12 @@
 
 ##### Definition Interaktion
 
-> Hier kommt eine Definition von Interaktion.
+> Aufeinander bezogenes Handeln zweier oder mehrerer Personen oder Handlungspartner.
 
-[https://de.wikipedia.org/wiki/Interaktivität](https://de.wikipedia.org/wiki/Interaktivität)
+[Zusammengefasste Definition gemäss Duden.](http://www.duden.de/rechtschreibung/Interaktion)
 
-Oder einfacher gesagt:
+Oder auf die Website bezogen:
 
-Kann eine Website die Aktion/Eingabe eines Benutzers entgegennehmen, interpretieren und darauf reagieren ist diese interaktiv.
+Kann eine Website die Aktion/Eingabe eines Benutzers __entgegennehmen, interpretieren und darauf reagieren__ ist diese interaktiv.
+
+Aufgabe
