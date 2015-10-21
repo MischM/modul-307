@@ -609,6 +609,6 @@ $wochentage = [
 
 foreach($wochentage as $abkurzung => $wochentag) {
     echo "{$wochentag} kürzt man ab als {$abkurzung}.";
-    // Montag kürz man ab als Mo.
+    // Montag kürzt man ab als Mo.
 }
 ```
