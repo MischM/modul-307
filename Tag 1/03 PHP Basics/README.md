@@ -179,13 +179,13 @@ Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` 
 
 ```php
 $wochentage = [
-    'mo' => 'Montag',
-    'di' => 'Dienstag',
-    'mi' => 'Mittwoch',
-    'do' => 'Donnerstag',
-    'fr' => 'Freitag',
-    'sa' => 'Samstag',
-    'so' => 'Sonntag',       // Letztes Komma kann stehen gelassen werden
+    'Mo' => 'Montag',
+    'Di' => 'Dienstag',
+    'Mi' => 'Mittwoch',
+    'Do' => 'Donnerstag',
+    'Fr' => 'Freitag',
+    'Sa' => 'Samstag',
+    'So' => 'Sonntag',       // Letztes Komma kann stehen gelassen werden
 ];
 ```
 
@@ -244,11 +244,12 @@ Eine Funktion kann wie folgt definiert werden:
 
 ```php
 function funktionsname($argument1, $argument2) {
-    // Tu' was...
+    echo $argument1 . ' ' . $argument2;
 }
 
 // Funktion aufrufen
-funktionsname('test', 'aufruf');
+funktionsname('Hallo', 'Welt');
+// Hallo Welt
 ```
 
 Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
@@ -277,7 +278,7 @@ echo $wert;
 Seit PHP 7 können für die Funktionsargumente sowie für den Rückgabewert einer Funktion Typen definiert werden.
 
 ```php
-function addiere(int $zahl1, int $zahl2): int {
+function addiere(int $zahl1, int $zahl2) : int {
     return $zahl1 + $zahl2;
 }
 
@@ -362,9 +363,10 @@ include 'echo.php';
 
 ### Operatoren
 
+
 #### Vergleichs-Operatoren
 
-Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen von `true` oder `false` zurück.
+Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen Wert von `true` oder `false` zurück.
 
 |  Beispiel |       Name      |                                      Ergebnis                                     |
 |-----------|-----------------|-----------------------------------------------------------------------------------|
@@ -380,34 +382,74 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 ##### Typenschwache und typenstarke Vergleiche
 
 In PHP können typschenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen (`==`) wird der Wert der Variablen unabhängig von ihren Typen verglichen. 
-Bei typenstarken Vergleichen (`===`) müssen Wert und Typ einer Variable identisch sein.
+Bei typenstarken Vergleichen (`===`) müssen Wert und Typ beider Variablen identisch sein.
 
 ```php
 $a = 1;     // Integer
 $b = "1";   // String
 
-var_dump($a == $b);
+var_dump($a == $b);       // 1 == "1"
 // true
 
-var_dump($a === $b);
+var_dump($a === $b);      // 1 == "1"
 // false
 
-$c = true;  // Boolean
+// ------------------------------------- 
 
-var_dump($a == $c);    // 1 == true
+$a = 1;      // Integer
+$b = true;   // Boolean
+
+var_dump($a == $b);       // 1 == true
 // true
 
-var_dump($a === $c);   // 1 === true
+var_dump($a === $b);      // 1 === true
 // false
 ```
 
 
 [Tabelle zu Typenvergleichen in PHP](https://secure.php.net/manual/de/types.comparisons.php)
 
+#### Arithmetische Operationen
 
-#### Null coalescing operator
+... oder einfacher gesagt: Rechnen.
 
-TBD
+```php
+$a = 2;
+$b = 4;
+
+echo $a + $b;    // Addition
+// 6
+
+echo $a - $b;    // Subtraktion
+// -2
+
+echo $a * $b;    // Multiplikation
+// 8
+
+echo $a / $b;    // Divison
+// 0.5
+
+echo $a % $b;    // Modulus (Rest)
+// 2
+
+```
+
+##### Inkrement- bzw. Dekrementoperatoren
+
+Um den Wert einer Variable um eins zu erhöhen oder zu reduzieren, kann der Inkrement- `++` oder Dekrementoperator `--` verwendet werden.
+
+```php
+$a = 5;
+$a++;  
+
+echo $a;
+// 6
+
+$a--
+
+echo $a;
+// 5
+```
 
 ### Konstrollstrukturen
 
@@ -428,6 +470,39 @@ if($a > $b) {
     echo '$a ist grösser als $b';
 }
 ```
+
+
+##### Logische Operatoren
+
+Um mehrere Vergleiche zu verbinden oder einen Vergleich umzukehren, können logische Operatoren verwendet werden.
+
+* and
+* or
+* xor
+* &&
+* ||
+* !
+
+```php
+if($a == 1 && $b == 2) {  // $a == 1 and $b == 2
+    echo '$a hat einen Wert von 1, $b hat einen Wert von 2';    
+}
+
+if($a == 1 || $a == 2) {  // $a == 1 or $b == 2
+    echo '$a hat einen Wert von 1 oder 2';    
+}
+
+if($a == 1 xor $b == 2) {
+    echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2';
+}
+
+if(! $a == 1) { 
+    echo '$a hat nicht einen Wert von 1';    
+}
+
+```
+
+[Tabelle zu Logische Operatoren in PHP](https://secure.php.net/manual/de/language.operators.logical.php)
 
 #### else
 
@@ -508,3 +583,32 @@ for ($i = 1; $i <= 10; $i++) {
 ```
 
 #### foreach
+
+Das `foreach`-Konstrukt bietet eine einfache Möglichkeit über Arrays zu iterieren (=schrittweise durchlaufen).
+
+```php
+// Zahlen von 1 bis 10 ausgeben
+$zahlen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];   // = range(1, 10)
+foreach($zahlen as $zahl) {
+    echo $zahl;
+}
+```
+
+Es existiert eine zweite Schreibweise für `foreach`, bei der zusätzlich der Array-Schlüssel in eine Variable geschrieben wird.
+
+```php
+$wochentage = [
+    'Mo' => 'Montag',
+    'Di' => 'Dienstag',
+    'Mi' => 'Mittwoch',
+    'Do' => 'Donnerstag',
+    'Fr' => 'Freitag',
+    'Sa' => 'Samstag',
+    'So' => 'Sonntag',
+];
+
+foreach($wochentage as $abkurzung => $wochentag) {
+    echo "{$wochentag} kürzt man ab als {$abkurzung}.";
+    // Montag kürz man ab als Mo.
+}
+```
