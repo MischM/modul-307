@@ -40,7 +40,7 @@ echo 'Hallo Welt!';
 ?>
 ```
 
-Wenn Du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest, kannst Du auch die Kurzform verwenden.
+Wenn Du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest, kannst Du auch die Kurzform für `echo` verwenden.
 
 ```php
 <?= 'Hallo Welt!'; ?>
