@@ -51,4 +51,4 @@ Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 
 Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
-Es sind also mehrere Lösungen möglich, solange die gewünschte Ausgabe erzeugt wird.
+Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
