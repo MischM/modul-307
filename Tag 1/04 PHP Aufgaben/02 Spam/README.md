@@ -26,7 +26,7 @@ $input = [
 ];
 ```
 
-Schreibe ein Script, welches jeden Input-Satz durchläuft und mit Hilfe der Funktion `[strpos](https://secure.php.net/manual/de/function.strpos.php)` überprüft, ob das Wort `SPAM` im Satz enthalten ist. 
+Schreibe ein Script, welches jeden Input-Satz durchläuft und mit Hilfe der Funktion [strpos](https://secure.php.net/manual/de/function.strpos.php) überprüft, ob das Wort `SPAM` im Satz enthalten ist. 
 
 Erzeuge folgende Ausgabe:
 
