@@ -12,7 +12,7 @@ Das Script soll eine HTML-Seite generieren. Rufe es also in Deinem Webbrower auf
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur soweit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 

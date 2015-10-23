@@ -10,7 +10,7 @@ Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also a
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur soweit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
