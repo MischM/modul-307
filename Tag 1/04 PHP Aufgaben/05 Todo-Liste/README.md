@@ -67,6 +67,16 @@ Unveränderte Aufgaben:
 
 ```
 
+#### Schritt 3 
+
+Erstelle eine Funktion `printTasks` die über folgende drei Aufrufe die gleiche Ausgabe wie in Schritt 2 erzeugt.
+
+```php
+echo printTasks('Abgeschlossene Aufgaben', $abgeschlossen);
+echo printTasks('Neue Aufgaben', $neu);
+echo printTasks('Unveränderte Aufgaben', $unbearbeitet);
+```
+
 ## Lösung
 
 Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
