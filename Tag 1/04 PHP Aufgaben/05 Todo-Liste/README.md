@@ -1,7 +1,5 @@
 # Todo-Liste
 
-![](res/clown.gif)
-
 ## Aufgabenstellung
 
 Du hast eine App für Smartphones entwickelt, mit deren Hilfe man eine Todo-Liste führen kann.
