@@ -67,7 +67,7 @@ Unveränderte Aufgaben:
 
 #### Schritt 3 
 
-Du hast jetzt vermutlich redundanten Code für die Ausgabe der Aufgaben in Deinem Script. Da für alle drei Ausgaben die gleiche Logik (Titel + Liste) besteht, bietet sich eine Funktion an.
+Du hast jetzt vermutlich sich wiederholenden Code für die Ausgabe der Aufgaben in Deinem Script. Da für alle drei Ausgaben die gleiche Logik (Titel + Liste) besteht, bietet sich eine Funktion als Lösung an.
 
 Erstelle die Funktion `printTasks` die über folgende drei Aufrufe die gleiche Ausgabe wie in Schritt 2 erzeugt.
 
