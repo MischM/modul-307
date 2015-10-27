@@ -7,3 +7,4 @@
 |       3 | Arrays und HTML-Ausgabe                     |
 |       4 |                                             |
 |       5 | **Zusatzaufgabe**: Arrayfunktionen          |
+|       6 | **Zusatzaufgabe**: Refactoring              |
