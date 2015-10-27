@@ -8,9 +8,9 @@ Die Login-Funktion überprüft, ob eine Kombination aus Benutzername und Passwor
 
 Schreibe den Code der Funktion `login` um, damit er besser lesbar ist.
 
-Die registrierten Benutzer werden jeweils aus der `src/users.php` Datei geladen. In dieser Datei findest Du alle registrierten Benutzer mit Passwort und Rolle.
+Die registrierten Benutzer werden jeweils aus der Datei `src/users.php`  geladen. In dieser Datei findest Du alle registrierten Benutzer mit Passwort und Rolle als PHP-Array.
 
-Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` aus diesem Verzeichnis.
+Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diesem Verzeichnis.
 
 
 ### Zielumgebung
@@ -24,6 +24,8 @@ php -f login.php
 ```
 
 Führe diesen Schritt jetzt gleich aus. Du solltest für alle fünf Tests einen Status von `OK` erhalten.
+
+
 ### Lösungsschritte
 
 Ändere das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
@@ -56,14 +58,14 @@ Der Rückgabewert `return 'Login okay!';` kommt zwei Mal vor. Möglicherweise l�
 
 #### Schritt 3
 
-Durch die vielen Einrückungen ist der Code immernoch sehr schlecht zu verstehen. Als Grundregel gilt, dass **nie mehr als 2 Stufen** eingerückt werden soll. 
+Durch die vielen Einrückungen ist der Code immernoch sehr schlecht zu verstehen. Als Grundregel gilt, dass **nie mehr als 2 Stufen** eingerückt werden sollen. 
 
-Nutze «Early Returns» um die Einrückung der kompletten Funktion auf 1 Stufe zu reduzieren.
+Nutze «Early Returns» um die Einrückung der kompletten Funktion auf eine Stufe zu reduzieren.
 
 ```php
 // Bisherige Methode
-function login($username, $password) {
-
+function login($username, $password)
+{
     if(array_key_exists($username, $users)) {
         // Viele
         // weitere
@@ -76,9 +78,9 @@ function login($username, $password) {
 ```
 
 ```php
-// Early Return
-function login($username, $password) {
-
+// Mit «Early Return»
+function login($username, $password)
+{
     if( ! array_key_exists($username, $users)) {
         return 'Dieser Benutzer existiert nicht.';
     }

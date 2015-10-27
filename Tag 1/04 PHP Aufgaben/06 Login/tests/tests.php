@@ -28,12 +28,12 @@ test("Nur Admin und Publisher haben Zugang.",
  * Gibt den Namen und das Resultat eines Tests aus.
  *
  * @param string  $name
- * @param boolean $condition
+ * @param boolean $result
  */
-function test($name, $condition)
+function test($name, $result)
 {
     echo str_pad($name, '62') . '-> ';
-    echo $condition === true ? 'OK' : 'FEHLER';
+    echo $result === true ? 'OK' : 'FEHLER';
 
     echo "\n";
 }
