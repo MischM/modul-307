@@ -16,11 +16,11 @@ test("Falsches Passwort wird erkannt",
     login('sue', 'falsches-passwort') === 'Das eingegebene Passwort ist falsch.'
 );
 
-test("Nicht registrierter Benutzer wird erkannt.",
+test("Nicht registrierter Benutzer wird erkannt",
     login('unbekannter-benutzer', 'falsches-passwort') === 'Dieser Benutzer existiert nicht.'
 );
 
-test("Nur Admin und Publisher haben Zugang.",
+test("Nur Admin und Publisher haben Zugang",
     login('bob', 'nT7rRKpmc589EpTC6Qxe2QfP') === 'Nur Administratoren und Publisher dürfen sich einloggen.'
 );
 
