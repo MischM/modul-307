@@ -1,12 +1,4 @@
-# PHP Basics
-
-> PHP (rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools») ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
-> 
-> PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
-> 
-> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites, Tendenz steigend. Zudem ist sie bei den meisten Webhostern vorinstalliert.
-
-[https://de.wikipedia.org/wiki/PHP](Wikipedia)
+# PHP Übersicht
 
 ## Codeschreibweise
 
@@ -45,7 +37,7 @@ echo 'Hallo Welt!';
 Du kannst ein PHP-Script entweder aus der Konsole ausführen
 
 ```
-php.exe -f script.php
+php -f script.php
 ```
 
 ... oder das Script direkt in Deinem Webbrowser aufrufen. Wichtig ist, dass Du das Script vom Webserver aufrufst, nicht direkt aus dem Dateisystem.
