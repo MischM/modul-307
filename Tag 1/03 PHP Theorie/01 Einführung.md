@@ -4,8 +4,9 @@
 > 
 > PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 
-
 [https://de.wikipedia.org/wiki/PHP](Wikipedia)
+
+Aktuell ist PHP als Version 7 verfügbar.
 
 ## Wer nutzt PHP?
 
@@ -15,11 +16,12 @@ Einige der grössten Websites der Welt...
 * Wikipedia (HHVM)
 * Flickr
 * Tumblr
-* Imgur
 * Yahoo
 * Sourceforge
 * Mailchimp
 * Fotolia
+* Imgur
+* ...
 
 Und natürlich die grossen CMS...
 
@@ -27,6 +29,7 @@ Und natürlich die grossen CMS...
 * Drupal
 * Typo
 * Joomla
+* ...
 
 > PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites, Tendenz steigend. Zudem ist sie bei den meisten Webhostern vorinstalliert.
 
