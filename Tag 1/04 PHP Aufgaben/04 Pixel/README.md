@@ -80,6 +80,32 @@ Stelle sicher, dass die folgenden Regeln erfüllt werden.
 * Die maximale Anzahl von Spalten oder Zeilen soll `60` sein.
 * Die minimale Anzahl von Spalten oder Zeilen soll `1` sein.
 
+#### Schritt 5
+
+Wir möchten nun über einen weiteren GET-Parameter `pixels` mehrere Koordinaten bestimmen können, für Tabellen-Zellen, die schwarz einzufärben sind. 
+
+Die CSS-Klasse `.mark` ist im CSS-File bereits vorbereitet. Diese Klasse kannst Du also Zellen vergeben, die markiert werden sollen.
+
+```html
+<td class="mark"></td> <!-- diese Zelle wird schwarz -->
+```
+
+Die Pixel-Koordinaten werden als String im Format `x|y` definiert. Möchten wir z. B. die 2. Zelle auf der 3. Zeile markieren, wären die Koordinaten `2|3`.
+
+Da wir mehrere Koordinaten an das PHP-Script übergeben möchten, können wir den GET-Parameter `pixels` als Array übergeben. Dies geschieht, indem `[]` an den Parametername angehängt wird. 
+
+```
+http://localhost/pixels/index.php?pixels[]=1|2&pixels[]=2|1
+```
+
+Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pixel markiert werden:
+
+|                  Query-String                            | Output            |
+|----------------------------------------------------------|-------------------|
+| ?rows=2&cols=2&pixels[]=1\|2&pixels[]=2\|2               | ![](res/out3.png) |
+| ?rows=3&cols=3&pixels[]=3\|1&pixels[]=1\|3               | ![](res/out1.png) |
+| ?rows=3&cols=3&pixels[]=1\|1&pixels[]=2\|2&pixels[]=3\|3 | ![](res/out2.png) |
+
 
 ## Lösung
 
