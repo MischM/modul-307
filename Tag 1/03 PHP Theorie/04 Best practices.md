@@ -3,6 +3,7 @@
 ## Grundsätzliches
 
 * Schreibe sauberen Code (Formatierung, Namensgebung, Verständlichkeit). Versuche PSR-1 und PSR-2 zu beachten.
+* Versuche redundanten Code auf einem absoluten Minimum zu halten ([DRY-Prinzip](https://de.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself)). Nutze wenn möglich Funktionen.
 * Achte auf Deine Ordnerstruktur. Benenne Deine Dateien und Ordner auf eine verständliche Art und Weise.
 * Trenne immer Logik und Darstelung im Code.
 
