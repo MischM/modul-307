@@ -39,8 +39,11 @@
     <table>
         <?php for ($i = 0; $i < $cols; $i++): ?>
             <tr>
-            <?php for ($j = 0; $j < $rows; $j++): ?>
-                <td class="<?= in_array(($i + 1) . '|' . ($j + 1), $pixels) ? 'mark' : '' ?>"></td>
+            <?php
+            for ($j = 0; $j < $rows; $j++):
+                $coordinates = ($i + 1) . '|' . ($j + 1); // x|y
+                ?>
+                <td class="<?= in_array($coordinates, $pixels) ? 'mark' : '' ?>"></td>
             <?php endfor;?>
             </tr>
         <?php endfor;?>
