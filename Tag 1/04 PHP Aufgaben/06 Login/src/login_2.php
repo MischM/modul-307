@@ -19,6 +19,7 @@ function login($username, $password)
             if ($user['blocked'] === true) {
                 return 'Dieser Benutzer ist gesperrt.';
             } else {
+                // Alternative Lösung:
                 // if ($user['role'] === 'Administrator' || $user['role'] === 'Publisher') {
                 if (in_array($user['role'], ['Administrator', 'Publisher'])) {
                     return 'Login okay!';
