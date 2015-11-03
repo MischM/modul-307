@@ -1,7 +1,7 @@
 <?php
 
 $input = [
-    'Jetzt neue Aktionen von Ihrem Computerteile-Händler.',
+    'Neue Aktionen von Ihrem Computerteile-Händler.',
     'Vergrössern Sie jetzt ihr SPAM mit SPAM.',
     'SPAM kann ihnen dabei helfen wieder ruhig zu schlafen.',
     'Kennen Sie Justin Bieber? Finden Sie andere Singles in Ihrer Nähe.',
