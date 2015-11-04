@@ -11,6 +11,10 @@
 
 > Angenommen du trifft den Präsident der Vereinigten Staaten oder die Queen, in diesem Fall gibt es bestimmte Prozeduren, welchen du befolgen musst. Du kannst nicht einfach zu dieser Person hin laufen und sagen «Hey Alter!». Es gibt bestimmte Vorschriften beim Gehen, beim Sprechen, bei der Begrüssung und auch bei der Verabschiedung.
 
+### Aufbau einer URL
+
+TBD
+
 #### Basis Beispiel: Aufruf einer Website
 
 1. Der __Benutzer__ öffnet seinen Browser (den Client).
