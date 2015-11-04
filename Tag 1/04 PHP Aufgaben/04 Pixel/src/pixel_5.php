@@ -37,16 +37,16 @@
 </head>
 <body>
     <table>
-        <?php for ($i = 0; $i < $cols; $i++): ?>
+        <?php for ($x = 1; $x <= $cols; $x++): ?>
             <tr>
             <?php
-            for ($j = 0; $j < $rows; $j++):
-                $coordinates = ($i + 1) . '|' . ($j + 1); // x|y
+            for ($y = 1; $y <= $rows; $y++):
+                $coordinates = $x . '|' . $y; // x|y
                 ?>
                 <td class="<?= in_array($coordinates, $pixels) ? 'mark' : '' ?>"></td>
-            <?php endfor;?>
+            <?php endfor; ?>
             </tr>
-        <?php endfor;?>
+        <?php endfor; ?>
     </table>
 </body>
 </html>

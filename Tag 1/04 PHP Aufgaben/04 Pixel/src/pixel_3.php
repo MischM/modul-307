@@ -11,9 +11,9 @@
 </head>
 <body>
     <table>
-        <?php for ($i = 0; $i < $cols; $i++): ?>
+        <?php for ($x = 0; $x < $cols; $x++): ?>
             <tr>
-            <?php for ($j = 0; $j < $rows; $j++): ?>
+            <?php for ($y = 0; $y < $rows; $y++): ?>
                 <td></td>
             <?php endfor;?>
             </tr>
