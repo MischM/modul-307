@@ -1,6 +1,6 @@
 <?php
-    $cols   = (int) $_GET['cols']   ?? 4;
-    $rows   = (int) $_GET['rows']   ?? 4;
+    $cols = (int) $_GET['cols'] ?? 4;
+    $rows = (int) $_GET['rows'] ?? 4;
 
     $pixels = $_GET['pixels'] ?? [];
 
@@ -39,12 +39,11 @@
     <table>
         <?php for ($x = 1; $x <= $cols; $x++): ?>
             <tr>
-            <?php
-            for ($y = 1; $y <= $rows; $y++):
-                $coordinates = $x . '|' . $y; // x|y
-                ?>
-                <td class="<?= in_array($coordinates, $pixels) ? 'mark' : '' ?>"></td>
-            <?php endfor; ?>
+                <?php for ($y = 1; $y <= $rows; $y++):
+                    $coordinates = $x . '|' . $y; // x|y
+                    ?>
+                    <td class="<?= in_array($coordinates, $pixels) ? 'mark' : '' ?>"></td>
+                <?php endfor; ?>
             </tr>
         <?php endfor; ?>
     </table>
