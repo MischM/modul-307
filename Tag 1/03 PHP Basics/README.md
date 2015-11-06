@@ -40,6 +40,46 @@ echo 'Hallo Welt!';
 ?>
 ```
 
+Wenn Du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest, kannst Du auch die Kurzform für `echo` verwenden.
+
+```php
+<?= 'Hallo Welt!'; ?>
+```
+
+PHP-Ausgaben werden direkt in den Output geschrieben. Du kannst also z. B. HTML- und PHP-Code mischen, um eine dynamische Seite zu generieren.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Seite</title>
+</head>
+<body>
+    <?php
+    echo "Dieser Text ist mit PHP generiert.\n";
+    echo "Das heutige Datum ist " . date('d.m.Y');
+    ?>
+</body>
+</html>
+```
+
+Da der PHP-Code immer auf dem Server verarbeitet wird, und nie an den Client gesendet wird, erzeugt obiges Beispiel folgende Antwort an den Client.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Seite</title>
+</head>
+<body>
+    Dieser Text ist mit PHP generiert.
+    Das heutige Datum ist 15.02.2016
+</body>
+</html>
+```
+
 ## Ausführung
 
 Du kannst ein PHP-Script entweder aus der Konsole ausführen
@@ -65,7 +105,7 @@ Ein gültiger Variablen-Name beginnt mit einem Buchstaben oder einem Unterstrich
 $variable;              // Gültig
 $_variable;             // Gültig
 
-$4ever;                 // Ungültig
+$2cool4school;          // Ungültig
 $sonder!zeichen;        // Ungültig
 
 $variable_mit_umläut;   // Gültig, jedoch nicht empfohlen
@@ -234,9 +274,61 @@ print_r($wochentage);
 
 ```
 
-## Funktionen
+## Interne Funktionen
 
-In PHP steht eine grosse Auswahl an internen Funktionen zur Verfügung. Auf diese werden wir in einem separaten Teil genauer eingehen. 
+
+In PHP steht eine grosse Auswahl an internen Funktionen zur Verfügung. Eine komplette nach Thema gegliederte Liste befindet sich in der PHP-Dokumentation:
+
+https://secure.php.net/manual/de/funcref.php
+
+Wir werden an dieser Stelle nur auf einige Beispiele eingehen und uns während den Übungsaufgaben mit weiteren Funktionen vertraut machen.
+
+Eine Funktion akzeptiert üblicherweise eines oder mehrere `Argumente`, verarbeitet diese und gibt dann  einen `Rückgabewert` zurück.
+
+```php
+$wert = funktionsname($argument1, $argument2);
+```
+
+### Ausgabe von Variablen mit `var_dump`
+
+Eine nützliche Funktion zur Ausgabe des Wertes und Typs einer Variable ist `var_dump`. Die Funktion wird in erster Linie zum debuggen verwendet.
+
+```php
+$bool = true;
+$integer = 20;
+$string = 'Hallo';
+
+var_dump($bool);
+// bool(true)
+
+var_dump($integer);
+// int(20)
+
+var_dump($string);
+// string(5) "Hallo"
+```
+
+### Strings manipulieren
+
+Zur Manipulierung von Strings stehen [diverse Funktionen](https://secure.php.net/manual/de/ref.strings.php) zur Verfügung.
+
+```php
+$string = 'Hallo';
+
+echo strtoupper($string);
+// HALLO
+
+echo strtolower($string);
+// hallo
+
+echo strlen($string);
+// 5
+
+echo strrev($string);
+// ollaH
+```
+
+### Benutzerdefinierte Funktionen
 
 Zusätzlich zu den internen Funktionen, können wir auch eigene definieren.
 

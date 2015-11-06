@@ -12,7 +12,7 @@ Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also a
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur soweit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 Das Script soll einen Vers für alle 99 Flaschen ausgeben.
@@ -51,4 +51,4 @@ Wenn keine Flaschen mehr vorhanden sind, soll der letzte Vers ausgegeben werden:
 
 Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis. Natürlich ist die Ausgabe des Scripts entscheidend, nicht der Code dazu.
 
-Es sind also mehrere Lösungen möglich, solange die gewünschte Ausgabe erzeugt wird.
+Es sind also mehrere Lösungen möglich, solange durch die richtige Logik die gewünschte Ausgabe erzeugt wird.
