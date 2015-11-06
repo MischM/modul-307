@@ -16,7 +16,7 @@ Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird.
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite ohne PHP-Code, auf der eine Tabelle mit 4 Spalten und 4 Zeilen vorhanden ist.
+Erstelle eine einfache HTML-Seite ohne PHP-Code. Auf der Seite soll eine Tabelle mit 4 Spalten und 4 Zeilen angezeigt werden.
 
 Kopiere das Stylesheet `src/styles.css` in Dein Verzeichnis und binde es in das Dokument ein. 
 
@@ -24,7 +24,7 @@ Du solltest nun eine vertikal und horizontal zentrierte Tabelle erhalten.
 
 #### Schritt 2
 
-Erstelle nun je eine Variable für die Anzahl Spalten (`$cols`) und die Anzahl Zeilen (`$rows`) am Anfang Deines Scripts. Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen zu generieren.
+Erstelle am Anfang Deines Scripts nun je eine Variable für die Anzahl Spalten (`$cols`) und die Anzahl Zeilen (`$rows`). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen zu generieren.
 
 ```php
 <?php
@@ -106,6 +106,11 @@ Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pix
 | ?rows=3&cols=3&pixels[]=3\|1&pixels[]=1\|3               | ![](res/out1.png) |
 | ?rows=3&cols=3&pixels[]=1\|1&pixels[]=2\|2&pixels[]=3\|3 | ![](res/out2.png) |
 
+##### Schritt 6
+
+Mit welchem Query-String erhältst Du diesen Output?
+
+![](res/out4.png) 
 
 ## Lösung
 
