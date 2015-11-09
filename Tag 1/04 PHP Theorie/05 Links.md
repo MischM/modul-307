@@ -1,11 +1,18 @@
 ## Links
 
 * [Offizielle PHP-Dokumentation](https://secure.php.net/manual/de/)
-* [PHP: The right way](http://www.phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP: The Right Way](http://www.phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP Essentials](http://www.techotopia.com/index.php/PHP_Essentials): Techotopia Wiki
 
 ## Weiterführende Links (nicht ÜK relevant)
 
 Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige interessante Ressourcen zu weiterführenden Themen.
+
+### Datenbanken
+
+* Es gibt viele Tutorials im Internet, die noch die veraltete und unsichere `mysql`-Erweiterung von PHP verwenden. Ignoriere Tutorials, in denen die `mysql_*`-Funktionen verwendet werden. Verwende für Datenbankzugriffe nur noch die [`mysqli_*`](https://secure.php.net/manual/de/book.mysqli.php)-Funktionen oder [`PDO`](https://secure.php.net/manual/de/class.pdo.php).
+* [«PHP: The Right Way» Kapitel zu Datenbanken](http://www.phptherightway.com/#databases)
+* [PDO-Tutorial von Peter Kropff](http://www.peterkropff.de/site/php/pdo.htm).
 
 ### Tutorials
 
