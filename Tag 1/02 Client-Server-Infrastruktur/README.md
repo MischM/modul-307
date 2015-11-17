@@ -15,6 +15,20 @@
 
 TBD
 
+### Aufbau eines HTTP-Requests
+
+```
+POST /path/script.cgi HTTP/1.0
+From: frog@jmarshall.com
+User-Agent: HTTPTool/1.0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 32
+
+home=Cosby&favorite+flavor=flies
+```
+
+TBD
+
 #### Basis Beispiel: Aufruf einer Website
 
 1. Der __Benutzer__ öffnet seinen Browser (den Client).

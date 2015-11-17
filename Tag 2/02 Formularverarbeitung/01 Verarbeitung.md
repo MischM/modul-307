@@ -76,7 +76,72 @@ Das «Decoding» der Daten übernimmt PHP automatisch (in diesem Fall `+` durch 
 $name = $_POST['name'];
 ```
 
+### Handelt es sich um einen `POST`-Request?
+
+Unser Code zur Formularverarbeitung soll nur dann ausgeführt werden, wenn ein Formular abgesendet wurde, bzw. ein `POST`-Request an unser Script gesendet wurde:
+
+```php
+<?php
+if(formular_abgesendet) {
+    verarbeite_daten();
+}
+?>
+...
+<form ... >
+```
+
+Um zu überprüfen, ob es sich beim Request um einen `POST`-Request handelt, können wir auf die `$_SERVER` Superglobale zurückgreifen. `$_SERVER` ist ein Array mit zahlreichen Informationen zu userem Script, unserem Server und auch dem eingehenden HTTP-Request.
+
+```
+<?php
+print_r($_SERVER);
+
+Array
+(
+    [HTTP_HOST] => localhost
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454.101 Chrome/45.0.2454.101 Safari/537.36
+    [HTTP_DNT] => 1
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, sdch
+    [HTTP_ACCEPT_LANGUAGE] => de,en-US;q=0.8,en;q=0.6
+    [HTTP_COOKIE] => PHPSESSID=vbqbfps2ahq0ltccajvsu240c7
+    [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    [SERVER_SIGNATURE] => <address>Apache/2.4.16 (Ubuntu) Server at localhost Port 80</address>
+    [SERVER_SOFTWARE] => Apache/2.4.16 (Ubuntu)
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 10.0.0.10
+    [DOCUMENT_ROOT] => /var/www
+    [REQUEST_SCHEME] => http
+    [CONTEXT_PREFIX] => 
+    [CONTEXT_DOCUMENT_ROOT] => /var/www
+    [SERVER_ADMIN] => webmaster@localhost
+    [SCRIPT_FILENAME] => /var/www/info.php
+    [REMOTE_PORT] => 57282
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /info.php
+    [SCRIPT_NAME] => /info.php
+    [PHP_SELF] => /info.php
+    [REQUEST_TIME_FLOAT] => 1447781626.979
+    [REQUEST_TIME] => 1447781626
+)
+```
+
+Für diese Abfrage relevant ist der `REQUEST_METHOD`-Schlüssel. Enthält dieser den Wert `POST` werden Daten (z. B. über ein Formular) an den Server gesendet.
 
 
-
-## Daten validieren
+```php
+<?php
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    verarbeite_daten();
+}
+?>
+...
+<form ... >
+```
