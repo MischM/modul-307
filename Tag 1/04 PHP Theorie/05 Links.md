@@ -31,6 +31,7 @@ Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige in
 * [PhpStorm](https://www.jetbrains.com/phpstorm/): PHP IDE<br />
   Tutorials zur Anwendung auf laracasts.com: [Be Awesome in PhpStorm](https://laracasts.com/series/how-to-be-awesome-in-phpstorm)
 * [Vagrant](https://www.vagrantup.com/): Einfache Entwicklungsumgebungen in virtuellen Maschinen erstellen (eine professionellere Alternative zu XAMPP).
+* [Xdebug](http://xdebug.org/): Debug-Extension für PHP
 
 ### Testing-Frameworks
 
