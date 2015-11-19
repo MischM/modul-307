@@ -90,9 +90,41 @@ if($geburtsjahr > (date('Y') - 18)) { // Geburtsjahr > 1998 -> Minderjährig
 
 ## Format überprüfen
 
-PHP bietet zur Überprüfung von einigen Formaten die Funktion [`filter_var`]() an.
+### `filter_var`
+
+PHP bietet zur Überprüfung von einigen Formaten die Funktion [`filter_var`](https://secure.php.net/manual/de/function.filter-var.php) an.
 
 Die Syntax ist wie folgt:
 
 ```php
-filter_var
+filter_var($variable, FILTER_KONSTANTE);
+```
+
+`filter_var` liefert bei einer ungültigen Eingabe einen Wert von `false` zurück. Andernfalls werden die Eingabe-Daten zurückgegeben. Es ist also wichtig einen **typenstarken Vergleich** mit `false` zur verwenden.
+
+Als Filter-Konstakte kann einer der folgenden Werte verwendet werden:
+
+* FILTER_VALIDATE_BOOLEAN
+* FILTER_VALIDATE_EMAIL
+* FILTER_VALIDATE_FLOAT
+* FILTER_VALIDATE_INT
+* FILTER_VALIDATE_IP
+* FILTER_VALIDATE_URL
+
+Um zu überprüfen, ob eine gültige URL eingegeben wurde, könnte also folgender Code verwendet werden:
+
+```php
+if(filter_var($url, FILTER_VALIDATE_URL) === false) {
+    echo 'URL ist ungültig!';
+} else {
+    echo 'URL ist gültig!';
+}
+```
+
+Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig [kontakt@höhenluft.ch]. Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten gültige aber besondere Email-Adresse ausschliessen.
+
+### Reguläre Ausdrücke
+
+Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit Regulären Ausdrücken validieren.
+
+Reguläre Ausdrücke sind jedoch ein Thema für sich und werden in kommenden Übungen angeschaut.
