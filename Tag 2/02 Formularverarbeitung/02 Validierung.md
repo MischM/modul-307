@@ -11,9 +11,13 @@ Grundsätzlich gilt es die Daten auf folgende Punkte zu überprüfen:
 
 ## Existenz überprüfen
 
-Um zu überprüfen, ob ein Formularfeld in einem `POST`-Request vorhanden ist, kann in der Superglobal `$_POST` die Existenz des gewünschten Schlüssels überprüft werden.
+### Werte aus Superglobals in Variablen übernehmen
 
-Eine Möglichkeit dies zu tun, ist mittels `isset()`. `isset()` überprüft, ob eine Variable vorhanden und nicht `null` ist. Es wird nicht überprüft, ob die Variable leer ist.
+Damit nicht mit der Superglobalen `$_POST` gearbeitet werden muss, bietet es sich an, die Werte in eigene Variablen zu übernehmen und bei nicht vorhandenen Feldern ein eigener Standard-Wert zu setzen.
+
+Um zu überprüfen, ob ein Formularfeld in einem `POST`-Request vorhanden ist, muss die Existenz des gewünschten Schlüssels in der `$_POST` Variable überprüft werden.
+
+Eine Möglichkeit dies zu tun ist mittels `isset()`. `isset()` überprüft, ob eine Variable vorhanden und nicht `null` ist. **Es wird nicht überprüft, ob die Variable leer ist.**
 
 ```php
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -74,7 +78,7 @@ Die logische Überprüfung variiert je nach Feld. Ein Geburtsjahr darf z. B. nie
 
 ```php
 if($geburtsjahr > date('Y')) { // date('Y') = aktuelles Jahr (z. B. 2016)
-    echo 'Geburtsjahr liegt in der Zukunft!';
+    echo 'Geburtsjahr muss in der Vergangenheit liegen.';
 }
 
 if($geburtsjahr > (date('Y') - 18)) { // Geburtsjahr > 1998 -> Minderjährig
@@ -85,3 +89,10 @@ if($geburtsjahr > (date('Y') - 18)) { // Geburtsjahr > 1998 -> Minderjährig
 (Bitte beachte, dass im letzten Beispiel natürlich das gesamte Geburtsdatum beachtet werden sollte, nicht nur das Jahr. Hier wurde das Beispiel vereinfacht.)
 
 ## Format überprüfen
+
+PHP bietet zur Überprüfung von einigen Formaten die Funktion [`filter_var`]() an.
+
+Die Syntax ist wie folgt:
+
+```php
+filter_var
