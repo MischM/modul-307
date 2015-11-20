@@ -100,7 +100,7 @@ Die Syntax ist wie folgt:
 filter_var($variable, FILTER_KONSTANTE);
 ```
 
-`filter_var` liefert bei einer ungültigen Eingabe einen Wert von `false` zurück. Andernfalls werden die Eingabe-Daten zurückgegeben. Es ist also wichtig einen **typenstarken Vergleich** mit `false` zur verwenden.
+`filter_var` liefert bei einer ungültigen Eingabe einen Wert von `false` zurück. Andernfalls werden die Eingabe-Daten zurückgegeben. Es ist also wichtig einen **typenstarken Vergleich** mit `false` zu verwenden.
 
 Als Filter-Konstakte kann einer der folgenden Werte verwendet werden:
 
@@ -121,11 +121,11 @@ if(filter_var($url, FILTER_VALIDATE_URL) === false) {
 }
 ```
 
-Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig [kontakt@höhenluft.ch]. Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten gültige aber besondere Email-Adresse ausschliessen.
+Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten grundsätzlich gültige aber besondere Email-Adressen als ungültig erkennen.
 
 ### Reguläre Ausdrücke
 
-Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit Regulären Ausdrücken validieren.
+Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit regulären Ausdrücken validieren.
 
 Mit der Funktion `preg_match` und dem regulären Ausdruck `/^\d{2}\.\d{2}\.\d{2,4}$/` lässt sich beispielsweise das Format eines Datums überprüfen.
 
