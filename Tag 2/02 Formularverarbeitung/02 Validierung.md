@@ -127,4 +127,27 @@ Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zur�
 
 Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit Regulären Ausdrücken validieren.
 
-Reguläre Ausdrücke sind jedoch ein Thema für sich und werden in kommenden Übungen angeschaut.
+Mit der Funktion `preg_match` und dem regulären Ausdruck `/^\d{2}\.\d{2}\.\d{2,4}$/` lässt sich beispielsweise das Format eines Datums überprüfen.
+
+```php
+$datum = '24.11.1990';
+
+if(preg_match('/^\d{2}\.\d{2}\.\d{2,4}$/', $datum)) {
+    echo 'Datum ist gültig!';
+} else {
+    echo 'Datum ist ungültig!';
+}
+```
+
+Dieser Ausdruck würde auch das Datum `40.80.8000` zulassen, für eine grobe Überprüfung reicht er jedoch aus. 
+
+Eine genauere Überprüfung wurde folgender Ausdruck bringen.
+
+```php
+^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(19|20)[0-9]{2}$
+```
+
+Wie Du siehst, wird es sehr schnell sehr komplex. Reguläre Ausdrücke sind daher ein Thema für sich und werden in diesem ÜK nur teilweise behandelt.
+
+* Siehe auch [PHP: Reguläre Ausdrücke auf wikibooks.org](https://de.wikibooks.org/wiki/Websiteentwicklung:_PHP:_Regul%C3%A4re_Ausdr%C3%BCcke)
+* Tool zum Testen von Ausdrücken: [PHP Live Regex](http://www.phpliveregex.com/)
