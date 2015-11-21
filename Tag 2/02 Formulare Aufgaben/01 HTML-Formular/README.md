@@ -1,4 +1,4 @@
-# HTML-Formular für Firmenevent
+# Anmelde-Formular für Firmenevent
 
 Die Firma Galaxy Webservices GmbH lädt seine Kunden zu einem Firmenevent nach Davos ein. Dafür wird per Newsletter ein Link zu einem Anmeldeformular versendet.
 
@@ -17,12 +17,14 @@ Pro eingeladener Firma können beliebig viele Personen am Event teilnehmen. Um d
 Erstelle eine HTML-Seite mit einem Formular, das folgende Kriterien erfüllt:
 
 * Das Formular hat einen Titel
+* Das Formular hat einen kurzen Begrüssungstext wie z. B. <br />
+  `Füllen Sie folgendes Formular aus um sich für den Event anzumelden.`
 * Der Firmenname kann eingetragen werden
 * Eine Email-Adresse kann eingetragen werden
 * Eine Telefonnummer kann eingetragen werden
 * Die Anzahl teilnehmender Personen kann eingetragen werden
-* Es kann ausgewählt werden, ob der Shuttle-Bus-Service beansprucht wird
 * Es kann ausgewählt werden, in welchem der beiden Hotels man untergebracht werden will
+* Es kann ausgewählt werden, ob der Shuttle-Bus-Service beansprucht wird
 * Es kann ausgewählt werden, an welchem der folgenden Abendprogramme man teilnehmen möchte
     - Kein Abendprogramm
     - Billardturnier
@@ -31,3 +33,4 @@ Erstelle eine HTML-Seite mit einem Formular, das folgende Kriterien erfüllt:
     - Asiatischer Kochkurs
     - Tankzurs für Webentwickler
     - Ying & Yang Yoga Einsteigerkurs
+* Als sekundäre Aktion soll ein Link vorhanden sein, um die Anmeldung abzubrechen. Der Link soll den Besucher auf die Firmenstartseite bringen

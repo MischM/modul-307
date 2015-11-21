@@ -7,33 +7,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container" id="main">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-            
-                <h1 class="form-title">Eventanmeldung</h1>
+    <div class="wrapper">
 
-                <form action="index.php" method="post">
+        <h1 class="form-title">Anmeldung für Kundenevent</h1>
 
-                    <div class="form-group">
-                        <label for="name">Ihr Name</label>
-                        <input class="form-control" type="text" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Ihre Telefonnummer</label>
-                        <input class="form-control" type="text" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="people">Anzahl Personen</label>
-                        <input class="form-control" min="0" max="9" type="number" id="people" name="people">
-                    </div>
-                    <div class="form-group">
-                        <input class="btn" type="submit" value="Anmelden">
+        <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
+
+        <form action="index.php" method="post">
+
+            <fieldset>
+                <legend class="form-legend">Kontaktdaten</legend>
+                <div class="form-group">
+                    <label class="form-label" for="name">Ihr Name</label>
+                    <input class="form-control" type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Ihre Email-Adresse</label>
+                    <input class="form-control" type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="phone">Ihre Telefonnummer</label>
+                    <input class="form-control" type="text" id="phone" name="phone">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="form-legend">Unterkunft</legend>
+                <div class="form-group">
+                    <label class="form-label" for="people">Wie viele Personen werden von Ihrer Firma teilnehmen?</label>
+                    <input class="form-control" min="0" max="9" type="number" id="people" name="people">
+                </div>
+                <div class="form-group option-group">
+
+                    <p class="form-label">In welchem Hotel möchten Sie übernachten?</p>
+
+                    <div class="radio">
+                        <label for="hotel1">
+                            <input type="radio" name="hotel" id="hotel1" value="InterContinental Davos">
+                            InterContinental Davos
+                        </label>
                     </div>
 
-                </form>
-            </div>
-        </div>
-    </div>
+                    <div class="radio">
+                        <label for="hotel2">
+                            <input type="radio" name="hotel" id="hotel2" value="Steinberger Grandhotel Belvédère">
+                            Steinberger Grandhotel Belvédère
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group option-group">
+                    <div class="checkbox">
+
+                        <p class="form-label">Shuttle-Bus-Service</p>
+
+                        <label for="shuttle">
+                            <input id="shuttle" name="shuttle" value="1" type="checkbox">
+                            Wir möchten den Shuttle-Bus-Service beanspruchen.
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="form-legend">Ihr individuelles Programm</legend>
+
+                <div class="form-group">
+                    <label class="form-label" for="program">Was möchten Sie am Abend unternehmen?</label>
+                    <select class="form-control" id="program" name="program">
+                        <option value="">Kein Abendprogramm</option>
+                        <option value="Billardturnier">Billardturnier</option>
+                        <option value="Bowlingturnier">Bowlingturnier</option>
+                        <option value="Weindegustation">Weindegustation</option>
+                        <option value="Asiatischer Kochkurs">Asiatischer Kochkurs</option>
+                        <option value="Tankzurs für Webentwickler">Tankzurs für Webentwickler</option>
+                        <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <div class="form-actions">
+              <input class="btn btn-primary" type="submit" value="Anmelden">
+              <a href="http://www.google.com" class="btn">Anmeldung abbrechen</a>
+          </div>
+
+      </form>
+  </div>
 </body>
 </html>
