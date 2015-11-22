@@ -71,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endif; ?>
         <!-- /SCHRITT 2 -->
 
-        <form action="index.php" method="post" novalidate>
+        <form action="index.php" method="post">
 
             <fieldset>
                 <legend class="form-legend">Kontaktdaten</legend>
