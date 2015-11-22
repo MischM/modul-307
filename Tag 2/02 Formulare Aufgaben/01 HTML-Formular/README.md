@@ -33,4 +33,5 @@ Erstelle eine HTML-Seite mit einem Formular, das folgende Kriterien erfüllt:
     - Asiatischer Kochkurs
     - Tankzurs für Webentwickler
     - Ying & Yang Yoga Einsteigerkurs
+* Es gibt eine Möglichkeit, um eine Bemerkung zur Anmeldung einzugeben.
 * Als sekundäre Aktion soll ein Link vorhanden sein, um die Anmeldung abzubrechen. Der Link soll den Besucher auf die Firmenstartseite bringen

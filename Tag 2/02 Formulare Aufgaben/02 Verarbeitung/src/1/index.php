@@ -13,7 +13,14 @@
 
         <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
 
-        <form action="index.html" method="post">
+        <!-- SCHRITT 1 -->
+        <ul class="errors">
+            <li>Bitte geben Sie einen Namen ein.</li>
+            <li>Die Email-Adresse "google.com" ist ungültig.</li>
+        </ul>
+        <!-- /SCHRITT 1 -->
+
+        <form action="index.php" method="post">
 
             <fieldset>
                 <legend class="form-legend">Kontaktdaten</legend>
@@ -83,7 +90,7 @@
                         <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="note" class="form-label">Haben Sie sonst noch einen Wunsch oder eine Bemerkung?</label>
                     <textarea name="note" id="note" rows="3" class="form-control"></textarea>

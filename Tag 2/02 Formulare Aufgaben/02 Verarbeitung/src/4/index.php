@@ -1,4 +1,52 @@
-<!DOCTYPE html>
+<?php
+// Schritt 2
+$errors = [];
+
+// Schritt 3
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+    // Schritt 4
+    $name    = trim($_POST['name'])    ?? '';
+    $email   = trim($_POST['email'])   ?? '';
+    $phone   = trim($_POST['phone'])   ?? '';
+    $people  = trim($_POST['people'])  ?? '';
+    $hotel   = trim($_POST['hotel'])   ?? '';
+    $program = trim($_POST['program']) ?? '';
+    $note    = trim($_POST['note'])    ?? '';
+
+    if($name === '') {
+        $errors[] = 'Bitte geben Sie einen Namen ein.';
+    }
+
+    if($email === '') {
+        $errors[] = 'Bitte geben Sie eine Email ein.';
+    } elseif(strpos($email, '@') === false) {
+        $errors[] = 'Die Email-Adresse "' . $email . '" ist ungültig.';
+    }
+
+    if($phone === '') {
+        $errors[] = 'Bitte geben Sie eine Telefonnummer ein.';
+    } elseif(!preg_match('/[\+ 0-9]+/', $phone)) {
+        $errors[] = 'Die Telefonnummer "' . $phone . '" ist ungültig.';
+    }
+
+    if($people === '') {
+        $errors[] = 'Bitte geben Sie die Anzahl teilnehmender Personen ein.';
+    } elseif(!is_numeric($people)) {
+        $errors[] = 'Bitte geben Sie für die Anzahl Personen nur Zahlen ein.';
+    }
+
+    if($hotel === '') {
+        $errors[] = 'Bitte wählen Sie ein Hotel für die Übernachtung aus.';
+    }
+
+    // Keine Fehler vorhanden
+    if(count($errors) === 0) {
+        echo 'OK';
+    }
+
+}
+?><!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +61,17 @@
 
         <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
 
-        <form action="index.html" method="post">
+        <!-- SCHRITT 2 -->
+        <?php if(count($errors) > 0): ?>
+        <ul class="errors">
+            <?php foreach($errors as $error): ?>
+                <li><?= $error ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+        <!-- /SCHRITT 2 -->
+
+        <form action="index.php" method="post" novalidate>
 
             <fieldset>
                 <legend class="form-legend">Kontaktdaten</legend>
@@ -83,12 +141,12 @@
                         <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="note" class="form-label">Haben Sie sonst noch einen Wunsch oder eine Bemerkung?</label>
                     <textarea name="note" id="note" rows="3" class="form-control"></textarea>
                 </div>
-
+                
             </fieldset>
 
             <div class="form-actions">

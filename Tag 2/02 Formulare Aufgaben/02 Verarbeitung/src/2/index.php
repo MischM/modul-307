@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+// Schritt 2
+$errors = [
+    'Bitte geben Sie einen Namen ein.',
+    'Die Email-Adresse "google.com" ist ungültig.'
+];
+?><!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +19,17 @@
 
         <p>Füllen Sie das folgende Formular aus um sich für unseren Kundenevent 2016 anzumelden.</p>
 
-        <form action="index.html" method="post">
+        <!-- SCHRITT 2 -->
+        <?php if(count($errors) > 0): ?>
+        <ul class="errors">
+            <?php foreach($errors as $error): ?>
+                <li><?= $error ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+        <!-- /SCHRITT 2 -->
+
+        <form action="index.php" method="post">
 
             <fieldset>
                 <legend class="form-legend">Kontaktdaten</legend>
@@ -83,7 +99,7 @@
                         <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="note" class="form-label">Haben Sie sonst noch einen Wunsch oder eine Bemerkung?</label>
                     <textarea name="note" id="note" rows="3" class="form-control"></textarea>
