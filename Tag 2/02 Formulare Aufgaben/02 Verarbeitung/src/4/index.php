@@ -2,18 +2,29 @@
 // Schritt 2
 $errors = [];
 
+// Schritt 4
+$name    = $_POST['name']    ?? '';
+$email   = $_POST['email']   ?? '';
+$phone   = $_POST['phone']   ?? '';
+$people  = $_POST['people']  ?? '';
+$hotel   = $_POST['hotel']   ?? '';
+$program = $_POST['program'] ?? '';
+$shuttle = $_POST['shuttle'] ?? '';
+$note    = $_POST['note']    ?? '';
+
 // Schritt 3
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
-    // Schritt 4
-    $name    = trim($_POST['name'])    ?? '';
-    $email   = trim($_POST['email'])   ?? '';
-    $phone   = trim($_POST['phone'])   ?? '';
-    $people  = trim($_POST['people'])  ?? '';
-    $hotel   = trim($_POST['hotel'])   ?? '';
-    $program = trim($_POST['program']) ?? '';
-    $note    = trim($_POST['note'])    ?? '';
 
+    // Schritt 4
+    $name    = trim($name);
+    $email   = trim($email);
+    $phone   = trim($phone);
+    $people  = trim($people);
+    $hotel   = trim($hotel);
+    $program = trim($program);
+    $shuttle = trim($shuttle);
+    $note    = trim($note);
+    
     if($name === '') {
         $errors[] = 'Bitte geben Sie einen Namen ein.';
     }
@@ -26,13 +37,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if($phone === '') {
         $errors[] = 'Bitte geben Sie eine Telefonnummer ein.';
-    } elseif(!preg_match('/[\+ 0-9]+/', $phone)) {
+    } elseif( ! preg_match('/[\+ 0-9]+/', $phone)) {
         $errors[] = 'Die Telefonnummer "' . $phone . '" ist ungültig.';
     }
 
     if($people === '') {
         $errors[] = 'Bitte geben Sie die Anzahl teilnehmender Personen ein.';
-    } elseif(!is_numeric($people)) {
+    } elseif( ! is_numeric($people)) {
         $errors[] = 'Bitte geben Sie für die Anzahl Personen nur Zahlen ein.';
     }
 
@@ -93,7 +104,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <legend class="form-legend">Unterkunft</legend>
                 <div class="form-group">
                     <label class="form-label" for="people">Wie viele Personen werden von Ihrer Firma teilnehmen?</label>
-                    <input class="form-control" min="0" max="9" type="number" id="people" name="people">
+                    <input class="form-control" min="0" type="number" id="people" name="people">
                 </div>
                 <div class="form-group option-group">
 

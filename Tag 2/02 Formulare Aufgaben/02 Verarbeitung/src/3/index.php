@@ -53,7 +53,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <legend class="form-legend">Unterkunft</legend>
                 <div class="form-group">
                     <label class="form-label" for="people">Wie viele Personen werden von Ihrer Firma teilnehmen?</label>
-                    <input class="form-control" min="0" max="9" type="number" id="people" name="people">
+                    <input class="form-control" min="0" type="number" id="people" name="people">
                 </div>
                 <div class="form-group option-group">
 

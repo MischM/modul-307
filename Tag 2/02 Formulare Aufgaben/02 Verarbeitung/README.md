@@ -66,34 +66,35 @@ Dort, wo Du momentan mit `var_dump` die Daten ausgibst, kannst Du diese nun vali
 Füge für fehlerhafte Eingaben die entsprechende Fehlermeldung zu Deinem `$errors`-Array hinzu.
 Pro Feld soll immer nur ein Fehler angezeigt werden. Falls die Email-Adresse also nicht eingegeben wurde, sollte diese nicht auch noch als fehlerhaft angezeigt werden!
 
-Alle Felder ausser das für die Bemerkung sind Pflichtfelder.
+Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
 
 Für die Validierung der Email-Adresse überprüfen wir nur, ob die Eingabe ein `@` enthält.
 
-Die Telefonnummer dürfen nur Zahlen, Leerzeichen und das `+` Symbol eingegeben werden. Alle anderen Eingaben sind ungültig.
+Für die Telefonnummer dürfen nur Zahlen, Leerzeichen und das `+` Symbol eingegeben werden. Alle anderen Eingaben sind ungültig.
+
+Wenn keine Fehler vorhanden sind, gib einfach nur den String `OK` nach der Validierung der Daten aus.
 
 Die folgenden Testfälle sollte Dein Formular erfüllen. 
 
-|       Feld      |         Input         |                      Ferhlermeldung                     |
-|-----------------|-----------------------|---------------------------------------------------------|
-| Name            | `''`  *(leer)*        | Bitte geben Sie einen Namen ein.                        |
-| Email           | `''`                  | Bitte geben Sie eine Email ein.                         |
-| Telefon         | `''`                  | Bitte geben Sie eine Telefonnummer ein.                 |
-| Anzahl Personen | `''`                  | Bitte geben Sie die Anzahl teilnehmender Personen ein.  |
-| Hotel           | `''`                  | Bitte wählen Sie ein Hotel für die Übernachtung aus.    |
-|                 |                       |                                                         |
-| Email           | `'google.com'`        | Die Email-Adresse "google.com" ist ungültig.            |
-| Telefon         | `'phone'`             | Die Telefonnummer "phone" ist ungültig.                 |
-| Anzahl Personen | `'Acht'`              | Bitte geben Sie für die Anzahl Personen nur Zahlen ein. |
-|                 |                       |                                                         |
-| Email           | `'test@google.com'`   | **keine**                                               |
-| Email           | `'     info@cern.ch'` | **keine**                                               |
-| Telefon         | `'+41 260 30 39'`     | **keine**                                               |
-| Name            | `'Peter'`             | **keine**                                               |
-| Anzahl Personen | `'5'`                 | **keine**                                               |
-| Bemerkung       | `''`                  | **keine**                                               |
+|       Feld      |        Input        |                      Ferhlermeldung                     |
+|-----------------|---------------------|---------------------------------------------------------|
+| Name            | `''`  *(leer)*      | Bitte geben Sie einen Namen ein.                        |
+| Email           | `''`                | Bitte geben Sie eine Email ein.                         |
+| Telefon         | `''`                | Bitte geben Sie eine Telefonnummer ein.                 |
+| Anzahl Personen | `''`                | Bitte geben Sie die Anzahl teilnehmender Personen ein.  |
+| Hotel           | `''`                | Bitte wählen Sie ein Hotel für die Übernachtung aus.    |
+|                 |                     |                                                         |
+| Email           | `'google.com'`      | Die Email-Adresse "google.com" ist ungültig.            |
+| Telefon         | `'phone'`           | Die Telefonnummer "phone" ist ungültig.                 |
+| Anzahl Personen | `'Acht'`            | Bitte geben Sie für die Anzahl Personen nur Zahlen ein. |
+|                 |                     |                                                         |
+| Email           | `'test@google.com'` | **keine**                                               |
+| Email           | `'info@cern.ch '`   | **keine**                                               |
+| Telefon         | `'+41 260 30 39'`   | **keine**                                               |
+| Name            | `'Peter'`           | **keine**                                               |
+| Anzahl Personen | `'5'`               | **keine**                                               |
+| Bemerkung       | `''`                | **keine**                                               |
     
-Wenn keine Fehler vorhanden sind, gib einfach nur den String `OK` nach der Validierung der Daten aus.
 
 #### Schritt 5
 
