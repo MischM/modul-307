@@ -98,7 +98,19 @@ Die folgenden Testfälle sollte Dein Formular erfüllen.
 
 #### Schritt 5
 
-Eingaben bei Fehler wieder in Inputs anzeigen.
+Wenn das Formular Fehler enthält, muss der Kunde momentan alle seine Daten erneut eintippen. Sorge dafür, dass bereits getätigte Eingaben nach dem Absenden des Formulars automatisch wieder voreingetragen sind.
+
+Achte darauf, dass auch die Radiobutton und Selectbox-Auswahlen vorselektiert werden.
+
+#### Schritt 6
+
+Entferne die Ausgabe des `OK`, wenn das Formular keine Fehler enthält. 
+
+Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werden. Das Formular soll nicht mehr angezeigt werden, wenn das Formular korrekt ausgefüllt worden ist.
+
+> **Anmeldung erfolgreich**
+> 
+> Vielen Dank für Ihre Anmeldung. Wir haben diese erfolgreich entgegengenommen.
 
 ## Lösung
 

@@ -185,11 +185,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             </fieldset>
 
             <div class="form-actions">
-              <input class="btn btn-primary" type="submit" value="Anmelden">
-              <a href="http://www.google.com" class="btn">Anmeldung abbrechen</a>
-          </div>
+                <input class="btn btn-primary" type="submit" value="Anmelden">
+                <a href="http://www.google.com" class="btn">Anmeldung abbrechen</a>
+            </div>
 
-      </form>
-  </div>
+        </form>
+    </div>
 </body>
 </html>
