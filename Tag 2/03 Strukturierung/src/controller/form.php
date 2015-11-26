@@ -21,7 +21,7 @@ if($email === '') {
 
 if($phone === '') {
     $errors[] = 'Bitte geben Sie eine Telefonnummer ein.';
-} elseif( ! preg_match('/[\+ 0-9]+/', $phone)) {
+} elseif( ! preg_match('/^[\+ 0-9]+$/', $phone)) {
     $errors[] = 'Die Telefonnummer "' . $phone . '" ist ungültig.';
 }
 
