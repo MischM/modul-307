@@ -124,10 +124,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="radio">
                             <label for="hotel1">
                                 <input type="radio"
-                                name="hotel"
-                                id="hotel1"
-                                value="InterContinental Davos"
-                                <?= $hotel === 'InterContinental Davos' || $hotel === '' ? 'checked' : '' ?>
+                                    name="hotel"
+                                    id="hotel1"
+                                    value="InterContinental Davos"
+                                    <?= $hotel === 'InterContinental Davos' || $hotel === '' ? 'checked' : '' ?>
                                 >
                                 InterContinental Davos
                             </label>
@@ -136,10 +136,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="radio">
                             <label for="hotel2">
                                 <input type="radio"
-                                name="hotel"
-                                id="hotel2"
-                                value="Steinberger Grandhotel Belvédère"
-                                <?= $hotel === 'Steinberger Grandhotel Belvédère' ? 'checked' : '' ?>
+                                    name="hotel"
+                                    id="hotel2"
+                                    value="Steinberger Grandhotel Belvédère"
+                                    <?= $hotel === 'Steinberger Grandhotel Belvédère' ? 'checked' : '' ?>
                                 >
                                 Steinberger Grandhotel Belvédère
                             </label>
@@ -152,10 +152,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                             <label for="shuttle">
                                 <input id="shuttle"
-                                name="shuttle"
-                                value="1"
-                                type="checkbox"
-                                <?= $shuttle == '1' ? 'checked' : '' ?>
+                                    name="shuttle"
+                                    value="1"
+                                    type="checkbox"
+                                    <?= $shuttle == '1' ? 'checked' : '' ?>
                                 >
                                 Wir möchten den Shuttle-Bus-Service beanspruchen
                             </label>
@@ -171,13 +171,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <select class="form-control" id="program" name="program">
                             <?php
                             $options = [
-                            'Kein Abendprogramm',
-                            'Billardturnier',
-                            'Bowlingturnier',
-                            'Weindegustation',
-                            'Asiatischer Kochkurs',
-                            'Tankzurs für Webentwickler',
-                            'Ying & Yang Yoga Einsteigerkurs',
+                                'Kein Abendprogramm',
+                                'Billardturnier',
+                                'Bowlingturnier',
+                                'Weindegustation',
+                                'Asiatischer Kochkurs',
+                                'Tankzurs für Webentwickler',
+                                'Ying & Yang Yoga Einsteigerkurs',
                             ];
 
                             foreach($options as $option): ?>
