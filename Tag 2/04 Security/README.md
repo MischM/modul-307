@@ -141,3 +141,34 @@ if(array_key_exists($page, $routes)) {
 include $include;
 ?>
 ```
+
+### SQL-Injections (nicht ÜK relevant)
+
+Bei einer SQL-Injection wird das unverarbeitete Einfügen von Benutzereingaben in eine SQL-Query missbraucht.
+
+```SQL
+SELECT `password` FROM `users` WHERE username = '$username';
+```
+
+Wird jetzt z. B. als Benutzername `'; DROP TABLE users; SELECT'` eingegeben, ist die Query so abgeändert worden, dass die komplette `users` Tabelle gelöscht wird.
+
+```SQL
+SELECT `password` FROM `users` WHERE username = ''; DROP TABLE users; SELECT '';
+```
+
+#### SQL-Injections verhindern
+
+Füge **niemals** Benutzereingaben direkt in eine SQL-Query ein. Verwende die modernen PHP-Erweiterungen [`mysqli`](https://secure.php.net/manual/de/book.mysqli.php) oder [`PDO`](https://secure.php.net/manual/en/book.pdo.php). Funktionen, die mit `mysql_` beginnen, dürfen nicht mehr verwendet werden!
+
+Verwende Prepared Statements: Auf diese Weise werden Deine Query und die Benutzereingaben getrennt an den Datenbankserver gesendet und müssen nicht vereint werden. Der DB-server übernimmt das sichere Handling der Query dann für Dich.
+
+```php
+$statement = $dbh->prepare("SELECT `password` FROM `users` WHERE username = :username");
+$statement->bindParam(':username', $username);
+$statement->execute();
+
+$password = $statement->fetch();
+...
+```
+
+### Verschlüsselung und Hashing 
