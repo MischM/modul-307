@@ -1,4 +1,4 @@
-# Security
+# Applikationssicherheit
 
 Die Sicherheit sollte beim Entwickeln einer Webapplikation immer höchste Priorität haben. Als Entwickler hast Du die Verantwortung dafür zu sorgen, dass Deine Kunden und deren Daten bei Dir gut aufgehoben sind.
 
@@ -7,17 +7,17 @@ Die Sicherheit sollte beim Entwickeln einer Webapplikation immer höchste Priori
 
 Ein wichtiger Grundsatz für die Absicherung Deiner Applikation ist, dass Du Eingaben, die vom Benutzer kommen, nie trauen sollst!
 
-Dies beinhaltet z. B. 
+Dies beinhaltet unter anderem 
 
 * GET- und POST-Daten 
 * Cookies
 * Dateiuploads
 
-Über alle diese Eingaben kann z. B. Code direkt in Deine Applikation eingeschleust werden.
+Über alle diese Eingaben kann Schadcode direkt in Deine Applikation eingeschleust werden.
 
 ## Ein kleines Beispiel
 
-Öffne Dein Formular in Firefox oder Internet Explorer und gibt als Telefonnummer folgenden Wert ein.
+Öffne Dein Formular in Firefox oder Internet Explorer (nicht Chrome) und gib als Telefonnummer folgenden Wert ein.
 
 ```
 <script>eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1.0.2=\'3://5.4/6\';',7,7,'location|document|href|http|gl|goo|bylFCM'.split('|'),0,{}))</script>
@@ -25,9 +25,9 @@ Dies beinhaltet z. B.
 
 ## Einige Arten von Sicherheitslücken
 
-Anschliessend eine **nicht abschliessende** Liste von möglichen Sicherheitslücken und wie Du diese verhindern kannst. Diese sind besonders für unser Anwendungsbereich relevant.
+Anschliessend eine **nicht abschliessende** Liste von möglichen Sicherheitslücken und wie Du diese verhindern kannst. Diese sind besonders für unser ÜK-Anwendungsbereich relevant.
 
-Weitere Informationen zu diesem Thema findest Du auf der Website des [Open Web Application Security Project (OWASP)](https://www.owasp.org/):
+Weitere Informationen zum Thema Applikationssicherheit findest Du auf der Website des [Open Web Application Security Project (OWASP)](https://www.owasp.org/).
 
 ### Cross-Site Scripting (XSS)
 
@@ -43,7 +43,8 @@ Da der eingegebene Code in unserer Fehlermeldung 1:1 wieder ausgegeben wird, erm
 </ul>
 ```
 
-Achtung, das gleiche Problem tritt auch auf, wenn wir unsere Eingabefelder bei Fehlerhaften Daten im Formular mit den Eingaben des Benutzers wieder ausfüllen!
+Achtung: Das gleiche Problem tritt auch auf, wenn wir unsere Eingabefelder bei fehlerhaften Daten im Formular mit den Eingaben des Benutzers wieder ausfüllen!
+
 
 ```html
 <!-- Beispieleingabe -->
@@ -58,19 +59,32 @@ Achtung, das gleiche Problem tritt auch auf, wenn wir unsere Eingabefelder bei F
 PHP bietet einige Möglichkeiten an, die Eingaben des Benutzers sicher wieder auszugeben. Mit der Funktion `htmlspecialchars` werden in HTML verwendete Zeichen wie `<>` oder `"` in so genannte Entities (`&gt;`) umgewandelt.
 
 ```php
+echo htmlspecialchars('<script type="javascript">');
+// &lt;script&gt; type=&quot;javascript&quot;
+```
+
+Anwendung im Formular:
+
+```php
 <input type="text" value="<?= htmlspecialchars($phone) ?>">
 
 // Neue Ausgabe
 <input type="text" value="&quot;&gt;&lt;script&gt;alert('XSS');&lt;/script&gt;">
 ```
 
-So ist es nicht mehr möglich, Schadcode auf der Website einzubinden.
+So ist es nicht mehr möglich Schadcode auf der Website einzubinden.
 
 Wichtig beim Verwenden dieser Funktion ist, dass für die HTML-Attribute doppelte Anführungszeichen `"` verwendet werden!
 
+Wird die Funktion in einem Kontext verwendet, in dem auch einfache Anführungszeichen `'` umgewandelt werden sollen, kann `ENT_QUOTES` als 2. Parameter mitgegeben werden.
+
+Zudem ist auch wichtig, dass das Encoding Deiner Datei korrekt ist und mit den PHP-Einstellungen übereinstimmt. Weichen die beiden Werte voneinander ab, muss das Encoding als 3. Parameter mitgegeben werden.
+
+Siehe [htmlspecialchars auf php.net](https://secure.php.net/manual/de/function.htmlspecialchars.php)
+
 ### Local File Inclusion
 
-Bei der Local File Inclusion wird ein `include` Statement so missbraucht, dass es eine beliebige Datei aus dem Dateisystem liest.
+Bei der Local File Inclusion wird ein `include` Statement so missbraucht, dass es eine beliebige Datei aus dem Dateisystem lädt.
 
 #### Beispiel
 
@@ -82,7 +96,7 @@ http://superman.ch/index.php?page=kontakt.php
 http://superman.ch/index.php?page=impressum.php
 ```
 
-Dein Dateisystem einhält folgende Dateien:
+Dein Dateisystem enthält folgende Dateien:
 
 ```
  | index.php                # Template
@@ -172,3 +186,31 @@ $password = $statement->fetch();
 ```
 
 ### Verschlüsselung und Hashing 
+
+Auch Verschlüsselung und Hashing von Daten sind wichtige Aspekte der Sicherheit. 
+
+* Versuche Deine Website immer über HTTPS zu betreiben. Nutze Angebote wie [letsencrypt.org](http://letsencrypt.org) um ein kostenloses SSL-Zertifikat zu erhalten.
+* Schreibe **niemals** Deine eigenen Verschlüsselungsfunktionen. Greiffe immer auf von Experten erstelle und getestete Bibliotheken zur Verschlüsselung zurück.
+
+#### Hashing von Passwörtern
+
+Speichere **niemals** Passwörter Deiner Benutzer als Plaintext in die Datenbank. Versuche auch **niemals** diese zu verschlüsseln!
+
+Nutze die Hashing-Funktionen von PHP (`password_hash`) um den Hash eines Passworts zu generieren. Speichere nur diesen in die Datenbank.
+
+Wenn sich Dein Benutzer anmelden möchte, musst Du nur den Hash seiner Eingabe mit dem in der Datenbank gespeicherten vergleichen (via `password_verify`). Das Passwort muss somit nie abgespeichert werden.
+
+Beim Generieren eines Hashs gehen Informationen verloren. Somit ist es nicht möglich, von Hash auf die ursprüngliche Eingabe zurückzuschliessen.
+
+In alten PHP-Tutorials werden oft Hashing-Funktionen wie `md5` oder `sha1` für Passwörter verwendet. Diese dürfen heute **auf keinen Fall** mehr verwendet werden.
+
+```php
+<?php
+$hash = password_hash('wreckingball', PASSWORD_DEFAULT);
+// $2y$10$Wn1yu.o6.zIWejtVYQivlOBBjerpb3cHDVDvK0Az7ox0M.K9P6kyW
+
+if(password_verify('wreckingball', $hash)) {
+    echo 'Passwort ist korrekt!';
+}
+?>
+```
