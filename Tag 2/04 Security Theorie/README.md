@@ -31,7 +31,7 @@ Weitere Informationen zum Thema Applikationssicherheit findest Du auf der Websit
 
 ### Cross-Site Scripting (XSS)
 
-Das obenstehende Beispiel ist eine XSS-Attacke. Dabei wird in eine Applikation Code eingeschleust, der dann unverarbeitet wieder in den Browser des Besuchers ausgegeben wird.
+Das obenstehende Beispiel ist eine XSS-Attacke. Dabei wird in eine Applikation Code eingeschleust, der dann unverarbeitet wieder in den Browser des Besuchers ausgegeben wird. Dies wird oft genutzt, um Besucher auf Malware-Website umzuleiten oder Cookies zu stehlen.
 
 Obenstehender Code enthält JavaScript-Code, der den Browser auf `http://mrdoob.com/lab/javascript/effects/ie6/` umleitet.
 
@@ -96,7 +96,7 @@ http://superman.ch/index.php?page=kontakt.php
 http://superman.ch/index.php?page=impressum.php
 ```
 
-Dein Dateisystem enthält folgende Dateien:
+Dein Dateisystem enthält folgende Dateien. Damit Deine E-Banking Zugangsdaten auch vor unerlaubten Zugriff geschützt sind, hast Du den direkten Zugriff auf .txt Dateien über Deine Webserver-Konfiguration blockiert.
 
 ```
  | index.php                # Template
@@ -190,7 +190,7 @@ $password = $statement->fetch();
 Auch Verschlüsselung und Hashing von Daten sind wichtige Aspekte der Sicherheit. 
 
 * Versuche Deine Website immer über HTTPS zu betreiben. Nutze Angebote wie [letsencrypt.org](http://letsencrypt.org) um ein kostenloses SSL-Zertifikat zu erhalten.
-* Schreibe **niemals** Deine eigenen Verschlüsselungsfunktionen. Greiffe immer auf von Experten erstelle und getestete Bibliotheken zur Verschlüsselung zurück.
+* Schreibe **niemals** Deine eigenen Verschlüsselungsfunktionen. Greife immer auf von Experten erstelle und getestete Bibliotheken zur Verschlüsselung zurück.
 
 #### Hashing von Passwörtern
 
@@ -200,9 +200,9 @@ Nutze die Hashing-Funktionen von PHP (`password_hash`) um den Hash eines Passwor
 
 Wenn sich Dein Benutzer anmelden möchte, musst Du nur den Hash seiner Eingabe mit dem in der Datenbank gespeicherten vergleichen (via `password_verify`). Das Passwort muss somit nie abgespeichert werden.
 
-Beim Generieren eines Hashs gehen Informationen verloren. Somit ist es nicht möglich, von Hash auf die ursprüngliche Eingabe zurückzuschliessen.
+Beim Generieren eines Hashs gehen Informationen verloren. Somit ist es nicht möglich, vom Hash auf die ursprüngliche Eingabe zurückzuschliessen.
 
-In alten PHP-Tutorials werden oft Hashing-Funktionen wie `md5` oder `sha1` für Passwörter verwendet. Diese dürfen heute **auf keinen Fall** mehr verwendet werden.
+In alten PHP-Tutorials werden oft Hashing-Funktionen wie `md5` oder `sha1` für Passwörter verwendet. Diese dürfen heute **auf keinen Fall** mehr zum hashen von Passwörtern verwendet werden.
 
 ```php
 <?php
