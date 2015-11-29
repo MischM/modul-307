@@ -349,6 +349,16 @@ Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
 
 Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden kann.
 
+Einem Argument kann ein Standardwert zugewiesen werden. Somit ist die Eingabe dieses Arguments optional.
+
+```php
+function sagwas($wort1, $wort2 = 'Welt') {
+    echo $wort1 . ' ' . $wort2;
+}
+
+sagwas('Hallo');
+```
+
 ### Rückgabewerte
 
 Eine Funktion kann über das `return` Konstrukt einen Wert zurückgeben.
@@ -364,6 +374,17 @@ echo sagwas('Hallo', 'Welt');
 $wert = sagwas('Hallo', 'ÜK');
 echo $wert;
 // Hallo ÜK;
+```
+
+Ein `return` beendet die Ausführung der Funktion. Code, der nach einem `return` steht wird nicht ausgefürt.
+
+```php
+function sagwas($wort1, $wort2) {
+    
+    return $wort1 . ' ' . $wort2;
+
+    echo 'Wird nie ausgeführt.';
+}
 ```
 
 ### Type-Hints
