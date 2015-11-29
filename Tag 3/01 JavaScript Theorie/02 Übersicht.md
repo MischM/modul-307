@@ -4,11 +4,11 @@
 
 Die Syntax ähnelt sehr jender von PHP. Daher wird diese Übersicht etwas kürzer gehalten.
 
-Wie in PHP werden alle Anweisungen durch ein Semikolon `;` beendet. Zeilenumbrüche und Leerzeichen sind nicht relevant.
+Wie in PHP werden alle Anweisungen durch ein Semikolon `;` beendet. Zeilenumbrüche und Leerzeichen sind nicht relevant. Die Gross- und Kleinschreibung wird in JavaScript berücksichtigt! (Case-Sensitive)
 
 ### JavaScript in HTML
 
-Möchtest Du JavaScript in HTML-Code verwenden, umschliesse es mit einem `script`-Tag.
+Möchtest Du JavaScript in HTML-Code verwenden, umschliesse es mit einem `script`-Tag. Das `script`-Tag ist innerhalb des `body` oder `head` Tags zugelassen.
 
 ```html
 <div>
@@ -39,6 +39,12 @@ var name = 'Robert Pattinson';
 <!-- index.html -->
 <script src="vars.js"></script>
 ```
+
+### Performance
+
+Da das Ausführen von JS im Browser das Rendern der Website beinflussen kann, sollte alles JS so weit wie möglich ans Ende des Dokuments verschoben werden (optimalerweise direkt vor `</body>`). 
+
+So kann der Browser die Website zuerst rendern und muss sich erst dann mit der Ausführung des JS-Codes befassen.
 
 ## Konsolenausgabe
 
@@ -193,8 +199,258 @@ spruch.toUpperCase();             // "HASTA LA VISTA, BABY"
 spruch.replace('Baby', 'Justin'); // "Hasta la vista, Justin"
 ```
 
+
+## Benutzerdefinierte Funktionen
+
+Funktionen in JavaScript werden wie in PHP definiert. 
+
+Type-Hints existieren in JS nicht. Standardwerte für optionale Argumente können erst seit ES6 definiert werden.
+
+```js
+function sagwas(wort1, wort2) {
+    console.log(wort1 + ' ' + wort2);
+}
+
+sagwas('Hallo', 'Welt');
+// Hallo Welt
+
+// Erst seit ES6
+function sagwas(wort1, wort2 = 'Welt') {
+    console.log(wort1 + ' ' + wort2);
+}
+
+sagwas('Hallo');
+// Hallo Welt
+```
+
 ### Geltungsbereich von Variablen
 
 Deklarierte Variablen sind immer in dem Kontext gültig, in dem sie deklariert wurden.
 
+Global definierte Variablen stehen in Funktionen zur Verfügung.
 
+```js
+var zahl = 20;
+
+function demo() {
+    return zahl;
+}
+
+demo();
+// 20
+```
+
+In Funktionen definierte Variablen sind ausserhalb der Funktion nicht gültig.
+
+```js
+function demo() {
+    
+    var zahl = 20;
+}
+
+demo();
+console.log(zahl)
+// undefined
+```
+
+Wir eine Variable global definiert (via `var`) und in einer Funktion verändert, ist die Variable im globalen Geltungsbereich ebenfalls angepasst.
+
+```js
+var zahl;
+
+function demo() {
+    zahl = 20;
+}
+
+demo();
+console.log(zahl)
+// 20
+```
+
+#### Hoisting
+
+Variablendeklarationen werden von der JS-Engine vor dem Ausführen des eigentlichen Codes durchgeführt. Dieser Umstand nennt sich «Hoisting». So kann eine Variable in JS verwendet werden, bevor Sie deklariert wurde. 
+
+Dies kann in spezifischen Situationen zu unerwartetem Verhalten führen.
+
+```js
+console.log(zahl);
+// 20
+
+var zahl = 20;
+
+// Resultierender Code für die JS-Engine
+// Die Deklaration wird an den Anfang "geschoben"
+
+var zahl = 20;
+console.log(zahl);
+// 20
+```
+
+### `var` vs. `let`
+
+Seit ES6 steht neben `var` auch das `let` Schlüsselwort zur Deklaration von Variablen zur Verfügung. Je nach Schlüsselwort haben die Variablen andere Geltungsbereiche.
+
+`var` ist immer für den umgebenden Funktionsblock gültig. `let` gilt immer nur für den nächsten «umschliessenden» Block.
+
+```js
+// Definition mit `var` ist für komplette Funktion gültig
+function demo() {
+    // i existiert (wegen hoisting)
+    for(var i = 0; i < 10; i++) {
+        // i existiert
+    }
+    // i existiert
+}
+
+
+// Definition mit `let` ist nur für `for` Block gültig
+function demo() {
+    // i ist nicht definiert
+    for(let i = 0; i < 10; i++) {
+        // i exisitert
+    }
+    // i ist nicht definiert
+}
+```
+
+## Sprachkonstrukte
+
+### Operatoren
+
+#### Vergleichs-Operatoren
+
+Wie in PHP kann auch in JS ein typenschwacher `==` und typenstarker `===` Vergleich durgeführt werden. Die Vergleichsregeln unterscheiden sich hier aber von PHP.
+
+Siehe [https://dorey.github.io/JavaScript-Equality-Table/](https://dorey.github.io/JavaScript-Equality-Table/)
+
+#### Arithmetische Operationen 
+
+Die Arithmetischen Operatoren funktionieren gleich wie in PHP.
+
+```js
+console.log(5 + 6);
+// 11
+
+console.log(12 / 6);
+// 2
+```
+
+
+##### Inkrement- bzw. Dekrementoperatoren
+Die Inkrement- und Dekrementoperatoren funktionieren gleich wie in PHP.
+
+```js
+var i = 1;
+
+i++;
+console.log(i);
+// 2
+
+i--
+console.log(i);
+// 1
+```
+
+
+### Konstrollstrukturen
+
+#### if/then/else
+
+Die `if/then/else` Konstrukte funktionieren gleich wie in PHP. Einziger Unterschied ist die Schreibweise von `else if` in zwei separaten Wörtern.
+
+```js
+if(a > b) {
+    console.log('a ist grösser als b');
+} else if(a < b) {
+    console.log('a ist kleiner als b');
+} else {
+    console.log('a und b sind gleich gross');
+}
+```
+
+##### Logische Operatoren
+
+Es stehen die gleichen logischen Operatoren wie in PHP zur Verfügung. Die Schreibweisen `or`, `and` und `xor` gibt es nicht.
+
+* &&
+* ||
+* !
+
+```js
+if(a == 1 && b == 2) {
+    console.log('a ist 1 und b ist 2');
+}
+
+if(a == 1 || b == 2) {
+    console.log('a ist 1 oder b ist 2');
+}
+if( ! a == 1) {
+    console.log('a ist nicht 1');
+}
+```
+
+##### Ternärer Operator
+
+Der Ternäre Operator steht auch in JS zur Verfügung.
+
+```js
+var text = (alter >= 18) ? 'Volljährig' : 'Minderjährig';
+```
+
+Die Klammern `( )` sind optional.
+
+#### while, for
+
+`for` und `while` funktionieren gleich wie in PHP.
+
+```js
+var zahl = 1;
+while(zahl <= 10) {
+    console.log(zahl++);
+}
+```
+
+#### forEach
+
+`forEach` steht in JS seit ES5.1 zur Verfügung und ist somit in allen modernern Browsern und IE >= 9 vorhanden.
+
+`forEach` wird als Methode auf einem Array-Objekt ausgeführt. Dabei muss eine so genannte `callback` Funktion definiert werden, die für jedes Element aufgerufen wird.
+
+```js
+var werktage = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
+werktage.forEach(function(element, index) {
+    console.log(element, index);
+});
+// Montag     0
+// Dienstag   1
+// Mittwoch   2
+// Donnerstag 3
+// Freitag    4
+```
+
+Objekte verfügen über keine `forEach` Methode. Hier muss auf die `for...in` Syntax zurückgegriffen werden.
+
+```js
+var wochentage = {
+    'mo': 'Montag',
+    'di': 'Dienstag',
+    'mi': 'Mittwoch',
+    'do': 'Donnerstag',
+    'fr': 'Freitag',
+    'sa': 'Samstag',
+    'so': 'Sonntag'
+};
+
+for(var key in wochentage) {
+    console.log(key + ' ist kurz für ' + wochentage[key]);
+}
+
+// mo ist kurz für Montag
+// di ist kurz für Dienstag
+// mi ist kurz für Mittwoch
+// do ist kurz für Donnerstag
+// fr ist kurz für Freitag
+// sa ist kurz für Samstag
+// so ist kurz für Sonntag
+```
