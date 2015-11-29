@@ -22,6 +22,15 @@ anweisung3;
 ?>
 ```
 
+Zeilenumbrüche und Leerzeichen werden ignoriert und sind nicht relevant. Achte jedoch stets auf gut formatierten Code!
+
+```php
+<?php
+// Würde auch funktionieren
+anweisung1;anweisung2;anweisung3;
+?>
+```
+
 Um eine Ausgabe zu machen, kann das Sprachkonstrukt `echo` verwendet werden.
 
 ```php
@@ -580,7 +589,7 @@ if($a == 1 xor $b == 2) {
     echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2';
 }
 
-if(! $a == 1) { 
+if( ! $a == 1) { 
     echo '$a hat nicht einen Wert von 1';    
 }
 
@@ -695,4 +704,42 @@ foreach($wochentage as $abkurzung => $wochentag) {
     echo "{$wochentag} kürzt man ab als {$abkurzung}.";
     // Montag kürzt man ab als Mo.
 }
+```
+
+#### Alternative Schreibweisen
+
+Für Kontrollstrukturen gibt es eine alternative Schreibweise, die besonders beim generieren von HTML oft besser lesbar ist.
+
+Bei der alternativen Schreibweise werden keine `{ }` verwendet:
+
+```php
+if($x == 1):     // Doppelpunkt anstelle von {
+
+    echo 'x = 1';
+
+endif;          // `endif` anstelle von }
+```
+
+Anwendungsbeispiel beim Generieren von HTML:
+
+```html
+<?php if(count($options) > 0): ?>
+<select name="auswahl">
+    <?php foreach($options as $value => $option): ?>
+        <option value="<?= $value ?>"><?= $option ?></option>
+    <?php endforeach; ?>
+</select>
+<?php endif; ?>
+```
+
+Herkömmliche Schreibweise...
+
+```html
+<?php if(count($options) > 0) { ?>
+<select name="auswahl">
+    <?php foreach($options as $value => $option) { ?>
+        <option value="<?= $value ?>"><?= $option ?></option>
+    <?php } ?>
+</select>
+<?php } ?>
 ```

@@ -1,11 +1,23 @@
 ## Links
 
 * [Offizielle PHP-Dokumentation](https://secure.php.net/manual/de/)
-* [PHP: The right way](http://www.phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP: The Right Way](http://www.phptherightway.com): Enthält die besten Verfahren, anerkannte Code-Standards und Links zu massgeblichen Anleitungen im Web. (Auch auf [deutsch](https://rwetzlmayr.github.io/php-the-right-way/) vorhanden, jedoch nicht komplett up-to-date).
+* [PHP Essentials](http://www.techotopia.com/index.php/PHP_Essentials): Techotopia Wiki
 
 ## Weiterführende Links (nicht ÜK relevant)
 
 Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige interessante Ressourcen zu weiterführenden Themen.
+
+### Hostings
+
+* Shared-Hostings von cyon.ch oder hostpoint.ch ab ca. 10 Fr. im Monat
+* VPS (Virtual Private Server mit Root-Zugang) ab 5 USD im Monat bei digitalocean.com
+
+### Datenbanken
+
+* Es gibt viele Tutorials im Internet, die noch die veraltete und unsichere `mysql`-Erweiterung von PHP verwenden. Ignoriere Tutorials, in denen die `mysql_*`-Funktionen verwendet werden. Verwende für Datenbankzugriffe nur noch die [`mysqli_*`](https://secure.php.net/manual/de/book.mysqli.php)-Funktionen oder [`PDO`](https://secure.php.net/manual/de/class.pdo.php).
+* [«PHP: The Right Way» Kapitel zu Datenbanken](http://www.phptherightway.com/#databases)
+* [PDO-Tutorial von Peter Kropff](http://www.peterkropff.de/site/php/pdo.htm).
 
 ### Tutorials
 
@@ -15,10 +27,11 @@ Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige in
 
 ### Tools
 
-* [Composer](https://getcomposer.org/): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken (z. B. von github.com) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. ([A short & simple Composer tutorial](http://www.dev-metal.com/composer-tutorial/))
+* [Composer](https://getcomposer.org/): Dependency Manager für PHP. Ermöglicht es, fremde Bibliotheken (z. B. von github.com) einfach in einem eigenen Projekt zu verwenden und hält diese Abhängigkeiten automatisch auf dem neusten Stand. (Tutorials: [PHP Dependencies Made Easy with Composer](http://www.sitepoint.com/watch-php-dependencies-made-easy-with-composer/) und [A short & simple Composer tutorial](http://www.dev-metal.com/composer-tutorial/))
 * [PhpStorm](https://www.jetbrains.com/phpstorm/): PHP IDE<br />
   Tutorials zur Anwendung auf laracasts.com: [Be Awesome in PhpStorm](https://laracasts.com/series/how-to-be-awesome-in-phpstorm)
 * [Vagrant](https://www.vagrantup.com/): Einfache Entwicklungsumgebungen in virtuellen Maschinen erstellen (eine professionellere Alternative zu XAMPP).
+* [Xdebug](http://xdebug.org/): Debug-Extension für PHP
 
 ### Testing-Frameworks
 
