@@ -646,6 +646,8 @@ if($alter >= 18) {
 }
 ```
 
+Die Klammern `( )` sind optional.
+
 #### elseif
 
 `elseif`, wie der Name schon sagt, ist eine Kombination aus `if` und `else`. Wie `else` erweitert es eine `if`-Kontrollstruktur, um alternative Befehle auszuführen, wenn die ursprüngliche `if`-Bedingung nicht zutrifft.
