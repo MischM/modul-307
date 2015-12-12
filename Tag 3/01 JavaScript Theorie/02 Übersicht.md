@@ -70,7 +70,7 @@ var alter = 17;
 let istLernender = true;
 ```
 
-Da das `let` Keyword noch nicht in allen Browsern unterstützt wird (Stand November 2015) werden wir in unserem Beispielen einfachheitshalber immer das `var` Keyword verwenden. 
+Da das `let` Keyword noch nicht in allen Browsern unterstützt wird (Stand November 2015) werden wir in unseren Beispielen einfachheitshalber immer das `var` Keyword verwenden. 
 
 Mit `let` definierte Variablen haben einen andern Geltungsbereich wie mit `var` definierte. Siehe «Geltungsbereich von Variablen» weiter unten.
 
@@ -131,8 +131,7 @@ Seit ES6 gibt es zudem die sogenannten `Template-Strings` mit deren Hilfe mehrze
 var mehrzeilig = `Ein String
 über
 mehrere 
-Zeilen
-`;
+Zeilen`;
 ```
 
 [Browser-Support für Template-Strings](https://kangax.github.io/compat-table/es6/#test-template_strings)
