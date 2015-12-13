@@ -268,7 +268,7 @@ console.log(zahl)
 
 #### Hoisting
 
-Variablendeklarationen werden von der JS-Engine vor dem Ausführen des eigentlichen Codes durchgeführt. Dieser Umstand nennt sich «Hoisting». So kann eine Variable in JS verwendet werden, bevor Sie deklariert wurde. 
+Variablendeklarationen werden von der JS-Engine vor dem Ausführen des eigentlichen Codes durchgeführt. Dieser Umstand nennt sich «Hoisting». So kann eine Variable in JS verwendet werden, bevor sie deklariert wurde. 
 
 Dies kann in spezifischen Situationen zu unerwartetem Verhalten führen.
 
@@ -277,7 +277,8 @@ console.log(zahl);
 // 20
 
 var zahl = 20;
-
+```
+```js
 // Resultierender Code für die JS-Engine
 // Die Deklaration wird an den Anfang "geschoben"
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schere, Stein, Papier</title>
+</head>
+<body>
+
+    <script>
+        var erlaubt = ['Schere', 'Stein', 'Papier'];
+        var spielzugSpieler = prompt('Was ist Deinen Spielzug?', 'Schere, Stein oder Papier?');
+
+        // Überprüfen, ob der Spielzug im Array 'erlaubt'
+        // vorhanden ist.
+        // -1 = nicht vorhanden, 0 wäre erstes Element
+        if(erlaubt.indexOf(spielzugSpieler) === -1) {
+            alert('Der eingegebene Speilzug ist nicht erlaubt!');
+        } else {
+            alert('Du hast ' + spielzugSpieler + ' eingegeben.');
+        }
+
+        // Schritt 2
+        var spielzugComputer = erlaubt[Math.floor(Math.random() * erlaubt.length)]
+        alert('Der Computer spielt ' + spielzugComputer + '.');
+
+        // Schritt 3
+        var resultat = spiele(spielzugSpieler, spielzugComputer);
+        alert('Das Endergebnis lautet: ' + resultat);
+
+        /**
+         * Ermittelt das Endergebnis des Spiels.
+         *
+         * @param  string spielzugSpieler
+         * @param  string spielzugComputer
+         *
+         * @return string
+         */
+        function spiele(spielzugSpieler, spielzugComputer) {
+
+            if(spielzugSpieler === spielzugComputer) {
+                return 'Unentschieden';
+            }
+
+            if(spielzugSpieler === 'Schere') {
+                
+                if(spielzugComputer === 'Papier') {
+                    return 'Spieler gewinnt!';
+                }
+                
+                return 'Computer gewinnt!';
+            }
+
+            if(spielzugSpieler === 'Stein') {
+                
+                if(spielzugComputer === 'Schere') {
+                    return 'Spieler gewinnt!';
+                }
+                
+                return 'Computer gewinnt!';
+            }
+
+            if(spielzugSpieler === 'Papier') {
+                
+                if(spielzugComputer === 'Stein') {
+                    return 'Spieler gewinnt!';
+                }
+                
+                return 'Computer gewinnt!';
+            }
+
+        }
+
+    </script>
+</body>
+</html>
