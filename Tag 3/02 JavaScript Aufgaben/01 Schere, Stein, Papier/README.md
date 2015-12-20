@@ -21,7 +21,7 @@ Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird.
 
 Erstelle eine einfache HTML-Seite. Erstelle darin ein `script` Tag in dem Du Dein Code platzieren kannst.
 
-Erstelle ein Array mit allen erlaubten Spielzügen (Schere, Stein und Papier).
+Erstelle ein Array mit allen erlaubten Spielzügen (`Schere`, `Stein` und `Papier`).
 
 ```js
 var erlaubt = [...];
@@ -70,7 +70,7 @@ var resultat = spiele(spielzugSpieler, spielzugComputer);
 alert('Das Endergebnis lautet: ' + resultat);
 ```
 
-#### Schritt 4 (Bonus)
+#### Schritt 4 (Zusatzaufgabe)
 
 Stelle sicher, dass die Gross- und Kleinschreibung sowie vorhergehende oder folgende Leerzeichen in der Eingabe keine Auswirkung haben.
 
