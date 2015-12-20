@@ -48,7 +48,7 @@ Erstelle im Code-Block einen jQuery-Selector, der Dein Button auswählt und spei
 var $button = ...;
 ```
 
-Erstelle ein Event-Listener für den `mouseenter` Event. Dieser wird ausgeführt, sobald der Mauszeiger sich über den Button bewegt. Der zweite Parameter ist eine Callback-Funktion, also eine Funktion, die ausgeführt wird, sobald der Event auftritt.
+Erstelle ein Event-Listener für den `mouseenter` Event. Dieser wird ausgeführt, sobald der Mauszeiger sich über den Button bewegt.
 
 Vorübergehend soll eine Meldung in der Konsole ausgegeben werden, sobald der Event auftritt.
 
