@@ -6,7 +6,7 @@
 
 Das Arbeiten mit dem DOM in JavaScript ist eine umständliche Angelegenheit. Aus diesem Grund greifen dafür viele Entwickler auf die heute sehr belibte JavaScript-Bibliothek jQuery zurück.
 
-jQuery ist eine Sammlung von Funktionen die das Arbeiten mit dem DOM vereinfachen.
+jQuery ist eine Sammlung von Funktionen, die das Arbeiten mit dem DOM vereinfachen.
 
 ## Einige Vergleiche
 
@@ -190,7 +190,7 @@ $button
 
 ## Das `this` Schlüsselwort
 
-`this` ist in JavaScript ein spezielles Schlüsselwort, das immer auf etwas in seinem Kontext verweist. In jQuery kann es beispielsweise in Callback-Funktionen verwendet werden, um auf ein Element zuzugreifen:
+`this` ist in JavaScript ein spezielles Schlüsselwort, das von seinem Kontext abhängig ist. In jQuery kann es beispielsweise in Callback-Funktionen verwendet werden, um auf ein Element zuzugreifen:
 
 ```js
 // <button class="button">Text 1</button>
@@ -198,6 +198,9 @@ $button
 // <button class="button">Text 3</button>
 
 $('.button').on('click', function() {
+    // this = der Button, auf den geklickt wurde
+    console.log(this);
+
     // Gibt den Text des Buttons aus, auf
     // den geklickt wurde
     console.log($(this).text());
@@ -210,9 +213,9 @@ $('.button').on('click', function() {
 
 ## Vorteile von jQuery
 
-* Einfache Syntax für die Manipulation des DOMs
+* Einfache Syntax für die Manipulation des DOM
 * Einfache Syntax für das Handling von Events
-* Schnellere Entwicklung dank weniger Code
+* Schnellere Entwicklung dank weniger zu schreibendem Code
 * Unterschiedliche JS-Verhalten in verschiedenen Browsern werden normalisiert
 
 ## Nachteile von jQuery
@@ -220,7 +223,7 @@ $('.button').on('click', function() {
 * Rund 80 kb Code der vom Besucher zusätzlich heruntergeladen werden muss
 * [Über 10'000 Zeilen JavaScript-Code](https://code.jquery.com/jquery.js), die der Browser bei jedem Seitenaufruf verarbeiten muss!
 
-Sie Dir immer bewusst, dass die Verwendung von jQuery die Ladezeiten Deiner Website beinflusst.
+Sei Dir immer bewusst, dass die Verwendung von jQuery die Ladezeiten Deiner Website beinflusst.
 
 ## Optimale Einbindung
 

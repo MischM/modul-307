@@ -119,7 +119,7 @@ Erstelle eine Variable `points` und erhöhe deren Wert jeweils um 1, sobald auf 
 
 Unser Spiel funktioniert schon fast wie gewünscht. Einzig die Verzögerung ist derzeit noch fix auf 1 Sekunde eingestellt.
 
-Ersetze die `setTimeout`-Verzögerung von derzeit 1000 Millisekunden mit einer neuen Variablen `delay`. 
+Ersetze die `setTimeout`-Verzögerung von derzeit 1000 Millisekunden mit einer neuen Variable `delay`. 
 
 Reduziere `delay` nach jedem Klick auf den Button um 25 Millisekunden.
 
