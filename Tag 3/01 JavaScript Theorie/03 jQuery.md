@@ -54,7 +54,7 @@ $('#list').append('<li>Neuer Punkt</li>');
 
 ## `$`
 
-jQuery wird nach dem Laden in eine Variable namens `$` gespeichert. Über diese Variable erhält man nun Zugriff auf alle jQuery-Funktionen. 
+jQuery wird nach dem Laden in eine Variable namens `$` gespeichert. Über diese Variable erhält man nun Zugriff auf alle jQuery-Funktionen.
 
 ## Der Document-Ready Event
 
@@ -104,7 +104,7 @@ $('.rot').html('<p>Ich bin rot!</p>'); // Den HTML-Inhalt aller .rot-Elemente ä
 
 In JavaScript existieren viele Events, die während der Interaktion mit einer Website ausgelöst werden. jQuery macht es einfach, auf solche Events zu warten und eine Aktion beim Auftreten zu definieren.
 
-Dazu kann die `.on()` Funktion verwendet werden. Als erster Parameter wird dieser Funktion den Namen eines Events mitgegeben. 
+Dazu kann die `.on()` Funktion verwendet werden. Als erster Parameter wird dieser Funktion den Namen eines Events mitgegeben.
 
 Der zweite Parameter ist eine Callback-Funktion, also eine Funktion, die ausgeführt wird, sobald der Event auftritt.
 
@@ -179,7 +179,7 @@ Im obigen Beispiel mit dem Button ist es nicht zwingend notwendig alle Operation
 ```js
 $button.hide().css('color', '#f00').show().on('click', function() {});
 
-// oder besser lesbar 
+// oder besser lesbar
 $button
     .hide()
     .css('color', '#f00')
@@ -248,4 +248,3 @@ Die aktuellste Version kannst Du immer über folgenden Link einbinden:
 ```
 https://code.jquery.com/jquery.min.js
 ```
-
