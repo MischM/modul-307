@@ -42,10 +42,13 @@ var spielzugSpieler = prompt(...);
 ```js
 if(/* spielzugNichtInErlaubtArray */) {
     alert('Der eingegebene Speilzug ist nicht erlaubt!');
+    throw new Error('Unerlaubter Spielzug.');
 } else {
     alert('Du hast ' + spielzugSpieler + ' eingegeben.');
 }
 ```
+
+> Mittels `throw` kannst Du einen Error erzeugen und somit die Ausführung des Scripts beenden. Der nachfolgende Code wird somit nicht ausgeführt.
 
 
 #### Schritt 2

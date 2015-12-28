@@ -15,6 +15,7 @@
         // -1 = nicht vorhanden, 0 wäre erstes Element
         if(erlaubt.indexOf(spielzugSpieler) === -1) {
             alert('Der eingegebene Speilzug ist nicht erlaubt!');
+            throw new Error('Unerlaubter Spielzug.');
         } else {
             alert('Du hast ' + spielzugSpieler + ' eingegeben.');
         }
