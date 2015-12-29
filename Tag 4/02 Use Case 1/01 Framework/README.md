@@ -32,6 +32,8 @@ http://localhost/use-case-1/index.php?url=andere-view
 
 ## Globale Helper-Funktionen
 
+Diese Funktionen stehen Dir überall zur Verfügung. Du __kannst__ diese verwenden, __musst__ Du aber nicht! Gerne kannst Du auch weitere Funktionen in der `helpers.php` ergänzen.
+
 ### `e()`
 
 Gibt einen String mit `htmlentities` aus. Verwende sie um User-Eingaben wieder auszugeben.
