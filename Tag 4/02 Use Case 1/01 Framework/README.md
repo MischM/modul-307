@@ -45,7 +45,7 @@ echo e('<script>XSS!</script>');
 
 ### `post()`
 
-Gibt einen Wert unverändert aus `$_POST` zurück, vereinfacht aber die Schreibweise.
+Gibt einen Wert aus `$_POST` unverändert zurück, vereinfacht aber die Schreibweise.
 
 ```php
 echo post('feld');
