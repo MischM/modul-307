@@ -1,0 +1,12 @@
+{
+    "name": "ict-bz/framework",
+    "require": {
+        "laracasts/integrated": "^0.15.6"
+    },
+    "authors": [
+        {
+            "name": "Tobias Kündig",
+            "email": "tobias.kuendig@offlinegmbh.ch"
+        }
+    ]
+}
