@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schere, Stein, Papier</title>
+</head>
+<body>
+
+    <script>
+        var erlaubt = ['Schere', 'Stein', 'Papier'];
+        var spielzugSpieler = prompt('Was ist Deinen Spielzug?', 'Schere, Stein oder Papier?');
+
+        // Überprüfen, ob der Spielzug im Array 'erlaubt'
+        // vorhanden ist.
+        // -1 = nicht vorhanden, 0 wäre erstes Element
+        if(erlaubt.indexOf(spielzugSpieler) === -1) {
+            alert('Der eingegebene Speilzug ist nicht erlaubt!');
+            throw new Error('Unerlaubter Spielzug.');
+        } else {
+            alert('Du hast ' + spielzugSpieler + ' eingegeben.');
+        }
+    </script>
+
+</body>
+</html>

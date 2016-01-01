@@ -4,7 +4,7 @@
 > 
 > PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 
-[https://de.wikipedia.org/wiki/PHP](Wikipedia)
+[Wikipedia](https://de.wikipedia.org/wiki/PHP)
 
 Aktuell ist PHP als Version 7 verfügbar.
 
@@ -21,6 +21,7 @@ Einige der grössten Websites der Welt...
 * Mailchimp
 * Fotolia
 * Imgur
+* Uber
 * ...
 
 Und natürlich die grossen CMS...

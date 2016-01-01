@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack-a-Button</title>
+    <style>
+    body {
+        font: 20px/1.6 'Arial', sans-serif;
+    }
+    #button {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        font-size: 1em;
+        padding: .5em 1em;
+        background: #FF2525;
+        color: #fff;
+        border: 1px solid #B90303;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    }
+    </style>
+</head>
+<body>
+    <button id="button">Whack me!</button>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var $button = $('#button');
+
+            $button.on('mouseenter', function() {
+                // Wird ausgeführt, sobald die Maus sich
+                // über den Button bewegt
+                console.log('Maus ist darüber!');
+            });
+        });
+    </script>
+</body>
+</html>
