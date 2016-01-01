@@ -38,7 +38,7 @@ Eine Direktive ist eine einzelne Einstellung. Sie setzt sich immer aus einem Nam
 ## php.ini
 
 Alle Einstellungen für Deine PHP-Installation lassen sich in der `php.ini` bearbeiten. 
-Diese befindet sich bei XAMPP unter `C:\xampp\apache2\php.ini`. 
+Diese befindet sich bei XAMPP unter `C:\xampp\php\php.ini`. 
 
 Öffne die Datei jetzt in Deinem Texteditor.
 
