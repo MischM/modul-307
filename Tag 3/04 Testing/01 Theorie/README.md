@@ -40,7 +40,8 @@ Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://ph
 Testen einer PHP-Funktion (die Funktion ist in diesem Fall eine `Unit`).
 
 ```php
-function add($a, $b) {
+function add($a, $b)
+{
     return $a + $b;
 }
 
@@ -69,8 +70,8 @@ Wir überprüfen mit diesem Integrationstest lediglich, ob wir der Email unsere 
 Wir möchten nicht testen, ob die Email versendet werden kann. Wir testen auch nicht, ob die Rechnung korrekt generiert wird. Dies wäre ein Unittest.
 
 ```php
-function testInvoiceMailer() {
-
+function testInvoiceMailer()
+{
     // Rechnung für Bestellung #100 generieren
     $invoice = new InvoiceGenerator(100);
 
@@ -84,7 +85,6 @@ function testInvoiceMailer() {
     test('Email hat PDF im Anhang.',
         $mailer->hasAttachment === true
     );
-
 }
 ```
 
@@ -99,8 +99,8 @@ Systemtests können in PHP mit einem Testing Framework wie [Codeception](codecep
 Unser Online-Shop verwendet für den Email-Versand der Rechnungen einen lokal installierten Mail-Server. Mit folgendem Test überprüfen wir, ob wir Emails aus unserem PHP-Script über diesen Server versenden können und unser System somit funktioniert.
 
 ```php
-function testMailer() {
-
+function testMailer()
+{
     // Mail vorbereiten
     $mailer = new CustomerMailer('kunde@test.com');
 
@@ -117,7 +117,6 @@ function testMailer() {
     test('Die Email wurde korrekt versendet.',
         $inbox->seeMessage('Ihre Bestellung #100');
     );
-
 }
 ```
 

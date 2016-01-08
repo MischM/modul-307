@@ -13,7 +13,8 @@ Der zusätzliche Entwicklungsaufwand für die Tests macht man über längere Zei
 Die Tests werden als ausführbarer Code entwickelt. Dies kann im einfachsten Fall ein PHP-Script sein, welches eine Funktion mit bestimmten Parametern aufruft, und deren `return` Wert mit einem erwarteten Wert vergleicht. Diesen Vergleich nennt man auch «`assertion`».
 
 ```php
-function add($a, $b) {
+function add($a, $b)
+{
     return $a + $b;
 }
 
@@ -61,19 +62,19 @@ Daher stehen für PHP diverse Testing Frameworks zur Verfügung, die eine Vielza
 
 Die zwei belibtesten Frameworks sind [PHPUnit](https://phpunit.de) und [Codeception](http://codeception.com/).
 
-Die Frameworks basieren alle auf objektorientierten Prinzipien auf und gehen über die Thematik dieses ÜKs hinaus. Daher werden wir diese nicht im Detail ansehen und uns mit einfacheren Testing-Methoden befassen. 
+Die Frameworks basieren alle auf objektorientierten Prinzipien und gehen über die Thematik dieses ÜKs hinaus. Daher werden wir diese nicht im Detail ansehen und uns mit einfacheren Testing-Methoden befassen. 
 
 In modernen Projekten sollte jedoch nicht auf den Einsatz eines solchen Testing-Frameworks verzichtet werden.
 
-#### Codeception-Beispiel
+#### Beispiel: Akzeptanz-/Integration-Test (Codeception)
 
-Dieser Test überprüft, ob die Homepage einer Website geladen werden kann. Als Assertion wird überprüft, ob die Überschrift im Seitenquelltext angezeigt wird. 
+Dieser Test überprüft, ob die Homepage einer Website geladen werden kann. Als Assertion wird überprüft, ob die Überschrift im Seitenquelltext vorhanden ist, was bedeutet, dass die Seite geladen werden kann.
 
 ```php
 <?php
 $I = new AcceptanceTester($scenario);
 $I->wantTo('ensure that the homepage works');
-$I->amOnPage('/home'); 
+$I->amOnPage('/index.php?url=home');
 $I->see('Herzlich willkommen im ÜK!');
 ?>
 ```
@@ -91,7 +92,7 @@ OK (1 test, 1 assertions)
 ```
 
 
-#### PHPUnit-Beispiel
+#### Beispiel: Unittest (PHPUnit)
 
 Dieser Test überprüft, ob meine Klasse `Car` wie gewünscht funktioniert.
 
@@ -100,8 +101,8 @@ Dieser Test überprüft, ob meine Klasse `Car` wie gewünscht funktioniert.
 class CarTest extends PHPUnit_Framework_TestCase {
 
     /** @test */
-    public function car_can_be_started() {
-        
+    public function car_can_be_started()
+    {
         $car = new Car();
 
         $car->start();
@@ -110,11 +111,11 @@ class CarTest extends PHPUnit_Framework_TestCase {
     }
 
     /** @test */
-    public function car_can_be_refueled() {
-        
+    public function car_can_be_refueled()
+    {
         $car = new Car();
 
-        // Tank auf 50 setzen
+        // Tank auf 50% setzen
         $car->setFuelLevel(50);
 
         // Auftanken
