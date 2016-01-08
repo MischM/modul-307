@@ -4,7 +4,7 @@
 
 [Wikipedia](https://de.wikipedia.org/wiki/Softwaretest)
 
-Softwaretests geben dem Entwickler die Sicherheit, dass bestimmte Komponenten seines Projekts wie von ihm getestet funktionieren. Sie erbringen aber keinen allgemeinen Nachweis, dass keine Programmfehler vorhanden sind.
+Softwaretests geben dem Entwickler die Gewissheit, dass bestimmte Komponenten seines Projekts wie von ihm getestet funktionieren. Sie erbringen aber keinen allgemeinen Nachweis, dass keine Programmfehler vorhanden sind.
  
 >«Program testing can be used to show the presence of bugs, but never show their absence!» - Edsger W. Dijkstra 
 
@@ -20,21 +20,8 @@ Löschst Du z. B. versehentlich das Passwort-Eingabefeld, wird Dein Test fehlsch
 
 Angenommen Du hast einen schwerwiegenden Bug in Deinem Shop: Die Funktion, die für die Überprüfung des Kundenpasswortes zuständig ist, gibt fälschlicherweise für jedes eingegebene Passwort immer `true` zurück. Die Funktion wird durch keinen Testfall überprüft.
 
+Dieser Bug bleibt von Deinem Testfall unbemerkt, da das Login grundsätzlich funktioniert.
 
-
-
-
-
-
-## Testing-Vokabular
-
-Hier einige Wörter, die im Zusammenhang mit Testing verwendet werden:
-
-|    Wort   |                                                                                          Bedeutung                                                                                          |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Test case | **Testfall**: Kann mehrere Tests enthalten. Ist unabhängig von anderen Testfällen.                                                                                                          |
-| Assertion | **Aussage/Annahme**: Dient dazu zu überprüfen, ob ein Test fehlschlägt. Dabei wir das Ergebnis aus einem Test mit einem erwarteten Ergebnis verglichen. Beispiel: `assert(sum(1, 2) === 3)` |
-| Szenario  | Wir besonders bei Akzeptanztests verwendet. Das Szenario definiert die Situation, in der die Software getestet werden soll.                                                                 |
 
 ## Arten des Testings
 
@@ -44,7 +31,7 @@ Grundsätzlich können folgende Testarten unterschieden werden:
 
 ### Unittest / Komponententest
 
-Unittests dienen dem Testen einzelner abgrentzbarer Komponenten einer Software.
+Unittests dienen dem Testen einzelner abgrentzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
 
 Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://phpunit.de/).
 
@@ -75,9 +62,11 @@ Integrationstests können in PHP mit einem Testing Framework wie [Codeception](c
 
 #### Beispiel
 
-In unserem Online-Shop wird nach einer getätigten Bestellung automatisch eine PDF-Rechnung generiert und per Mail versendet. Dafür nutzen wir zwei Komponenten/Units: Eine `InvoiceGenerator`-Klasse und eine `CustomerMailer`-Klasse.
+In einem Online-Shop wird nach einer getätigten Bestellung automatisch eine PDF-Rechnung generiert und per Mail versendet. Dafür nutzen wir zwei Komponenten/Units: Eine `InvoiceGenerator`-Klasse und eine `CustomerMailer`-Klasse.
 
-Wir überprüfen mit diesem Integrationstest lediglich, ob wir der Email unsere Rechnung anhängen können. Wir testen also die Schnittstelle zwischen `InvoiceGenerator` und `CustomerMailer`. Wir möchten nicht testen, ob die Email versendet werden kann!
+Wir überprüfen mit diesem Integrationstest lediglich, ob wir der Email unsere Rechnung anhängen können. Wir testen also die Schnittstelle zwischen `InvoiceGenerator` und `CustomerMailer`.
+
+Wir möchten nicht testen, ob die Email versendet werden kann. Wir testen auch nicht, ob die Rechnung korrekt generiert wird. Dies wäre ein Unittest.
 
 ```php
 function testInvoiceMailer() {
@@ -101,7 +90,7 @@ function testInvoiceMailer() {
 
 ### Systemtest
 
-Beim Systemtest wird überprüft, ob unser System im Ganzen funktioniert. Sie unterscheiden sich gegenüber den Integrationstests indem hier auch externe Systeme miteinbezogen werden. Dafür wird meistens eine Testumgebung mit Testdaten verwendet. Die Testumgebung sollte immer die Zielumgebung 1:1 simulieren (gleiche Software-Versionen, etc).
+Bei Systemtests wird überprüft, ob unser System im Ganzen funktioniert. Sie unterscheiden sich gegenüber den Integrationstests indem hier auch externe Systeme miteinbezogen werden. Dafür wird meistens eine Testumgebung mit Testdaten verwendet. Die Testumgebung sollte immer die Zielumgebung 1:1 simulieren (gleiche Software-Versionen, etc).
 
 Systemtests können in PHP mit einem Testing Framework wie [Codeception](codeception.com) umgesetzt werden.
 
@@ -136,9 +125,9 @@ function testMailer() {
 
 Ein Abnahmetest ist das Testen der gelieferten Software durch den Kunden. Hierbei orientiert man sich nicht mehr am Code sondern nur noch am Verhalten der Software.
 
-Dazu werden Test Szenarien definiert, die die genaue Funktionsweise der Software beschreiben.
+Dazu werden Test-Szenarien definiert, die die genaue Funktionsweise der Software beschreiben.
 
-Für die Definition eines Test Szenarios können verschiedene Methoden verwendet werden. Eine gängige Methode ist die `Given - When - Then` Schreibweise.
+Für die Definition eines Test-Szenarios können verschiedene Methoden verwendet werden. Eine gängige Methode ist die `Given - When - Then` Schreibweise.
 
 ```
 GIVEN   I am logged in as an administrator
@@ -151,9 +140,9 @@ THEN    the error message "you have no rights to delete this user"
         is shown and the user is NOT removed from the database
 ```
 
-Da in den meisten Testing Frameworks solche `Given - When - Then` Szenarios automatisch in ausführbaren Code umgewandelt werden können, werden sie üblicherweise auf englisch verfasst.
+Da in den meisten Testing Frameworks solche `Given - When - Then` Szenarios automatisch in ausführbaren Code umgewandelt werden können, werden sie üblicherweise auf Englisch verfasst.
 
-Im Deutschen gibt es keinen offiziellen Standard diese Schreibweise anzuwenden. Dennoch spricht nichts dagegen, die Szenarien sinngemäss auf deutsch zu übersetzen:
+Im Deutschen gibt es keinen offiziellen Standard diese Schreibweise anzuwenden. Dennoch spricht nichts dagegen, die Szenarien sinngemäss auf Deutsch zu übersetzen:
 
 ```
 GEGEBEN SEI   Ich bin als Administrator eingeloggt
@@ -182,8 +171,19 @@ Testing Frameworks wie PHPUnit oder Codeception vereinfachen diese Arbeit bei de
 
 ### Test-Driven-Development (TDD)
 
-Eine weit verbreitete Art der Entwicklung ist das so genannte «Test-Driven-Development». Dabei wird vor der Entwicklung eines neuen Features ein Test definiert, der fehlschlägt. 
+Eine weit verbreitete Art der Entwicklung ist das so genannte «Test-Driven-Development». Dabei wird vor der Entwicklung eines neuen Features ein Test definiert, der dieses noch nicht existierende Feature überprüft und darum fehlschlägt. 
 
-Anschliessend wird das neue Feature entwickelt, damit der Test funktioniert.
+Anschliessend wird das neue Feature entwickelt, damit der Test erfolgreich ausgeführt werden kann.
 
 Mit dieser Methode kann theoretisch sichergestellt werden, dass keine Funktion existiert, die nicht durch mindestens einen Test überprüft wird.
+
+
+## Testing-Vokabular
+
+Hier einige Wörter, die im Zusammenhang mit Testing verwendet werden:
+
+|    Wort   |                                                                                          Bedeutung                                                                                          |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Test case | **Testfall**: Kann mehrere Tests enthalten. Ist unabhängig von anderen Testfällen.                                                                                                       |
+| Assertion | **Aussage/Annahme**: Dient dazu zu überprüfen, ob ein Test fehlschlägt. Dabei wir das Ergebnis aus einem Test mit einem erwarteten Ergebnis verglichen. Beispiel: `assert(sum(1, 2) === 3)` |
+| Szenario  | Wir besonders bei Akzeptanztests verwendet. Das Szenario definiert die Situation, in der die Software getestet werden soll.                                                                 |
