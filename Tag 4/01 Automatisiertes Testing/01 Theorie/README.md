@@ -73,7 +73,7 @@ Dieser Test überprüft, ob die Homepage einer Website geladen werden kann. Als 
 ```php
 <?php
 $I = new AcceptanceTester($scenario);
-$I->wantTo('ensure that the homepage works');
+$I->wantTo('ensaure that the homepage works');
 $I->amOnPage('/index.php?url=home');
 $I->see('Herzlich willkommen im ÜK!');
 ?>
