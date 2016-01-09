@@ -66,7 +66,7 @@ Die Frameworks basieren alle auf objektorientierten Prinzipien und gehen über d
 
 In modernen Projekten sollte jedoch nicht auf den Einsatz eines solchen Testing-Frameworks verzichtet werden.
 
-#### Beispiel: Akzeptanz-/Integration-Test (Codeception)
+#### Beispiel: Akzeptanz-/Integrations-Test (Codeception)
 
 Dieser Test überprüft, ob die Homepage einer Website geladen werden kann. Als Assertion wird überprüft, ob die Überschrift im Seitenquelltext vorhanden ist, was bedeutet, dass die Seite geladen werden kann.
 
