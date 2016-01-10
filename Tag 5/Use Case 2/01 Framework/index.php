@@ -10,6 +10,15 @@ $availableViews = [
  // 'andere-view',
 ];
 
+/**
+ * Alle vorhandenen Produkte
+ * 
+ * @var array
+ */
+$products = [
+    'art-1905' => ['name' => 'Testprodukt 1', 'price' => 50.00],
+    'art-4423' => ['name' => 'Testprodukt 2', 'price' => 50.00],
+];
 
 
 // -------------------------------------------------------

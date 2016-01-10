@@ -1,4 +1,14 @@
-# Framework für Use Case 1
+# Framework für Use Case
+
+## Neue Seite erstellen
+
+Beispiel View-Name: `kontakt`
+
+1. Erstelle eine neue View im `views` Verzeichnis (`kontakt.php`). 
+2. Füge sie zum `availableViews` Array in der `index.php` hinzu (`kontakt`).
+3. Wenn die View ein Controller benötigt, erstelle diesen im `controller` Verzeichnis (`kontakt.php`). Der Controller wird automatisch eingebunden.
+
+Deine neue Seite ist jetzt via `index.php?url=kontakt` erreichbar.
 
 ## URL
 
@@ -8,10 +18,6 @@ Die Views werden über den GET-Parameter `url` geladen:
 http://localhost/use-case-1/index.php?url=home
 http://localhost/use-case-1/index.php?url=andere-view
 ```
-
-## CSS und JavaScript
-
-Ein CSS- sowie ein JavaScript-File sind im `assets` Verzeichnis vorbereitet. jQuery wurde bereits eingebunden.
 
 ## Ordnerstruktur
 
@@ -23,16 +29,6 @@ Ein CSS- sowie ein JavaScript-File sind im `assets` Verzeichnis vorbereitet. jQu
 - index.php     # Front-Controller
 - helpers.php   # Für globale Funktionen
 ```
-
-## Neue Seite erstellen
-
-Beispiel View-Name: `kontakt`
-
-1. Erstelle eine neue View im `views` Verzeichnis (`kontakt.php`). 
-2. Füge sie zum `availableViews` Array in der `index.php` hinzu (`kontakt`).
-3. Wenn die View ein Controller benötigt, erstelle diesen im `controller` Verzeichnis (`kontakt.php`). Der Controller wird automatisch eingebunden.
-
-Deine neue Seite ist jetzt via `index.php?url=kontakt` erreichbar.
 
 ## Globale Helper-Funktionen
 
