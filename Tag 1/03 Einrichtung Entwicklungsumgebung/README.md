@@ -141,7 +141,7 @@ Autocomplete-Funktionen, die Dir bei der Eingabe von PHP-Code helfen, kannst Du 
 
 ##### Hinweis zu `atom-autocomplete-php`:
 
-Die Installation wird einen Fehler ausgeben. Gehe nach der Installation in die Plugin-Einstellungen und gib unter `Command php` folgenden Wert ein:
+Wird bei der Installation ein Fehler ausgeben, gehe nach der Installation in die Plugin-Einstellungen und gib unter `Command php` folgenden Wert ein:
 
 ```
 c:\xampp\php\php.exe

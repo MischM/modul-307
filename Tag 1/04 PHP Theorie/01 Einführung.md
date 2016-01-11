@@ -32,11 +32,11 @@ Und natürlich die grossen CMS...
 * Joomla
 * ...
 
-> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites, Tendenz steigend. Zudem ist sie bei den meisten Webhostern vorinstalliert.
+> PHP wird auf etwa 244 Millionen Websites eingesetzt (Stand: Januar 2013), wird auf über 82 % aller Websites als serverseitige Programmiersprache verwendet (Stand: Januar 2015) und ist damit die am häufigsten verwendete Sprache zum Erstellen von Websites - Tendenz steigend. Die Programmiersprache ist sie bei den meisten Webhostern vorinstalliert.
 
 ## Was genau ist PHP?
 
-PHP ist eine serverseitige Scriptsprache. PHP erlaubt dem Entwickler Logik in seine Webpages zu integrieren. 
+PHP ist eine serverseitige Scriptsprache und erlaubt dem Entwickler Logik in seine Webpages zu integrieren. 
 
 Mit PHP können Daten von verschiedensten Quellen verarbeitet werden:
 
@@ -53,6 +53,8 @@ PHP setzt sich aus der Scriptsprache und dem dazugehörigen Interpreter zusammen
 Der Webserver (in unserem Fall Apache) verfügt über ein PHP-Modul. Dieses Modul versteht PHP-Code, es kann ihn also interpretieren.
 
 Beim Aufruf einer Webpage durch den Besucher lädt der Webserver das gewünschte Script und schickt es an das PHP-Modul. Dort wird der PHP-Code nun verarbeitet. Dabei können Script-Ausgaben entstehen. Diese Ausgaben werden in die aufgerufene Seite eingefügt und dann an den Browser des Besuchers gesendet.
+
+![Szene 8](../02 Client-Server-Infrastruktur/src/08.jpg)
 
 ### Aufruf über Webserver
 
@@ -97,7 +99,9 @@ Das resultierende Dokument wird vom Browser also wie normales HTML behandelt. Da
 
 ### Aufruf über Kommandozeile
 
-Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML ausgeben. Es kann z. B. auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden. In diesem Fall soll die Ausgabe z. B. nur einfacher Text sein:
+Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML ausgeben. Es kann beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden. 
+
+Im Beispiel unten soll die Ausgabe z. B. nur einfacher Text sein:
 
 ```php
 <?php

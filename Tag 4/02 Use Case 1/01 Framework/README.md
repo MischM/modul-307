@@ -1,4 +1,4 @@
-# Framework für Use Case 1
+# Framework für Use Case
 
 ## Neue Seite erstellen
 

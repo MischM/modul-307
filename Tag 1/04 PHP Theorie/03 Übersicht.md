@@ -47,7 +47,7 @@ Wenn Du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest
 <?= 'Hallo Welt!'; ?>
 ```
 
-PHP-Ausgaben werden direkt in den Output geschrieben. Du kannst also z. B. HTML- und PHP-Code mischen, um eine dynamische Seite zu generieren.
+PHP-Ausgaben werden direkt in den Output geschrieben. Du kannst also HTML- und PHP-Code mischen, um eine dynamische Seite zu generieren.
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ PHP-Ausgaben werden direkt in den Output geschrieben. Du kannst also z. B. HTML-
 </html>
 ```
 
-Da der PHP-Code immer auf dem Server verarbeitet wird, und nie an den Client gesendet wird, erzeugt obiges Beispiel folgende Antwort an den Client.
+Da der PHP-Code immer auf dem Server verarbeitet, und nie an den Client gesendet wird, erzeugt das Beispiel oben folgende Antwort an den Client.
 
 ```html
 <!DOCTYPE html>
@@ -98,7 +98,7 @@ file:///c:/xampp/htdocs/script.php   # Falsch!
 
 ## Variablen
 
-Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Variablen dargestellt. Bei Variablen-Namen wird zwischen Groß- und Kleinschreibung unterschieden (case-sensitive).
+Eine Variable wird in PHP durch das Dollar-Zeichen `$` gefolgt vom Namen der Variablen dargestellt. Bei Variablen-Namen wird zwischen Gross- und Kleinschreibung unterschieden (case-sensitive).
 
 Ein gültiger Variablen-Name beginnt mit einem Buchstaben oder einem Unterstrich, gefolgt von einer beliebigen Anzahl von Buchstaben, Zahlen oder Unterstrichen.
 
@@ -124,7 +124,7 @@ $ichBinFalsch = false;
 
 ### Integer
 
-Als `Integer` werden natürliche Zahlen bezeichnet.
+Als `Integer` werden ganze, natürliche Zahlen bezeichnet.
 
 ```php
 $alter = 17;
@@ -161,7 +161,7 @@ echo 'Ein sehr langer unleserlicher '
    . 'String als Beispiel.';
 ```
 
-Es ist auch möglich, Variablen zu verketten.
+Es ist auch möglich Variablen zu verketten.
 
 ```php
 $popstar = 'Justin Bieber';
@@ -177,18 +177,18 @@ Variablen können direkt in einen String eingefügt werden, sofern dieser mit `"
 ```php
 $popstar = 'Justin Bieber';
 
-echo "Ich liebe die Musik von $popstar";
-// Ich liebe die Musik von Justin Bieber
+echo "Ich liebe die Musik von $popstar.";
+// Ich liebe die Musik von Justin Bieber.
 
-echo 'Ich liebe die Musik von $popstar';
-// Ich liebe die Musik von $popstar
+echo 'Ich liebe die Musik von $popstar.';
+// Ich liebe die Musik von $popstar.
 ```
 
 Es können auch die alternativen Schreibweisen mit geschweiften Klammern verwendet werden.
 
 ```php
-echo "Ich liebe die Musik von ${popstar}";
-echo "Ich liebe die Musik von {$popstar}";
+echo "Ich liebe die Musik von ${popstar}.";
+echo "Ich liebe die Musik von {$popstar}.";
 ```
 
 ### Arrays
@@ -452,7 +452,7 @@ echo demo();
 
 Zusätzlich zu den Funktionen in PHP gibt es noch zahlreiche weitere «Sprachkonstrukte», welche wir verwenden können.
 
-### Script-Einbinung
+### Script-Einbindung
 
 Über die Sprachkonstrukte `include` und `require` haben wir die Möglichkeit, ein Script aus einer anderen Datei in unser Script einzubinden.
 
@@ -484,14 +484,14 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 
 |  Beispiel |       Name      |                                      Ergebnis                                     |
 |-----------|-----------------|-----------------------------------------------------------------------------------|
-| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist                                         |
-| $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind         |
-| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist                                       |
-| $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind |
-| $a < $b   | Kleiner als     | Gibt `true` zurück, wenn $a kleiner als $b ist                                    |
-| $a > $b   | Grösser als     | Gibt `true` zurück, wenn $a grösser als $b ist                                    |
-| $a <= $b  | Kleiner Gleich  | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist                            |
-| $a >= $b  | Grösser Gleich  | Gibt `true` zurück, wenn $a grösser oder gleich $b ist                            |
+| $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist.                                         |
+| $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind.         |
+| $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist.                                       |
+| $a !== $b | Nicht identisch | Gibt `true` zurück, wenn $b ungleich $b ist und beide nicht vom gleichen Typ sind. |
+| $a < $b   | Kleiner als     | Gibt `true` zurück, wenn $a kleiner als $b ist.                                    |
+| $a > $b   | Grösser als     | Gibt `true` zurück, wenn $a grösser als $b ist.                                    |
+| $a <= $b  | Kleiner Gleich  | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist.                            |
+| $a >= $b  | Grösser Gleich  | Gibt `true` zurück, wenn $a grösser oder gleich $b ist.                            |
 
 ##### Typenschwache und typenstarke Vergleiche
 
@@ -599,19 +599,19 @@ Um mehrere Vergleiche zu verbinden oder einen Vergleich umzukehren, können logi
 
 ```php
 if($a == 1 && $b == 2) {  // $a == 1 and $b == 2
-    echo '$a hat einen Wert von 1, $b hat einen Wert von 2';    
+    echo '$a hat einen Wert von 1, $b hat einen Wert von 2.';    
 }
 
-if($a == 1 || $a == 2) {  // $a == 1 or $b == 2
-    echo '$a hat einen Wert von 1 oder 2';    
+if($a == 1 || $b == 2) {  // $a == 1 or $b == 2
+    echo '$a hat einen Wert von 1 oder '$b hat einen Wert von 2.';    
 }
 
 if($a == 1 xor $b == 2) {
-    echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2';
+    echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2, jedoch nicht beides.';
 }
 
 if( ! $a == 1) { 
-    echo '$a hat nicht einen Wert von 1';    
+    echo '$a hat nicht einen Wert von 1.';    
 }
 
 ```
