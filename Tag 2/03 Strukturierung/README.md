@@ -62,14 +62,14 @@ formular/
  | index.php           # Front-Controller
 ```
 
-Kopiere nun den ganzen Inhalt Deiner `index.php` in das `app.php` Template und lade das Template in Deiner `index.php` mittels einem `include` Statement.
+Kopiere nun den ganzen Inhalt Deiner `index.php` in das `app.php` Template. Lade das Template in Deiner `index.php` mittels einem `include` Statement.
 
 ```php
 // index.php
 include 'templates/app.php';
 ```
 
-Wenn Du Dein Formular jetzt aufrufst, sollte immernoch alles funktionieren wie bisher!
+Wenn Du Dein Formular jetzt aufrufst, sollte immer noch alles funktionieren wie bisher!
 
 ### Schritt 2: Views auslagern
 

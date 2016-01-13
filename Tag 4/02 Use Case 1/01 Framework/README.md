@@ -36,7 +36,7 @@ Diese Funktionen stehen Dir überall zur Verfügung. Du __kannst__ diese verwend
 
 ### `e()`
 
-Gibt einen String mit `htmlentities` aus. Verwende sie um User-Eingaben wieder auszugeben.
+Gibt einen String mit `htmlspecialchars` aus. Verwende sie um User-Eingaben wieder auszugeben.
 
 ```php
 echo e('<script>XSS!</script>');

@@ -31,6 +31,7 @@ Lagere die «Beispielfehler» nun in ein PHP-Array am Anfang Deines Dokumentes a
 
 ```php
 $errors = [];  // --> Keine Fehlerliste anzeigen
+// ... oder
 $errors = [    // --> Liste wie unter Schritt 1 anzeigen
     'Bitte geben Sie einen Namen ein.',
     'Die Email-Adresse "google.com" ist ungültig.'
@@ -48,6 +49,8 @@ $errors = [];
 Erstelle am Anfang Deines Dokumentes einen PHP-Block, der mit Hilfe der `var_dump`-Funktion alle via POST-Methode gesendeten Daten ausgibt. Diese Ausgabe soll **nur dann erscheinen**, wenn das Formular auch wirklich abgesendet wurde!
 
 ```php
+// var_dump(...);
+
 // Beispielausgabe
 array (size=7)
   'name' => string '' (length=0)
@@ -65,6 +68,19 @@ Dort, wo Du momentan mit `var_dump` die Daten ausgibst, kannst Du diese nun vali
 
 Füge für fehlerhafte Eingaben die entsprechende Fehlermeldung zu Deinem `$errors`-Array hinzu.
 Pro Feld soll immer nur ein Fehler angezeigt werden. Falls die Email-Adresse also nicht eingegeben wurde, sollte diese nicht auch noch als fehlerhaft angezeigt werden!
+
+
+```php
+// Pseudocode
+if(feld_xy_ungültig) {
+    füge_fehler_in_array_ein;
+}
+
+if(feld_yz_ungültig) {
+    füge_fehler_in_array_ein;
+}
+// ...
+```
 
 Alle Felder, ausser das für die Bemerkung, sind Pflichtfelder.
 
@@ -106,7 +122,7 @@ Achte darauf, dass auch die Radiobutton und Selectbox-Auswahlen vorselektiert we
 
 Entferne die Ausgabe des `OK`, wenn das Formular keine Fehler enthält. 
 
-Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werden. Das Formular soll nicht mehr angezeigt werden, wenn das Formular korrekt ausgefüllt worden ist.
+Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werden. Das Formular soll nicht mehr angezeigt werden wenn das Formular korrekt ausgefüllt worden ist.
 
 > **Anmeldung erfolgreich**
 > 
