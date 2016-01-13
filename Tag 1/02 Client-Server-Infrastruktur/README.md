@@ -45,32 +45,32 @@ TBD
 
 Wie bereits erwähnt besteht ein Aufruf immer aus einem __Server__ und einem __Client__
 
-![Szene 1](src/01.jpg)
+![Szene 1](res/01.jpg)
 
 Der __Server__ und der __Client__ kommunizieren mit dem HTTP Protokoll untereinander. Damit ist es für den __Client__ möglich Anfragen an den __Server__ zu senden und die Antwort darauf zu erhalten.
 
-![Szene 2](src/02.jpg)
+![Szene 2](res/02.jpg)
 
 Der __Client__ und __Server__ müssen keine getrennten Harware-Systeme sein, sondern können auf dem gleichen Rechner installiert werden. Dabei besteht der __Client__ aus dem Browser und der __Server__ aus einem Webserver.
 
-![Szene 3](src/03.jpg)
+![Szene 3](res/03.jpg)
 
 Der __Client__ schickt einen HTTP-Request `http://google.ch` [1].
 
-![Szene 4](src/04.jpg)
+![Szene 4](res/04.jpg)
 
 Der __Server__ empfängt den Request und stellt darauf die Daten bereit, sprich den Sourcecode [2]. Diese Daten schickt er anschliessend dem __Client__ zurück [3].
 
-![Szene 5](src/05.jpg)
+![Szene 5](res/05.jpg)
 
-Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcode in eine für den Menschen lesbare Form um, die Website [4].
+Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcecode in eine für den Menschen lesbare Form um: Die Website [4].
 
-![Szene 6](src/06.jpg)
+![Szene 6](res/06.jpg)
 
-Bestimmte Code-Schnippel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Interpretator Ausschau nach PHP-Code, um diesen auszuführen.
+Bestimmte Code-Schnippsel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Interpretator Ausschau nach PHP-Code, um diesen auszuführen.
 
-![Szene 7](src/07.jpg)
+![Szene 7](res/07.jpg)
 
 Das gleiche passiert nach der Übertragung zum __Client__ durch den JavaScript-Interpretator.
 
-![Szene 8](src/08.jpg)
+![Szene 8](res/08.jpg)

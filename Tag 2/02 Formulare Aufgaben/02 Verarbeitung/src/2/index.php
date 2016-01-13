@@ -21,11 +21,11 @@ $errors = [
 
         <!-- SCHRITT 2 -->
         <?php if(count($errors) > 0): ?>
-        <ul class="errors">
-            <?php foreach($errors as $error): ?>
-                <li><?= $error ?></li>
-            <?php endforeach; ?>
-        </ul>
+            <ul class="errors">
+                <?php foreach($errors as $error): ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
         <?php endif; ?>
         <!-- /SCHRITT 2 -->
 
@@ -96,7 +96,7 @@ $errors = [
                         <option value="Weindegustation">Weindegustation</option>
                         <option value="Asiatischer Kochkurs">Asiatischer Kochkurs</option>
                         <option value="Tankzurs für Webentwickler">Tankzurs für Webentwickler</option>
-                        <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
+                        <option value="Ying &amp; Yang Yoga Einsteigerkurs">Ying &amp; Yang Yoga Einsteigerkurs</option>
                     </select>
                 </div>
                 

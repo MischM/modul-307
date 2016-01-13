@@ -97,6 +97,8 @@ Nach der Verarbeitung wird das Dokument ohne den ursprünglichen PHP-Code an den
 
 Das resultierende Dokument wird vom Browser also wie normales HTML behandelt. Dass darin einmal PHP-Code vorhanden war, weiss dieser nicht.
 
+PHP ermöglicht es uns, die Ausgabe von HTML-Code an Bedingungen zu knüpfen. So können wir dynamische Dokumente erstellen.
+
 ### Aufruf über Kommandozeile
 
 Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML ausgeben. Es kann beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden. 

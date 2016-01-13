@@ -177,7 +177,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 'Weindegustation',
                                 'Asiatischer Kochkurs',
                                 'Tankzurs für Webentwickler',
-                                'Ying & Yang Yoga Einsteigerkurs',
+                                'Ying &amp; Yang Yoga Einsteigerkurs',
                             ];
 
                             foreach($options as $option): ?>

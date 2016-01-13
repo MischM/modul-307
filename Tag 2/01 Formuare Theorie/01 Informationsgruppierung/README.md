@@ -26,7 +26,7 @@ Die Formularfelder sind die kleinsten Elemente innerhalb eines Formulars. Die ve
 
 Als kleine Illustration:
 
-![Formularfelder](src/Formularfelder.jpg)
+![Formularfelder](res/Formularfelder.jpg)
 
 
 Zur Repetition befindet sich unter folgendem Link ein kleines Cheatsheet zum Thema Formularfelder:
@@ -35,7 +35,7 @@ Zur Repetition befindet sich unter folgendem Link ein kleines Cheatsheet zum The
 
 ### 2. Formularfeld-Gruppen
 
-Das Tag `fieldset` ermöglichst es dem Benutzer die Formularfelder in Sets/Gruppen zu strukturieren. Ausschlaggebend für die Unterteilung ist die thematische Zusammengehörigkeit der einzlenen Felder.
+Das Tag `fieldset` ermöglicht es dem Benutzer die Formularfelder in Sets/Gruppen zu strukturieren. Ausschlaggebend für die Unterteilung ist die thematische Zusammengehörigkeit der einzlenen Felder.
 
 Die Formularfeld-Gruppen erleichtern zum einen die Navigation innerhalb des Dokuments und erhöhen gleichzeitig die Accessability der Seite.
 
@@ -69,7 +69,7 @@ Die Formularfeld-Gruppen erleichtern zum einen die Navigation innerhalb des Doku
 
 Als keine Illustration:
 
-![Formularfelder](src/Fieldset.jpg)
+![Formularfelder](res/Fieldset.jpg)
 
 Accessability/Barrierefreiheit: Kommunikation in der Weise, dass sie von Menschen mit Behinderung und von älteren Menschen in derselben Weise genutzt werden kann, wie von Menschen ohne Behinderung.
 
@@ -119,4 +119,4 @@ Das `form` Tag ist auf der höchsten strukturellen Ebene eines Formulars und bei
 
 Als keine Illustration:
 
-![Formularfelder](src/Form.jpg)
+![Formularfelder](res/Form.jpg)

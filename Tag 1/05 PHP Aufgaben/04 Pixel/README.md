@@ -76,7 +76,7 @@ Stelle sicher, dass die folgenden Regeln erfüllt werden.
 
 ##### Regeln
 
-* `$cols` und `$rows` sollen **immer** ein Integer sein (siehe [Type Casting](https://secure.php.net/manual/de/language.types.type-juggling.php#language.types.typecasting)
+* `$cols` und `$rows` sollen **immer** ein Integer sein (siehe [Type Casting](https://secure.php.net/manual/de/language.types.type-juggling.php#language.types.typecasting))
 * Die maximale Anzahl von Spalten oder Zeilen soll `60` sein.
 * Die minimale Anzahl von Spalten oder Zeilen soll `1` sein.
 

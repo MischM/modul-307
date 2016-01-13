@@ -1,14 +1,14 @@
 <?php
 /**
  * Nutze diese Funktion um einfach eine Ausgabe
- * mit htmlentities() zu erstellen.
+ * mit htmlspecialchars() zu erstellen.
  *
  * @param  string   $value
  * @return string
  */
 function e(string $value) : string
 {
-    return htmlentities($value, ENT_QUOTES, 'UTF-8', false);
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8', false);
 }
 
 /**

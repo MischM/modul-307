@@ -31,7 +31,7 @@ Erstelle ein PHP-Array, welches die Namen der Clowns enthält. Generiere die Lis
 
 #### Schritt 3
 
-Die Liste soll alplhabetisch sortiert ausgegeben werden. Verändere die Reihenfolge der Clowns in Deinem Array nicht. Sortiere es [mit der entsprechenden PHP-Funktion](https://secure.php.net/manual/de/array.sorting.php).
+Die Liste soll alphabetisch sortiert ausgegeben werden. Verändere die Reihenfolge der Clowns in Deinem Array nicht. Sortiere es [mit der entsprechenden PHP-Funktion](https://secure.php.net/manual/de/array.sorting.php).
 
 * Alfredo Smaldini
 * Carl Godlewski

@@ -1,7 +1,7 @@
 
 # Validieren von Formulardaten
 
-Das Validieren oder «Prüfen» der empfangenen Daten ist enorm wichtig, da unerwartete oder nicht vorhandene Daten zu fehlerhaften oder unbrauchbaren Resultaten führt.
+Das Validieren oder «Prüfen» der empfangenen Daten ist enorm wichtig, da unerwartete oder nicht vorhandene Daten zu fehlerhaften oder unbrauchbaren Resultaten führen.
 
 Grundsätzlich gilt es die Daten auf folgende Punkte zu überprüfen:
 
@@ -102,7 +102,7 @@ filter_var($variable, FILTER_KONSTANTE);
 
 `filter_var` liefert bei einer ungültigen Eingabe einen Wert von `false` zurück. Andernfalls werden die Eingabe-Daten zurückgegeben. Es ist also wichtig einen **typenstarken Vergleich** mit `false` zu verwenden.
 
-Als Filter-Konstakte kann einer der folgenden Werte verwendet werden:
+Als Filter-Konstante kann einer der folgenden Werte verwendet werden:
 
 * FILTER_VALIDATE_BOOLEAN
 * FILTER_VALIDATE_EMAIL
