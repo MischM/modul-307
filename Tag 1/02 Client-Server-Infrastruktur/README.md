@@ -63,11 +63,11 @@ Der __Server__ empfängt den Request und stellt darauf die Daten bereit, sprich 
 
 ![Szene 5](src/05.jpg)
 
-Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcode in eine für den Menschen lesbare Form um, die Website [4].
+Der __Client__ empfängt die HTTP-Response des Servers und wandelt den Sourcecode in eine für den Menschen lesbare Form um: Die Website [4].
 
 ![Szene 6](src/06.jpg)
 
-Bestimmte Code-Schnippel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Interpretator Ausschau nach PHP-Code, um diesen auszuführen.
+Bestimmte Code-Schnippsel müssen aber nicht einfach nur abgerufen und angezeigt werden, sonder ebenfalls noch interpretiert. Serverseitig hält deshalb ein PHP-Interpretator Ausschau nach PHP-Code, um diesen auszuführen.
 
 ![Szene 7](src/07.jpg)
 
