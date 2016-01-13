@@ -74,11 +74,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <!-- SCHRITT 2 -->
         <?php if(count($errors) > 0): ?>
-        <ul class="errors">
-            <?php foreach($errors as $error): ?>
-                <li><?= $error ?></li>
-            <?php endforeach; ?>
-        </ul>
+            <ul class="errors">
+                <?php foreach($errors as $error): ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
         <?php endif; ?>
         <!-- /SCHRITT 2 -->
 
@@ -166,7 +166,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                             'Weindegustation',
                             'Asiatischer Kochkurs',
                             'Tankzurs für Webentwickler',
-                            'Ying & Yang Yoga Einsteigerkurs',
+                            'Ying &amp; Yang Yoga Einsteigerkurs',
                         ];
 
                         foreach($options as $option): ?>

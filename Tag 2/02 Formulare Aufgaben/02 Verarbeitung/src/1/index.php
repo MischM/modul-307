@@ -87,7 +87,7 @@
                         <option value="Weindegustation">Weindegustation</option>
                         <option value="Asiatischer Kochkurs">Asiatischer Kochkurs</option>
                         <option value="Tankzurs für Webentwickler">Tankzurs für Webentwickler</option>
-                        <option value="Ying & Yang Yoga Einsteigerkurs">Ying & Yang Yoga Einsteigerkurs</option>
+                        <option value="Ying &amp; Yang Yoga Einsteigerkurs">Ying &amp; Yang Yoga Einsteigerkurs</option>
                     </select>
                 </div>
                 
