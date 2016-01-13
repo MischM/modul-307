@@ -16,7 +16,11 @@ Rufe die Datei über [http://localhost/info.php](http://localhost/info.php) auf.
 
 > **Achtung!!!** Sei vorsichtig, wenn Du eine solche Datei auf einem Webserver veröffentlichst, da die angezeigten Infos sehr viel über Dein System verraten und für Angriffe ausgenutzt werden können.
 
+Dir wird nun eine Übersicht aller für PHP relevanten Einstellungen gezeigt. 
+
 Sieh Dir die `Apache Environment` und `HTTP Headers Information` Sektionen einmal an. Was für Informationen werden Dir angezeigt?
+
+Für die Konfiguration Deiner PHP-Installation stehen diverse Einstellungen, so genannte `Direktiven` zur Verfügung.
 
 ### Core-Sektion
 
