@@ -603,7 +603,7 @@ if($a == 1 && $b == 2) {  // $a == 1 and $b == 2
 }
 
 if($a == 1 || $b == 2) {  // $a == 1 or $b == 2
-    echo '$a hat einen Wert von 1 oder '$b hat einen Wert von 2.';    
+    echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2.';    
 }
 
 if($a == 1 xor $b == 2) {

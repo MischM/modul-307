@@ -11,7 +11,7 @@ XAMPP ist ein Software-Paket, welches die Installation von Apache mit PHP auf Li
 1. Führe das XAMPP-Setup aus. Du findest den Installer auf dem Austausch-Laufwerk.
 2. Es reicht aus, dass Du nur die folgenden Komponenten installierst: Apache, PHP.
 3. Installiere XAMPP ins Verzeichnis `C:\xampp`
-4. Deaktiviere die Option «Learn more about BItnami for XAMPP»
+4. **Deaktiviere die Option «Learn more about Bitnami for XAMPP»**
 
 ### XAMPP Control Panel
 
@@ -149,6 +149,6 @@ c:\xampp\php\php.exe
 
 Starte Atom anschliessend neu.
 
-Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert die Autovervollständigung trotzdem.
+Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert die Autovervollständigung trotzdem. `¯\_(ツ)_/¯`
 
 

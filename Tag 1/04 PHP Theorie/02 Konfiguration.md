@@ -94,4 +94,4 @@ In einer Produktivumgebung solltest Du diesen Wert immer auf `Off` setzen. Nutze
 
 Speichere Deine `php.ini` ab, starte Apache neu und aktualisiere Deine `info.php` im Browser.
 
-Stelle sicher, dass `error_reporting` einen Wert von `32767` hat, und `display_errors` auf `On` ist.
+Stelle sicher, dass `error_reporting` einen Wert von `32767` (=`E_ALL`) hat, und `display_errors` auf `On` ist.
