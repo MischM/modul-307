@@ -42,7 +42,7 @@ var name = 'Robert Pattinson';
 
 ### Performance
 
-Da das Ausführen von JS im Browser das Rendern der Website beinflussen kann, sollte alles JS so weit wie möglich ans Ende des Dokuments verschoben werden (optimalerweise direkt vor `</body>`). 
+Da das Ausführen von JS im Browser das Rendern der Website blockieren kann, sollte alles JS so weit wie möglich ans Ende des Dokuments verschoben werden (optimalerweise direkt vor `</body>`). 
 
 So kann der Browser die Website zuerst rendern und muss sich erst dann mit der Ausführung des JS-Codes befassen.
 
@@ -54,7 +54,7 @@ Um eine Ausgabe in die Entwicklerkonsole Deines Browser zu machen, nutze `consol
 console.log('Hallo Welt!');
 ```
 
-`console` ist hier das Konsolen-Objekt, welches mehrere Methoden zur Verfügung stellt. Via `.` kannst Du auf diese Methoden zugreiffen.
+`console` ist hier das Konsolen-Objekt, welches mehrere Methoden zur Verfügung stellt. Via `.` kannst Du auf diese Methoden zugreifen.
 
 ```js
 console.error('Fehler, den ich in die Konsole logge');
@@ -63,16 +63,18 @@ console.info('Information, die ich in die Konsole logge');
 
 ## Variablen
 
-Variablen werden via `var` oder seit ES6 mit dem `let` Keyword definiert. Anders als bei PHP müssen die Variablen nicht mit einem Dollarzeichen beginnen.
+Variablen werden via `var` oder seit ES6 mit den Keywords `let`/`const` definiert. Anders als bei PHP müssen die Variablen nicht mit einem Dollarzeichen beginnen.
 
 ```js
 var alter = 17;
 let istLernender = true;
 ```
 
-Da das `let` Keyword noch nicht in allen Browsern unterstützt wird (Stand November 2015) werden wir in unseren Beispielen einfachheitshalber immer das `var` Keyword verwenden. 
+Da die `let`/`const` Keywords noch nicht in allen Browsern unterstützt werden (Stand November 2015), werden wir in unseren Beispielen einfachheitshalber immer das `var` Keyword verwenden. 
 
 Mit `let` definierte Variablen haben einen andern Geltungsbereich wie mit `var` definierte. Siehe «Geltungsbereich von Variablen» weiter unten.
+
+Mit `const` definierte Variablen können nach ihrer Definition nicht mehr geändert werden (=Konstante).
 
 
 ### Booleans
@@ -138,7 +140,7 @@ Zeilen`;
 
 #### Parsing von Variablen
 
-Variablen können nicht wie in PHP direkt in normale Strings eingebettet werden. Es muss immer konkateniert werden. Alternativ müssen Template-Strings verwendet werden.
+Variablen können anders als in PHP nicht direkt in normale Strings eingebettet werden. Es muss immer konkateniert werden. Alternativ müssen Template-Strings verwendet werden.
 
 ```js
 var film = 'Twilight';
@@ -164,17 +166,17 @@ Anders als bei Arrays werden hier `{}` zur Definition verwendet. Schlüssel und 
 
 ```js
 var wochentage = {
-    'mo': 'Montag',
-    'di': 'Dienstag',
-    'mi': 'Mittwoch',
-    'do': 'Donnerstag',
-    'fr': 'Freitag',
-    'sa': 'Samstag',
-    'so': 'Sonntag'
+    mo: 'Montag',
+    di: 'Dienstag',
+    mi: 'Mittwoch',
+    do: 'Donnerstag',
+    fr: 'Freitag',
+    sa: 'Samstag',
+    so: 'Sonntag'
 };
 ```
 
-Der Schlüssel muss hier nicht zwingend in `''` geschrieben werden.
+Der Schlüssel kann hier auch in `''` geschrieben werden. Dies ist jedoch nicht zwingend notwendig.
 
 Der Zugriff auf die einzelnen Objekt-Properties kann jetzt mit `.` oder `[]`-Syntax geschehen.
 
@@ -226,7 +228,7 @@ sagwas('Hallo');
 
 Deklarierte Variablen sind immer in dem Kontext gültig, in dem sie deklariert wurden.
 
-Global definierte Variablen stehen in Funktionen zur Verfügung.
+Global definierte Variablen stehen also überall (auch in untergeordneten Funktionen) zur Verfügung.
 
 ```js
 var zahl = 20;
@@ -239,7 +241,7 @@ demo();
 // 20
 ```
 
-In Funktionen definierte Variablen sind ausserhalb der Funktion nicht gültig.
+In Funktionen definierte Variablen sind ausserhalb der Funktion nicht verfügbar.
 
 ```js
 function demo() {

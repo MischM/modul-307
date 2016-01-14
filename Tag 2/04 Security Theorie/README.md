@@ -174,14 +174,14 @@ SELECT `password` FROM `users` WHERE username = ''; DROP TABLE users; SELECT '';
 
 Füge **niemals** Benutzereingaben direkt in eine SQL-Query ein. Verwende die modernen PHP-Erweiterungen [`mysqli`](https://secure.php.net/manual/de/book.mysqli.php) oder [`PDO`](https://secure.php.net/manual/en/book.pdo.php). Funktionen, die mit `mysql_` beginnen, dürfen nicht mehr verwendet werden!
 
-Verwende Prepared Statements: Auf diese Weise werden Deine Query und die Benutzereingaben getrennt an den Datenbankserver gesendet und müssen nicht vereint werden. Der DB-server übernimmt das sichere Handling der Query dann für Dich.
+Verwende Prepared Statements: Auf diese Weise werden Deine Query und die Benutzereingaben getrennt an den Datenbankserver gesendet und müssen nicht vereint werden. Der DB-Server übernimmt das sichere Handling der Query dann für Dich.
 
 ```php
 $statement = $dbh->prepare("SELECT `password` FROM `users` WHERE username = :username");
 $statement->bindParam(':username', $username);
 $statement->execute();
 
-$password = $statement->fetch();
+$user = $statement->fetch();
 ...
 ```
 
@@ -202,7 +202,7 @@ Wenn sich Dein Benutzer anmelden möchte, musst Du nur den Hash seiner Eingabe m
 
 Beim Generieren eines Hashs gehen Informationen verloren. Somit ist es nicht möglich, vom Hash auf die ursprüngliche Eingabe zurückzuschliessen.
 
-In alten PHP-Tutorials werden oft Hashing-Funktionen wie `md5` oder `sha1` für Passwörter verwendet. Diese dürfen heute **auf keinen Fall** mehr zum hashen von Passwörtern verwendet werden.
+In alten PHP-Tutorials werden oft Hashing-Funktionen wie `md5` oder `sha1` für Passwörter verwendet. Diese dürfen heute **auf keinen Fall** mehr zum Hashen von Passwörtern verwendet werden.
 
 ```php
 <?php
