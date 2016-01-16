@@ -43,7 +43,7 @@ $(function() {
 
 ## Umsetzung einer Validierung
 
-Ähnlich wie in PHP kannst Du im `submit` Event Deine Formular-Daten validieren.
+Ähnlich wie in PHP, kannst Du im `submit` Event Deine Formular-Daten validieren.
 
 Falls Fehler vorhanden sind, kannst Du mittels `return false` verhindern, dass das Formular an den Sever versendet wird.
 

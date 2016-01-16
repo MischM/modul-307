@@ -7,7 +7,7 @@ include __DIR__ . '/../src/StringCalculator.php';
 test('Ist nur eine Zahl vorhanden, wird diese ausgegeben',
     calculateSum('4') == 4
 );
-test('Zwei zahlen werden richtig summiert',
+test('Zwei Zahlen werden richtig summiert',
     calculateSum('2,3') == 5
 );
 

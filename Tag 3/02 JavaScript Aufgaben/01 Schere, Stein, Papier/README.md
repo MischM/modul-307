@@ -7,7 +7,7 @@ Erstelle ein funktionierendes «Schere, Stein, Papier» Spiel in JavaScript.
 
 ### Zielverhalten
 
-Das Script soll direkt nach dem Laden der Seite ausgeführt werden. Es ist unterteilt in drei Schritte:
+Das Script soll direkt nach dem Laden einer HTML-Seite ausgeführt werden. Es ist unterteilt in drei Schritte:
 
 - Frage nach dem eigenen Spielzug (Schere, Stein oder Papier)
 - Automatisches Generieren eines Spielzuges für den Gegenspieler (Computer)
@@ -48,18 +48,19 @@ if(/* spielzugNichtInErlaubtArray */) {
 }
 ```
 
-> Mittels `throw` kannst Du einen Error erzeugen und somit die Ausführung des Scripts beenden. Der nachfolgende Code wird somit nicht ausgeführt.
+> Mittels `throw` kannst Du einen Error erzeugen und somit auch dem Browser mitteilen, dass etwas schief gelaufen ist. Die Ausführung des Scripts wird dann sofort beendet. Der nachfolgende Code wird somit nicht ausgeführt.
 
 
 #### Schritt 2
 
 Wähle ein zufälliges Element aus dem `erlaubt` Array als Spielzug für den Computer aus. Speichere dieses in die Variable `spielzugComputer`. Gib diese via `alert` aus.
 
-Wie Du ein zufälliges Array-Element auswählen kannst, kann Dir Google sicher verraten. Kannst Du den gefundenen Code auch erklären?
 
 ```js
 alert('Der Computer spielt ' + spielzugComputer + '.');
 ```
+
+Wie Du ein zufälliges Array-Element auswählen kannst, kann Dir Google sicher verraten. Kannst Du den gefundenen Code auch erklären?
 
 #### Schritt 3
 
