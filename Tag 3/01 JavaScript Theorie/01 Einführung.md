@@ -9,7 +9,7 @@
 
 JavaScript ist eine Implementierung des ECMAScript-Standards. JavaScript wird von allen gängigen Webbrowsern unterstützt.
 
-ECMAScript-Implementierungen wie JScript oder das Node.js Framework ermöglichen die Anwendung von JavaScript auch serverseitig.
+ECMAScript-Implementierungen wie JScript oder die Node.js Plattform ermöglichen die Anwendung von JavaScript auch serverseitig.
 
 Die 6. Version des ECMAScript-Standards (ES6 oder ECMAScript 2015) wurde 2015 verabschiedet. Der Browser-Support für die neuen Funktionen hinkt hier jedoch etwas hinterher. Die 5. Version des Standards (ES5) ist [in allen gängigen Browsern komplett implementiert](https://kangax.github.io/compat-table/es5/). Funktionen [der aktuellen 6. Version (ES6)](https://kangax.github.io/compat-table/es6/) und [der kommenden 7. Version (ES7 oder ECMAScript 2016)](https://kangax.github.io/compat-table/es7/) stehen nur teilweise zur Verfügung.
 
@@ -23,7 +23,7 @@ Die 6. Version des ECMAScript-Standards (ES6 oder ECMAScript 2015) wurde 2015 ve
 
 Trotz der Namens- und syntaktischen Ähnlichkeit hat JavaScript nichts mit Java zu tun. Es handelt sich um zwei komplett unterschiedliche Sprachen.
 
-## Was genau ist JavaScript?
+## Was ist JavaScript?
 
 JavaScript ist eine Scriptsprache, die clientseitig oder seit einigen Jahren auch serverseitig Anwendung findet.
 
@@ -54,6 +54,6 @@ Wird HTML-Code an den Browser gesendet, wird dieser Code geparsed. Daraus erstel
 
 ![](res/dom.png)
 
-Wenn Du in Deinem Browser die Option «Quelltext anzeigen» auswählst, siehst Du den HTML-Code, der an den Browser gesendet wurde. Öffnest Du die Entwicklertools arbeitest Du mit dem DOM. Dein Browser versucht Fehler im HTML-Code automatisch zu beheben. Daher ist es möglich, dass sich der HTML-Code vom letzendlichen DOM unterscheidet!
+Wenn Du in Deinem Browser die Option «Quelltext anzeigen» auswählst, siehst Du den HTML-Code, der vom Server an den Browser gesendet wurde. Öffnest Du die Entwicklertools, arbeitest Du mit dem DOM. Dein Browser versucht Fehler im HTML-Code automatisch zu beheben. Daher ist es möglich, dass sich der HTML-Code vom letzendlichen DOM unterscheidet!
 
 Ein primärer Anwendungszweck von JavaScript im Browser ist die Manipulation des DOM. Via JavaScript können die einzelnen Attribute eines Objektes im DOM ausgelesen und verändert werden. Das DOM enthält Position, Grösse, CSS-Styles und diverse andere Attribute zu jedem Element.

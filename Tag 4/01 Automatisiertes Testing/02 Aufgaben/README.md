@@ -123,7 +123,7 @@ Ist nur eine Zahl vorhanden, wird diese ausgegeben      -> OK
 Ergänze den nächsten Test:
 
 ```php
-test('Zwei zahlen werden richtig summiert',
+test('Zwei Zahlen werden richtig summiert',
     calculateSum('2,3') == 5
 );
 ```
@@ -132,7 +132,7 @@ Führe das Testfile aus. Du solltest folgende Ausgabe erhalten:
 
 ```
 Ist nur eine Zahl vorhanden, wird diese angezeigt           -> OK
-Zwei zahlen werden richtig summiert                         -> FEHLER
+Zwei Zahlen werden richtig summiert                         -> FEHLER
 ```
 
 Sorge jetzt dafür, dass der neue Testfall nicht mehr fehlschlägt. 
@@ -153,12 +153,12 @@ Wenn Du ein Array aus Zahlen hast, kannst Du die Funktion [`array_sum`](https://
 
 ```
 Ist nur eine Zahl vorhanden, wird diese ausgegeben          -> OK
-Zwei zahlen werden richtig summiert                         -> OK
+Zwei Zahlen werden richtig summiert                         -> OK
 ```
 
 #### Schritt 4
 
-Funktioniert das ganze auch mit mehr als zwei Zahlen? Teste es!
+Funktioniert das Ganze auch mit mehr als Zwei Zahlen? Teste es!
 
 ```php
 test('Drei Zahlen werden richtig summiert',
@@ -174,7 +174,7 @@ test('Vier Zahlen werden richtig summiert',
 
 ```
 Ist nur eine Zahl vorhanden, wird diese ausgegeben          -> OK
-Zwei zahlen werden richtig summiert                         -> OK
+Zwei Zahlen werden richtig summiert                         -> OK
 Drei Zahlen werden richtig summiert                         -> OK
 Vier Zahlen werden richtig summiert                         -> OK
 ```
@@ -201,7 +201,7 @@ Ignoriere die neue `> 100`-Funktionalität vorerst noch. Sorge erst einmal dafü
 
 ```
 Ist nur eine Zahl vorhanden, wird diese ausgegeben          -> OK
-Zwei zahlen werden richtig summiert                         -> OK
+Zwei Zahlen werden richtig summiert                         -> OK
 Drei Zahlen werden richtig summiert                         -> OK
 Vier Zahlen werden richtig summiert                         -> OK
 ```
@@ -214,7 +214,7 @@ Mit der neuen `foreach`-Variante sollte es nun kein Problem sein, Zahlen > 100 v
 
 ```
 Ist nur eine Zahl vorhanden, wird diese ausgegeben          -> OK
-Zwei zahlen werden richtig summiert                         -> OK
+Zwei Zahlen werden richtig summiert                         -> OK
 Drei Zahlen werden richtig summiert                         -> OK
 Vier Zahlen werden richtig summiert                         -> OK
 Zahlen > 100 werden ignoriert                               -> OK
@@ -230,7 +230,7 @@ Schreibe selber einen Test für diese Funktionalität und erweitere Deine Funkti
 
 ```
 Ist nur eine Zahl vorhanden, wird diese ausgegeben          -> OK
-Zwei zahlen werden richtig summiert                         -> OK
+Zwei Zahlen werden richtig summiert                         -> OK
 Drei Zahlen werden richtig summiert                         -> OK
 Vier Zahlen werden richtig summiert                         -> OK
 Zahlen > 100 werden ignoriert                               -> OK

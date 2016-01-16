@@ -149,6 +149,8 @@ c:\xampp\php\php.exe
 
 Starte Atom anschliessend neu.
 
-Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert die Autovervollständigung trotzdem. `¯\_(ツ)_/¯`
+Du wirst jetzt zwar immer noch eine Fehlermeldung erhalten, jedoch funktioniert die Autovervollständigung trotzdem.
+
+`¯\_(ツ)_/¯`
 
 

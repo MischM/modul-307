@@ -18,7 +18,7 @@ Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird.
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite. Füge auf dieser Seite einen Button hinzu und positioniere diesen via CSS absolut im Body.
+Erstelle eine einfache HTML-Seite. Füge auf dieser Seite einen Button hinzu und positioniere diesen via CSS absolut im Body (`position: absolute`).
 
 ```html
 <button id="button">Whack me!</button>

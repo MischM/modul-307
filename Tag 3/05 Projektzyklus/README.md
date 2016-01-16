@@ -4,7 +4,7 @@ Es gibt nicht __den__ Projektzyklus für die Umsetzung eines Webprojektes. Insge
 
 ## «User Centred Design»-Prozess
 
-> Human-centred design is an approach to interactive system development that focuses specifically on making systems usable. It is a multi-disciplinary activity.
+> User centered design is an approach to interactive system development that focuses specifically on making systems usable. It is a multi-disciplinary activity.
 
 Definition gemäss ISO 13407 (1999).
 
@@ -12,9 +12,9 @@ Definition gemäss ISO 13407 (1999).
 
 ![Not Sure if user is stupid, or design is just bad](src/ux-fry-meme.jpg)
 
-Das Ziel oder der Grund um mit der Methode des User Centred Design zu arbeiten ist es, eine benutzerfreundliche Oberfläche zu gestalten. Dabei steht nicht der technologische oder der Design Aspekt im Vordergrund, sondern die Benutzerfreundlichkeit.
+Der Grund um mit der Methode des User Centred Design zu arbeiten ist es, eine benutzerfreundliche Oberfläche zu gestalten. Dabei steht nicht der technologische oder der Design-Aspekt im Vordergrund, sondern die Benutzerfreundlichkeit.
 
-> Ein benutzerfreundliche Oberfläche ist einfach zu lernen, intuitiv bedienbar, unterstützt den die Aufgaben und Ziele des Benutzers effektiv und effizient und ist motivierend und kurzweilig zum Bedienen.
+> Ein benutzerfreundliche Oberfläche ist einfach zu lernen, intuitiv bedienbar, unterstützt die Aufgaben und Ziele des Benutzers effektiv und effizient und ist motivierend und kurzweilig zum Bedienen.
 
 Freie Übersetzung von [www.usabilityfirst.com](www.usabilityfirst.com)
 
@@ -33,7 +33,7 @@ Folgende drei verkürzten Charakteristiken geben über die Grundsätze des UCD-P
 
 #### 1. Analyse
 
-Im ersten Schritt des UCD-Prozess geht es darum den Nutzer zu analysieren. Ziel ist es ein möglichst genaues Bild dieser Personengruppe zu erstellen. So können die nachfolgenden SChritte optimal danach ausgerichtet werden.
+Im ersten Schritt des UCD-Prozess geht es darum, den Nutzer zu analysieren. Ziel ist es, ein möglichst genaues Bild dieser Personengruppe zu erstellen. So können die nachfolgenden Schritte optimal danach ausgerichtet werden.
 
 TIPP: Eine sinnvolle Methode ist die Erstellung von Personas anhand der folgenden Fragestellungen
 
@@ -59,7 +59,7 @@ __Nutzeraufgaben__ - Wie arbeitet unser Nutzer?
 
 #### 2. Spezifikationen
 
-Nachdem wir den Nutzer für das Produkt definiert haben, müssen wir dies mit den restlichen Rahmenbedingungen in den Spezifikationen zusammentragen. Das Ziel ist es ein Projektdokument mit sämtlichen relevanten Informationen zu erstellen. 
+Nachdem wir den Nutzer für das Produkt definiert haben, müssen wir dies mit den restlichen Rahmenbedingungen in den Spezifikationen zusammentragen. Das Ziel ist es, ein Projektdokument mit sämtlichen relevanten Informationen zu erstellen. 
 
 Mögliche Inhalte dafür sind:
 
@@ -78,7 +78,7 @@ In diesem Schritt werden die gestalterischen Voraussetzungen beispielsweise aus 
 
 #### 3. Design
 
-In diesem Schritt des Prozess wird das Designkonzept erarbieten. Die Umsetzung erfolgt dabei meistens in mehreren Schritten, von der einfachen Skizze bis zum kompletten Design.
+In diesem Schritt des Prozesses wird das Designkonzept erarbieten. Die Umsetzung erfolgt dabei meistens in mehreren Schritten, von der einfachen Skizze bis zum kompletten Design.
 
 Bereits hier wird der Kunde beziehungsweise der Nutzer ständig miteinbezogen (UCD).
 
@@ -101,7 +101,7 @@ Das Produkt wird veröffentlicht, das Testing und die Anpassungen sind jedoch ke
 ##### Fragen, fragen, fragen...
 Was? Wann? Warum? Wo? Wie? Wer? 
 
-##### normaler Menschenverstand
+##### Normaler Menschenverstand
 Das UCD ist ein abgeschlossenes Model, sondern nur eine Konzeptvorlage. Wie das Konzept genau umgesetzt wird, liegt in der Hand des Andwenders!
 
 Praxisbezogene Umsetzung: [Ein Beispiel aus der Praxis.](http://www.mprove.de/script/00/upa/_media/upaposter_85x11.pdf)

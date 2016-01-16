@@ -174,7 +174,7 @@ Das Dollarzeichen hat in diesem Fall nichts mit jQuery zu tun sondern ist einfac
 
 ### Mehrere Operationen aneinanderketten
 
-Im obigen Beispiel mit dem Button ist es nicht zwingend notwendig alle Operationen separat auszuführen. Falls alle Operationen direkt nacheinander ausgeführt werden sollen und es die Lesbarkeit des Codes erhöht, können sie aneinandergekettet werden:
+Im obigen Beispiel mit dem Button ist es nicht zwingend notwendig alle Operationen separat auszuführen. Falls alle Operationen direkt nacheinander und auf dem selben Objekt ausgeführt werden sollen und es die Lesbarkeit des Codes erhöht, können sie aneinandergekettet werden:
 
 ```js
 $button.hide().css('color', '#f00').show().on('click', function() {});
@@ -220,7 +220,7 @@ $('.button').on('click', function() {
 
 ## Nachteile von jQuery
 
-* Rund 80 kb Code der vom Besucher zusätzlich heruntergeladen werden muss
+* Rund 80 kb Code, der vom Besucher zusätzlich heruntergeladen werden muss
 * [Über 10'000 Zeilen JavaScript-Code](https://code.jquery.com/jquery.js), die der Browser bei jedem Seitenaufruf verarbeiten muss!
 
 Sei Dir immer bewusst, dass die Verwendung von jQuery die Ladezeiten Deiner Website beinflusst.

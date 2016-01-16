@@ -23,6 +23,8 @@ http://www.web.com/zeige-bild.php?id=4
 
 Daten, die via `POST`-Methode gesendet werden, werden im Body des HTTP-Requests eingefügt. Die Daten werden dort im selben Format wie beim `GET`-Request eingefügt, sind jedoch diesmal kein Bestandteil der URL.
 
+**Dies ist besonders beim Versenden von vertraulichen Daten wie Passwörtern wichtig zu unterscheiden:** Via GET übermittelte Daten sind **Bestandteil der URL** und werden somit auch in Logfiles oder Besucherstatistiken geloggt. Werden die Daten via POST an den Server gesendet, bleibt die URL neutral und die Daten werden separat übermittelt.
+
 Die `POST`-Methode verwenden wir, wenn wir Daten an einen Server senden (= engl. `to post`) möchten. So können wir einem Script z. B. Benutzername und Passwort für ein Login zusenden.
 
 ```php

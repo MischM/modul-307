@@ -164,7 +164,7 @@ Beim automatisierten Testing können mehrere definierte Testfälle automatisch a
 
 Der Vorteil hierbei ist ganz klar die Zeitersparnis beim mehrfachen Ausführen der Tests. So können beispielsweise vor der Veröffentlichung eines neuen Software-Releases automatisch alle Tests ausgeführt werden. Schlägt einer der Tests fehl, wird der neue Release nicht veröffentlicht.
 
-Der Nachteil gegenüber dem manuellen Testing ist, dass alle Tests zusätzlich zur eigentlichen Software ebenfalls programmiert werden müssen.
+Der Nachteil gegenüber dem manuellen Testing ist, dass alle Tests, zusätzlich zur eigentlichen Software, ebenfalls programmiert werden müssen.
 
 Testing Frameworks wie PHPUnit oder Codeception vereinfachen diese Arbeit bei der Entwicklung mit PHP. 
 

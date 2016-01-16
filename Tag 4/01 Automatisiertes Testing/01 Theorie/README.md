@@ -10,7 +10,7 @@ Der zusätzliche Entwicklungsaufwand für die Tests macht man über längere Zei
 
 ### Einfache Testfunktion
 
-Die Tests werden als ausführbarer Code entwickelt. Dies kann im einfachsten Fall ein PHP-Script sein, welches eine Funktion mit bestimmten Parametern aufruft, und deren `return` Wert mit einem erwarteten Wert vergleicht. Diesen Vergleich nennt man auch «`assertion`».
+Die Tests werden als ausführbarer Code entwickelt. Dies kann im einfachsten Fall ein PHP-Script sein, welches eine Funktion mit bestimmten Parametern aufruft, und deren `return` Wert mit einem erwarteten Wert vergleicht. Diesen Vergleich nennt man auch «Assertion».
 
 ```php
 function add($a, $b)
