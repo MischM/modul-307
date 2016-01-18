@@ -6,12 +6,11 @@
 
 [Zusammengefasste Definition gemäss Duden.](http://www.duden.de/rechtschreibung/Interaktion)
 
-Oder auf die Website bezogen:
+Oder auf Websites bezogen:
 
 Kann eine Website die Aktion/Eingabe eines Benutzers __entgegennehmen, interpretieren und darauf reagieren__, ist diese interaktiv.
 
 # Stadt, Land, Interaktion
-
 ## Aufgabenstellung
 
 Ihr wisst jetzt was Ineraktivität auf einer Website bedeutet. Findet zu zweit innert drei Minuten mindestens fünf __unterschiedliche__ Beispiele von Interaktion auf Websites.
