@@ -1,7 +1,7 @@
 # PHP
 
 > PHP (rekursives Akronym und Backronym für «PHP: Hypertext Preprocessor», ursprünglich «Personal Home Page Tools») ist eine Skriptsprache mit einer an C und Perl angelehnten Syntax, die hauptsächlich zur Erstellung dynamischer Webseiten oder Webanwendungen verwendet wird.
-> 
+>
 > PHP wurde erstmals 1995 von seinem Entwickler, Rasmus Lerdorf, veröffentlicht.
 
 [Wikipedia](https://de.wikipedia.org/wiki/PHP)
@@ -36,15 +36,15 @@ Und natürlich die grossen CMS...
 
 ## Was genau ist PHP?
 
-PHP ist eine serverseitige Scriptsprache und erlaubt dem Entwickler Logik in seine Webpages zu integrieren. 
+PHP ist eine serverseitige Scriptsprache und erlaubt dem Entwickler Logik in seine Webpages zu integrieren.
 
 Mit PHP können Daten von verschiedensten Quellen verarbeitet werden:
 
 * Datenbanken
 * Dateisystem
-* HTTP-Requests 
+* HTTP-Requests
 * Entfernte APIs
-* uvm.
+* u. v. m.
 
 ## Wie funktioniert PHP?
 
@@ -52,9 +52,9 @@ PHP setzt sich aus der Scriptsprache und dem dazugehörigen Interpreter zusammen
 
 Der Webserver (in unserem Fall Apache) verfügt über ein PHP-Modul. Dieses Modul versteht PHP-Code, es kann ihn also interpretieren.
 
-Beim Aufruf einer Webpage durch den Besucher lädt der Webserver das gewünschte Script und schickt es an das PHP-Modul. Dort wird der PHP-Code nun verarbeitet. Dabei können Script-Ausgaben entstehen. Diese Ausgaben werden in die aufgerufene Seite eingefügt und dann an den Browser des Besuchers gesendet.
+Beim Aufruf einer Webpage durch den Besucher lädt der Webserver das gewünschte Script und schickt es an das PHP-Modul. Dort wird der PHP-Code  verarbeitet. Dabei können Script-Ausgaben entstehen. Diese Ausgaben werden in die aufgerufene Seite eingefügt und anschliessend an den Browser des Besuchers gesendet.
 
-![Szene 8](../02 Client-Server-Infrastruktur/src/08.jpg)
+![Szene 8](../02 Client-Server-Infrastruktur/res/08.jpg)
 
 ### Aufruf über Webserver
 
@@ -97,11 +97,11 @@ Nach der Verarbeitung wird das Dokument ohne den ursprünglichen PHP-Code an den
 
 Das resultierende Dokument wird vom Browser also wie normales HTML behandelt. Dass darin einmal PHP-Code vorhanden war, weiss dieser nicht.
 
-PHP ermöglicht es uns, die Ausgabe von HTML-Code an Bedingungen zu knüpfen. So können wir dynamische Dokumente erstellen.
+PHP ermöglicht es, die Ausgabe von HTML-Code an Bedingungen zu knüpfen. So können dynamische Dokumente erstellt werden.
 
 ### Aufruf über Kommandozeile
 
-Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML ausgeben. Es kann beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden. 
+Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML-Code ausgeben. Es kann beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden.
 
 Im Beispiel unten soll die Ausgabe z. B. nur einfacher Text sein:
 
