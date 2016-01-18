@@ -70,17 +70,17 @@ In PHP gibt es mehrere Error-Levels. PHP versucht stehts, gefundene Fehler in Sc
 | E_PARSE     | Parser-Fehler während der Übersetzung. Das auszuführende Script enthält Syntax-Fehler. Das Script wird abgebrochen.         |
 | E_NOTICE    | Eine mögliche Fehlerquelle wurde entdeckt (z. B. undefinierte Variable). Das Script wird trotzdem ausgeführt.               |
 
-Siehe [Vordefinierte Fehler-Konstanten](https://secure.php.net/manual/de/errorfunc.constants.php) für eine komplette Liste.
+Hier befindet sich eine komplette Liste der [vordefinierten Fehler-Konstanten](https://secure.php.net/manual/de/errorfunc.constants.php).
 
 #### Error-Reporting richtig einstellen
 
-Egal ob Deine Scripts in einer Produktiv- oder Entwicklungsumgebung ausgeführt werden, es ist immer wichtig, über **alle** Fehler informiert zu werden. Unsere `error_reporting` Direktive setzen wir also auf `E_ALL` (es werden somit alle auftretenden Fehler gemeldet.)
+Egal ob deine Scripts in einer Produktiv- oder Entwicklungsumgebung ausgeführt werden, es ist immer wichtig, über **alle** Fehler informiert zu werden. Unsere `error_reporting` Direktive setzen wir also auf `E_ALL` (es werden somit alle auftretenden Fehler gemeldet.)
 
 ```
 error_reporting = E_ALL
 ```
 
-In Deiner Entwicklungsumgebung ist es nützlich, wenn auftretende Fehler direkt im Output angezeigt werden. Auf einer Produktivumgebung hingegen möchten wir für die Öffentlichkeit nichts von unserem System preisgeben und zeigen die internen PHP-Fehlermeldungen nicht an. Im Fehlerfall werden wir für unsere Besucher eigene Fehlerseiten erstellen.
+In deiner Entwicklungsumgebung ist es nützlich auftretende Fehler direkt im Output anzuzeigen. Auf einer Produktivumgebung hingegen möchten wir für die Öffentlichkeit nichts von unserem System preisgeben und zeigen die internen PHP-Fehlermeldungen nicht an. Im Fehlerfall werden wir für unsere Besucher eigene Fehlerseiten erstellen.
 
 Für unsere Entwicklungsumgebung lassen wir uns also alle Fehler anzeigen:
 
@@ -92,6 +92,6 @@ In einer Produktivumgebung solltest Du diesen Wert immer auf `Off` setzen. Nutze
 
 ### Neue Konfiguration überprüfen
 
-Speichere Deine `php.ini` ab, starte Apache neu und aktualisiere Deine `info.php` im Browser.
+Speichere deine `php.ini` ab, starte Apache neu und aktualisiere deine `info.php` im Browser.
 
 Stelle sicher, dass `error_reporting` einen Wert von `32767` (=`E_ALL`) hat, und `display_errors` auf `On` ist.

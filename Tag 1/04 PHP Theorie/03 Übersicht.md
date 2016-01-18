@@ -41,7 +41,7 @@ echo 'Hallo Welt!';
 ?>
 ```
 
-Wenn Du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest, kannst Du auch die Kurzform für `echo` verwenden.
+Wenn du in einem PHP-Codesegment ausschliesslich eine Ausgabe erzeugen möchtest, kannst du auch die Kurzform für `echo` verwenden.
 
 ```php
 <?= 'Hallo Welt!'; ?>
@@ -65,7 +65,7 @@ PHP-Ausgaben werden direkt in den Output geschrieben. Du kannst also HTML- und P
 </html>
 ```
 
-Da der PHP-Code immer auf dem Server verarbeitet, und nie an den Client gesendet wird, erzeugt das Beispiel oben folgende Antwort an den Client.
+Da der PHP-Code immer auf dem Server und nie vom Client verarbeitet wird, erzeugt das Beispiel oben folgende Antwort an den Client:
 
 ```html
 <!DOCTYPE html>
@@ -83,13 +83,13 @@ Da der PHP-Code immer auf dem Server verarbeitet, und nie an den Client gesendet
 
 ## Ausführung
 
-Du kannst ein PHP-Script entweder aus der Konsole ausführen
+Du kannst ein PHP-Script entweder aus der Konsole ausführen...
 
 ```
 php -f script.php
 ```
 
-... oder das Script direkt in Deinem Webbrowser aufrufen. Wichtig ist, dass Du das Script vom Webserver aufrufst, nicht direkt aus dem Dateisystem.
+...oder das Script direkt in deinem Webbrowser aufrufen. Wichtig ist, dass du das Script vom Webserver aufrufst, nicht direkt aus dem Dateisystem.
 
 ```
 http://localhost/script.php          # Korrekt
@@ -106,7 +106,7 @@ Ein gültiger Variablen-Name beginnt mit einem Buchstaben oder einem Unterstrich
 $variable;              // Gültig
 $_variable;             // Gültig
 
-$2cool4school;          // Ungültig
+$2ql4sql;               // Ungültig
 $sonder!zeichen;        // Ungültig
 
 $variable_mit_umläut;   // Gültig, jedoch nicht empfohlen
@@ -184,7 +184,7 @@ echo 'Ich liebe die Musik von $popstar.';
 // Ich liebe die Musik von $popstar.
 ```
 
-Es können auch die alternativen Schreibweisen mit geschweiften Klammern verwendet werden.
+Es kann auch die alternative Schreibweise mit geschweiften Klammern verwendet werden.
 
 ```php
 echo "Ich liebe die Musik von ${popstar}.";
@@ -193,13 +193,13 @@ echo "Ich liebe die Musik von {$popstar}.";
 
 ### Arrays
 
-In einem Array können mehrere Werte in einer Variable gespeichert werden. Um ein Array zu definieren, verwenden wir `[...]`.
+In einem Array können mehrere Werte in einer Variable gespeichert werden. Um ein Array zu definieren, verwenden wir die eckigen Klammern `[...]`.
 
 ```php
 $edelmetalle = ['Gold', 'Platin', 'Iridium', 'Silber'];
 
 // Vor PHP 5.4 wurden arrays durch das array() Konstrukt definiert.
-// Diese Methode wird heute teilweise noch verwendet, um mit alten 
+// Diese Methode wird heute teilweise noch verwendet, um mit alten
 // PHP-Versionen kompatibel zu bleiben. Wenn möglich sollte aufgrund
 // der besseren Lesbarkeit aber die Kurzschreibweise verwendet werden.
 $edelmetalle = array('Gold', 'Platin', 'Iridium', 'Silber');
@@ -214,9 +214,9 @@ echo $edelmetalle[1];  // Platin
 
 #### Array-Schlüssel
 
-Zusätzlich zu jedem Wert, kann ein spezifischer Schlüssel vergeben werden. 
+Zusätzlich zu jedem Wert, kann ein spezifischer Schlüssel vergeben werden.
 
-Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel (wie in vorherigem Beispiel). 
+Wird kein eigener Schlüssel angegeben, vergibt PHP automatisch einen `Integer` als Schlüssel (wie in vorherigem Beispiel).
 
 ```php
 $wochentage = [
@@ -249,6 +249,8 @@ print_r($edelmetalle);
 //     [3] => Silber
 // )
 
+```
+```php
 
 $wochentage = [
     'mo' => 'Montag',
@@ -284,7 +286,7 @@ https://secure.php.net/manual/de/funcref.php
 
 Wir werden an dieser Stelle nur auf einige Beispiele eingehen und uns während den Übungsaufgaben mit weiteren Funktionen vertraut machen.
 
-Eine Funktion akzeptiert üblicherweise eines oder mehrere `Argumente`, verarbeitet diese und gibt dann  einen `Rückgabewert` zurück.
+Eine Funktion akzeptiert üblicherweise eines oder mehrere `Argumente`, verarbeitet diese und gibt anschliessend einen `Rückgabewert` zurück.
 
 ```php
 $wert = funktionsname($argument1, $argument2);
@@ -311,7 +313,7 @@ var_dump($string);
 
 ### Strings manipulieren
 
-Zur Manipulierung von Strings stehen [diverse Funktionen](https://secure.php.net/manual/de/ref.strings.php) zur Verfügung.
+Zur Manipulation von Strings stehen [diverse Funktionen](https://secure.php.net/manual/de/ref.strings.php) zur Verfügung.
 
 ```php
 $string = 'Hallo';
@@ -331,7 +333,7 @@ echo strrev($string);
 
 ### Benutzerdefinierte Funktionen
 
-Zusätzlich zu den internen Funktionen, können wir auch eigene definieren.
+Zusätzlich zu den internen Funktionen, können wir auch eigene Funktionen definieren.
 
 Eine Funktion kann wie folgt definiert werden:
 
@@ -347,7 +349,7 @@ funktionsname('Hallo', 'Welt');
 
 Für die Funktionsnamen gelten die gleichen Regeln wie für Variablennamen.
 
-Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden kann.
+Einer Funktion können Argumente mitgegeben werden, auf die innerhalb der Funktion zugegriffen werden können.
 
 Einem Argument kann ein Standardwert zugewiesen werden. Somit ist die Eingabe dieses Arguments optional.
 
@@ -376,11 +378,11 @@ echo $wert;
 // Hallo ÜK;
 ```
 
-Ein `return` beendet die Ausführung der Funktion. Code, der nach einem `return` steht wird nicht ausgefürt.
+Ein `return` beendet die Ausführung der Funktion. Code, der nach einem `return` steht wird nicht ausgeführt.
 
 ```php
 function sagwas($wort1, $wort2) {
-    
+
     return $wort1 . ' ' . $wort2;
 
     echo 'Wird nie ausgeführt.';
@@ -403,7 +405,7 @@ var_dump($resultat);
 
 ### Geltungsbereich von Variablen
 
-Der Geltungsbereich einer Variablen ergibt sich aus dem Zusammenhang, in dem sie definiert wurde. Anders ausgedrückt: Globale Variabeln sind in Funktionen nicht zugänglich. Variablen die in Funktionen definiert wurden, sind ausserhalb der Funktion nicht zugänglich.
+Der Geltungsbereich einer Variablen ergibt sich aus dem Zusammenhang, in dem sie definiert wurde. Anders ausgedrückt: Globale Variablen sind in Funktionen nicht zugänglich. Variablen die in Funktionen definiert wurden, sind ausserhalb der Funktion nicht zugänglich.
 
 ```php
 $zahl = 20; // Global
@@ -436,7 +438,7 @@ echo $zahl;
 $zahl = 20; // Global
 
 function demo() {
-    
+
     global $zahl;
 
     return $zahl;
@@ -469,8 +471,8 @@ include 'echo.php';
 
 #### Unterschiede zwischen `require` / `include`
 
-| Schlüsselwort |                                                   Bedeutung                                                    |
-|---------------|----------------------------------------------------------------------------------------------------------------|
+| Schlüsselwort | Bedeutung                                                                                                      |
+|:--------------|:---------------------------------------------------------------------------------------------------------------|
 | include       | Wenn die eingebundene Datei nicht existiert, wird ein E_WARNING produziert. Die Skriptausführung läuft weiter. |
 | require       | Wenn die eingebundene Datei nicht existiert, wird ein E_COMPILE_ERROR produziert. Die Skriptausführung stoppt. |
 
@@ -481,9 +483,8 @@ include 'echo.php';
 #### Vergleichs-Operatoren
 
 Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `===`. Ein Vergleichs-Ausdruck gibt immer einen boolschen Wert von `true` oder `false` zurück.
-
-|  Beispiel |       Name      |                                      Ergebnis                                     |
-|-----------|-----------------|-----------------------------------------------------------------------------------|
+| Beispiel  | Name            | Ergebnis                                                                           |
+|:----------|:----------------|:-----------------------------------------------------------------------------------|
 | $a == $b  | Gleich          | Gibt `true` zurück, wenn $a gleich $b ist.                                         |
 | $a === $b | Identisch       | Gibt `true` zurück, wenn $b gleich $b ist und beide vom gleichen Typ sind.         |
 | $a != $b  | Ungleich        | Gibt `true` zurück, wenn $b ungleich $b ist.                                       |
@@ -492,10 +493,11 @@ Um zwei Werte in PHP zu vergleichen, gibt es die Vergleichsoperatoren `==` und `
 | $a > $b   | Grösser als     | Gibt `true` zurück, wenn $a grösser als $b ist.                                    |
 | $a <= $b  | Kleiner Gleich  | Gibt `true` zurück, wenn $a kleiner oder gleich $b ist.                            |
 | $a >= $b  | Grösser Gleich  | Gibt `true` zurück, wenn $a grösser oder gleich $b ist.                            |
+ |
 
 ##### Typenschwache und typenstarke Vergleiche
 
-In PHP können typschenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen (`==`) wird der Wert der Variablen unabhängig von ihren Typen verglichen. 
+In PHP können typenschwache oder typenstarke Vergleiche durchgeführt werden. Bei typenschwachen Vergleichen (`==`) wird der Wert der Variablen unabhängig von ihren Typen verglichen.
 Bei typenstarken Vergleichen (`===`) müssen Wert und Typ beider Variablen identisch sein.
 
 ```php
@@ -508,7 +510,7 @@ var_dump($a == $b);       // 1 == "1"
 var_dump($a === $b);      // 1 == "1"
 // false
 
-// ------------------------------------- 
+// -------------------------------------
 
 $a = 1;      // Integer
 $b = true;   // Boolean
@@ -569,7 +571,7 @@ echo $a;
 
 #### if
 
-Das if-Konstrukt ist eines der wichtigsten Features vieler Programmiersprachen, so auch in PHP, denn es ermöglicht die bedingte Ausführung von Kodefragmenten. 
+Das if-Konstrukt ist eines der wichtigsten Features vieler Programmiersprachen, so auch in PHP. Das Konstrukt ermöglicht die bedingte Ausführung von Codefragmenten.
 
 ```php
 if(ausdruck) {
@@ -577,7 +579,7 @@ if(ausdruck) {
 }
 ```
 
-Nur wenn `ausdruck` den Wert `true` ergibt, wird `anweisung` ausgeführt. 
+Nur wenn `ausdruck` den Wert `true` ergibt, wird `anweisung` ausgeführt.
 
 ```php
 if($a > $b) {
@@ -610,7 +612,7 @@ if($a == 1 xor $b == 2) {
     echo '$a hat einen Wert von 1 oder $b hat einen Wert von 2, jedoch nicht beides.';
 }
 
-if( ! $a == 1) { 
+if( ! $a == 1) {
     echo '$a hat nicht einen Wert von 1.';    
 }
 
@@ -636,13 +638,13 @@ Um eine einfache `if/else`-Bedingung zu erstellen, kann auch der `Ternäre Opera
 
 ```php
 // (if) ? then : else;
-$text = ($alter >= 18) ? 'Volljährig' : 'Minderjährig';
+$text = ($alter >= 18) ? 'volljährig' : 'minderjährig';
 
 // Entspricht
 if($alter >= 18) {
-    $text = 'Volljährig';
+    $text = 'volljährig';
 } else {
-    $text = 'Minderjährig';
+    $text = 'minderjährig';
 }
 ```
 
@@ -700,7 +702,7 @@ for ($i = 1; $i <= 10; $i++) {
 
 #### foreach
 
-Das `foreach`-Konstrukt bietet eine einfache Möglichkeit über Arrays zu iterieren (=schrittweise durchlaufen).
+Das `foreach`-Konstrukt bietet eine einfache Möglichkeit durch Arrays zu iterieren (=schrittweise durchlaufen).
 
 ```php
 // Zahlen von 1 bis 10 ausgeben
@@ -723,15 +725,15 @@ $wochentage = [
     'So' => 'Sonntag',
 ];
 
-foreach($wochentage as $abkurzung => $wochentag) {
-    echo "{$wochentag} kürzt man ab als {$abkurzung}.";
+foreach($wochentage as $abkuerzung => $wochentag) {
+    echo "{$wochentag} kürzt man ab als {$abkuerzung}.";
     // Montag kürzt man ab als Mo.
 }
 ```
 
 #### Alternative Schreibweisen
 
-Für Kontrollstrukturen gibt es eine alternative Schreibweise, die besonders beim generieren von HTML oft besser lesbar ist.
+Für Kontrollstrukturen gibt es eine alternative Schreibweise, die besonders beim Generieren von HTML oft besser lesbar ist.
 
 Bei der alternativen Schreibweise werden keine `{ }` verwendet:
 
