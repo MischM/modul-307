@@ -2,9 +2,9 @@
 
 ## `phpinfo()`
 
-Um sich eine Übersicht über die Konfiguration der vorhandenen PHP-Installation zu machen, kann man die `phpinfo`-Funktion nutzen.
+Um sich eine Übersicht über die Konfiguration der vorhandenen PHP-Installation zu machen, kann die `phpinfo`-Funktion genutzt werden.
 
-Erstelle in Deinem Webserver-Rootverzeichnis eine Datei mit dem Namen `info.php` und füge folgenden Inhalt ein:
+Erstelle in deinem Webserver-Rootverzeichnis eine Datei mit dem Namen `info.php` und füge folgenden Inhalt ein:
 
 ```php
 <?php
@@ -14,13 +14,13 @@ phpinfo();
 
 Rufe die Datei über [http://localhost/info.php](http://localhost/info.php) auf.
 
-> **Achtung!!!** Sei vorsichtig, wenn Du eine solche Datei auf einem Webserver veröffentlichst, da die angezeigten Infos sehr viel über Dein System verraten und für Angriffe ausgenutzt werden können.
+> **Achtung!!!** Sei vorsichtig, wenn du eine solche Datei auf einem Webserver veröffentlichst, da die angezeigten Infos sehr viel über dein System verraten und für Angriffe ausgenutzt werden können.
 
-Dir wird nun eine Übersicht aller für PHP relevanten Einstellungen gezeigt. 
+Dir wird nun eine Übersicht aller für PHP relevanten Einstellungen gezeigt.
 
-Sieh Dir die `Apache Environment` und `HTTP Headers Information` Sektionen einmal an. Was für Informationen werden Dir angezeigt?
+Sieh dir die `Apache Environment` und `HTTP Headers Information` Sektionen einmal an. Was für Informationen werden angezeigt?
 
-Für die Konfiguration Deiner PHP-Installation stehen diverse Einstellungen, so genannte `Direktiven` zur Verfügung.
+Für die Konfiguration deiner PHP-Installation stehen diverse Einstellungen zur Verfügung, sogenannte `Direktiven`.
 
 ### Core-Sektion
 
@@ -32,24 +32,24 @@ Eine Direktive ist eine einzelne Einstellung. Sie setzt sich immer aus einem Nam
 
 |     Direktive      |                                                                     Bedeutung                                                                      |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| display_errors     | Legt fest, ob Fehlerausgaben angezeigt werden sollen                                                                                               |
-| log_errors         | Legt fest, ob Fehler in eine Datei geloggt werden sollen                                                                                          |
-| error_log          | Den Pfad zur Datei, in der Fehler geloggt werden                                                                                                  |
-| error_reporting    | Legt fest, welche Fehler beachtet werden sollen, und welche nicht                                                                                                                                                   |
-| max_execution_time | Legt fest, wie viele Sekunden ein PHP-Script maximal für seine Ausführung Zeit hat, bevor die Ausführung abgebrochen und ein Fehler generiert wird |
-| memory_limit       | Legt fest, wie viele MB RAM PHP maximal für die Ausführung eines Scripts belegen darf                                                              |
+| display_errors     | Legt fest, ob Fehlerausgaben angezeigt werden sollen.                                                                                               |
+| log_errors         | Legt fest, ob Fehler in eine Datei geloggt werden sollen.                                                                                          |
+| error_log          | Den Pfad zur Datei, in der Fehler geloggt werden.                                                                                                  |
+| error_reporting    | Legt fest, welche Fehler beachtet werden sollen, und welche nicht.                                                                                                                                                   |
+| max_execution_time | Legt fest, wie viele Sekunden ein PHP-Script maximal für seine Ausführung Zeit hat, bevor die Ausführung abgebrochen und ein Fehler generiert wird. |
+| memory_limit       | Legt fest, wie viele MB RAM PHP maximal für die Ausführung eines Scripts belegen darf.                                                              |
 
 ## php.ini
 
-Alle Einstellungen für Deine PHP-Installation lassen sich in der `php.ini` bearbeiten. 
-Diese befindet sich bei XAMPP unter `C:\xampp\php\php.ini`. 
+Alle Einstellungen für Deine PHP-Installation lassen sich in der `php.ini` bearbeiten.
+Diese befindet sich bei XAMPP unter `C:\xampp\php\php.ini`.
 
-Öffne die Datei jetzt in Deinem Texteditor.
+Öffne die Datei in Deinem Texteditor.
 
-In dieser Datei befinden sich alle Direktiven inklusive einer kurzen Info dazu.
+In dieser Datei befinden sich alle Direktiven, einschliesslich einer kurzen Info dazu.
 Zeilen, die mit einem `;` beginnen sind auskommentiert und werden nicht beachtet.
 
-Das Format für jede Direktive ist 
+Das Format für jede Direktive ist
 
 ```
 direktiven_name = wert

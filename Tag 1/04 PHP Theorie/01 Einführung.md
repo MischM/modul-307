@@ -101,7 +101,7 @@ PHP ermöglicht es, die Ausgabe von HTML-Code an Bedingungen zu knüpfen. So kö
 
 ### Aufruf über Kommandozeile
 
-Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML-Code ausgeben. Es kann beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden.
+Ein PHP-Script muss nicht zwingend über den Webserver aufgerufen werden und HTML-Code ausgeben. Die PHP-Scripts können beispielsweise auch unabhängig vom Webserver über die Kommandozeile ausgeführt werden.
 
 Im Beispiel unten soll die Ausgabe z. B. nur einfacher Text sein:
 
