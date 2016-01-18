@@ -10,7 +10,7 @@ Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also a
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -26,7 +26,7 @@ $input = [
 ];
 ```
 
-Schreibe ein Script, welches jeden Input-Satz durchläuft und mit Hilfe der Funktion [strpos](https://secure.php.net/manual/de/function.strpos.php) überprüft, ob das Wort `SPAM` im Satz enthalten ist. 
+Schreibe ein Script, welches jeden Input-Satz durchläuft und mit Hilfe der Funktion [strpos](https://secure.php.net/manual/de/function.strpos.php) überprüft, ob das Wort `SPAM` im Satz enthalten ist.
 
 Erzeuge folgende Ausgabe:
 
@@ -40,7 +40,7 @@ Satz 4 ist OK
 
 #### Schritt 2
 
-Unser Spamfilter scheint den letzten Satz nicht als Spam zu erkennen, obwohl das Wort `spam` darin vorkommt. Weisst Du wieso? Korrigiere Dein Script, damit die folgende korrigierte Ausgabe generiert wird.
+Unser Spamfilter scheint den letzten Satz nicht als Spam zu erkennen, obwohl das Wort `spam` darin vorkommt. Weisst du wieso? Korrigiere dein Script, damit die folgende korrigierte Ausgabe generiert wird.
 
 ```php
 Satz 0 ist OK

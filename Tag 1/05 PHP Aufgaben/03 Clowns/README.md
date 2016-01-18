@@ -12,7 +12,7 @@ Das Script soll eine HTML-Seite generieren. Rufe es also in Deinem Webbrower auf
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -31,7 +31,7 @@ Erstelle ein PHP-Array, welches die Namen der Clowns enthält. Generiere die Lis
 
 #### Schritt 3
 
-Die Liste soll alphabetisch sortiert ausgegeben werden. Verändere die Reihenfolge der Clowns in Deinem Array nicht. Sortiere es [mit der entsprechenden PHP-Funktion](https://secure.php.net/manual/de/array.sorting.php).
+Die Liste soll alphabetisch sortiert ausgegeben werden. Verändere die Reihenfolge der Clowns in deinem Array nicht. Sortiere es [mit der entsprechenden PHP-Funktion](https://secure.php.net/manual/de/array.sorting.php).
 
 * Alfredo Smaldini
 * Carl Godlewski
@@ -44,7 +44,7 @@ Die Liste soll alphabetisch sortiert ausgegeben werden. Verändere die Reihenfol
 
 Wir möchten die Clowns, deren Name auf `-ski` endet, fett rot markieren. Erstelle die CSS-Klasse `.markiert` und setze die Schriftfarbe dafür auf rot und den Schriftstil auf **fett**.
 
-Du kannst die CSS-Regel in ein `style` Tag innerhalb Deines `head` Tags schreiben und musst nicht extra ein Stylesheet erstellen.
+Du kannst die CSS-Regel in ein `style` Tag innerhalb deines `head` Tags schreiben und musst nicht extra ein Stylesheet erstellen.
 
 ```html
 ...

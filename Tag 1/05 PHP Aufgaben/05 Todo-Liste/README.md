@@ -6,7 +6,7 @@ Du hast eine App für Smartphones entwickelt, mit deren Hilfe man eine Todo-List
 
 Die Todo-Liste wird auf dem Smartphone bearbeitet. Es können Einträge erstellt und gelöscht werden.
 
-Beim Speichern der Änderungen auf dem Smartphone, wird der neue Datenbestand der Todo-Liste an ein PHP-Script auf Deinem Server gesendet, welches die zentrale Datenbank aktualisieren soll.
+Beim Speichern der Änderungen auf dem Smartphone, wird der neue Datenbestand der Todo-Liste an ein PHP-Script auf deinem Server gesendet, welches die zentrale Datenbank aktualisieren soll.
 
 Dieses Script soll nun ermitteln, welche Einträge in der Datenbank neu eröffnet werden müssen und welche Einträge zu löschen sind.
 
@@ -35,7 +35,7 @@ Die Scriptausgabe soll in der Kommandozeile erscheinen. Starte das Script also a
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -54,7 +54,7 @@ Neue Aufgaben:
 
 #### Schritt 2
 
-Erweitere das Script so, dass es Dir zusätzlich zu vorherigem Output auch noch anzeigt, welche Aufgaben unverändert geblieben sind.
+Erweitere das Script so, dass es dir zusätzlich zu vorherigem Output auch noch anzeigt, welche Aufgaben unverändert geblieben sind.
 
 ```php
 ...
@@ -65,9 +65,9 @@ Unveränderte Aufgaben:
 
 ```
 
-#### Schritt 3 
+#### Schritt 3
 
-Du hast jetzt vermutlich sich wiederholenden Code für die Ausgabe der Aufgaben in Deinem Script. Da für alle drei Ausgaben die gleiche Logik (Titel + Liste) besteht, bietet sich eine Funktion als Lösung an.
+Du hast jetzt vermutlich sich redundanten (wiederholenden) Code für die Ausgabe der Aufgaben in deinem Script. Da für alle drei Ausgaben die gleiche Logik (Titel + Liste) besteht, bietet sich eine Funktion als Lösung an.
 
 Erstelle die Funktion `printTasks` die über folgende drei Aufrufe die gleiche Ausgabe wie in Schritt 2 erzeugt.
 
