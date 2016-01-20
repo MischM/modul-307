@@ -14,7 +14,7 @@ Nach jedem erfolgreichen Klick verschiebt sich der Button schneller an eine neue
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
