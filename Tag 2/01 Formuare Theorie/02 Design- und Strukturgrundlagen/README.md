@@ -15,7 +15,7 @@ Die User Experience bei Formularen ist wichtig, da zwischen dem Ziel des Benutze
 
 ![Gebrauch von Formularen.](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-objectives.jpg)
 
-<sup>Gebraucht von Formularen, auf [Smashing Magazine](http://www.smashingmagazine.com), gemäss [Luke Wroblewski](http://www.lukew.com/resources/web_form_design.asp).</sup>
+<sup>Gebrauch von Formularen, auf [Smashing Magazine](http://www.smashingmagazine.com), gemäss [Luke Wroblewski](http://www.lukew.com/resources/web_form_design.asp).</sup>
 
 * Ein __Formular__ macht somit eine Website __nutzbar__.
 * Ein __Formular__ muss somit __nützlich__ sein.
@@ -26,14 +26,14 @@ Jedes Webformular besteht grundsätzlich aus drei Komponenten. Um eine positive 
 
 1. __Beziehung__ - Formulare ermöglichen eine Beziehung zwischen Benutzer und Unternehmen.
 
-2. __Dialog__ - Formulare ermögilchen eine Konversation zwischen Benutzern und Unternehmen.
+2. __Dialog__ - Formulare ermögilchen eine Konversation zwischen Benutzer und Unternehmen.
 
-3. __Aussehen__ - Erst mit dem richtigen Aussehen und einer logischen Struktur ermöglichen sie den Aufbau einer Beziehung und eines Dialogs.
+3. __Aussehen__ - Erst mit dem richtigen Aussehen und einer logischen Struktur ermöglichen das Formular den Aufbau einer Beziehung und eines Dialogs.
 
 #### Beziehung
-Ein formular kann die Beziehung zwischen Benutzer und Unternehmen aufbauen und verstärken. Dies bedeutet jedoch auch, dass eine schlechtes Formular eine Beziehung beendeten oder schwächen kann.
+Ein Formular kann die Beziehung zwischen Benutzer und Unternehmen aufbauen und verstärken. Dies bedeutet jedoch auch, dass ein schlechtes Formular eine Beziehung beenden oder schwächen kann.
 
-* __Eine Beziehung basiert auf Vertrauen.__ Somit muss das Formular vertrauenswürdig sein. Dies kann durch das allgemeine Design, Logo, Fotos, Farben, Typographie oder wordig erreicht werden. Der Benutzer muss sofort wissen, dass das Formular von einer seriösen Firma kommt.
+* __Eine Beziehung basiert auf Vertrauen.__ Somit muss das Formular vertrauenswürdig sein. Dies kann durch das allgemeine Design, Logo, Fotos, Farben, Typographie oder Wording erreicht werden. Der Benutzer muss sofort wissen, dass das hinter dem Formular eine seriösen Firma steht.
 
 * __Jede Beziehung hat ein Ziel.__ Ob in einer romatischen Beziehung oder bei Businesspartnern, jede Beziehung hat ein Ziel. Was hat dein Formular für ein Ziel?
 
@@ -45,37 +45,37 @@ Ein formular kann die Beziehung zwischen Benutzer und Unternehmen aufbauen und v
 
 <sup>Anmeldeformular auf [www.debenhams.com](www.debenhams.com) - die Bereiche für die unterschiedlichen Zielgruppen sind klar differenzierbar.</sup>
 
-* __Die Grenzen des Formulars kennen.__ Das Formular darf keine Fragen enthalten, welche über den Sinn des Formulars hinausgehen. Ansonsten wird der Benutzer misstrauisch.
+* __Die Grenzen des Formulars kennen.__ Das Formular darf keine Fragen enthalten, welche über den Sinn des Formulars hinausgehen - ansonsten wird der Benutzer misstrauisch.
 
-* __Menschen lieben Konstanz.__ Darum ist es wichtig keine plötzlichen Änderungen in der Struktur und im Aussehen des Formulars einzubauen. Der Benutzer darf nicht in seinem Flow unterbrochen werden.
+* __Menschen lieben Konstanz.__ Darum ist es wichtig keine plötzlichen Änderungen in der Struktur und im Aussehen des Formulars einzubauen. Der Benutzer darf nicht in seinem 'Flow' unterbrochen werden.
 
 #### Dialoge
-Ein Formular ist keine einseitige Kommunikation sondern ein Gespräch zwischen mehreren Parteien - ein Dialog. Somit muss immer im Hinterkopf behalten werden, dass der Benutzer ein Formlar ausfüllt um ein Gespräch mit dem Unternehmen zu beginnen.
+Ein Formular ist keine einseitige Kommunikation, sondern ein Gespräch zwischen mehreren Parteien - ein Dialog. Somit muss immer im Hinterkopf behalten werden, dass der Benutzer ein Formlar ausfüllt um ein Gespräch mit dem Unternehmen zu beginnen.
 
-* __Ein Formular ist somit ein Gespräch und kein Verhör.__ Aggressives und herrscherisches Wording lösen beim Benutzer eine Abwerhaltung aus.
+* __Ein Formular ist somit ein Gespräch und kein Verhör.__ Aggressives und herrscherisches Wording lösen beim Benutzer eine Abwehrhaltung aus.
 
-* __Dem logischen Aufbau einer Konversation folgen.__ Ein Formular muss einen logischen Aufbau aufweisen. Du würdest doch auch nicht nach dem Kennenlernen gleich nach dem Namen die Telefonnummer erfragen? Als Grundsatz gilt: Das Formular geht von den allgemeine Fragen (low Involvement) langsam über zu spezifischen Fragen (high Involvement).
+* __Dem logischen Aufbau einer Konversation folgen.__ Ein Formular muss einen logischen Aufbau aufweisen. Du würdest doch auch nicht in den ersten 5 Sekunden des Kennenlernens gleich nach der Telefonnummer fragen? Als Grundsatz gilt: Das Formular geht von den allgemeine Fragen (low Involvement) langsam über zu spezifischen Fragen (high Involvement).
 
-* __Formular nach Themen sortieren.__ Menschen denken in Cluster: Fragt ein Formular beispielsweise nach Informationen über das Auto des Benutzers ruft dieser das Cluster «Auto» in seine Gedanken. Nun kann er sämtliche Informationen über sein Auto schnell abrufen und das Formular ausfüllen.
+* __Formular nach Themen sortieren.__ Menschen denken in Cluster: Fragt ein Formular beispielsweise Informationen über das Auto des Benutzers ab, ruft dieser das Cluster «Auto» in seine Gedanken auf. Nun kann er sämtliche Informationen über sein Auto schnell abrufen und das Formular ausfüllen.
 
 ![Formulare nach Themen sortieren.](res/02.jpg)
 
-<sup>Formularstruktur auf [www.comparis.ch](www.comparis.ch) - Die Informationsgruppen sind optisch und inhaltlich klar untertrennt.</sup>
+<sup>Formularstruktur auf [www.comparis.ch](www.comparis.ch) - Die Informationsgruppen sind optisch und inhaltlich klar aufgeteilt.</sup>
 
-* __Pausen einbauen.__ Viele Benutzer fühlen sich vor allem von grossen Formularen überrumpelt. Dem kann entgegengewirkt werden indem gezielt Abstände oder Seitenumbrüche in das Formular eingebaut werden.
+* __Pausen einbauen.__ Viele Benutzer fühlen sich vor allem von grossen Formularen überrumpelt. Dem kann entgegengewirkt werden, indem gezielt Abstände oder Seitenumbrüche in das Formular eingebaut werden.
 
 * __Ablenkungen entfernen.__ Wie bei einem richtigen Dialog, stören Ablenkungen den Gesprächsfluss. Darum ist es wichtig den Fokus auf das Formular zu setzen und unnötige Ablenkungen zu eliminieren.
 
 ![Reduce to the Max - Damit sich der Besucher orientieren kann.](res/03.jpg)
 
-<sup>Anmeldeformular für Unternehmen auf [www.dropbox.com](www.dropbox.com) - Die gesamte Seite wirkt sehr reduziert. So ist es möglich den Fokus komplett auf des Kaufformular zu konzentrieren.</sup>
+<sup>Anmeldeformular für Unternehmen auf [www.dropbox.com](www.dropbox.com) - Die gesamte Seite wirkt sehr reduziert. So ist es möglich den Fokus komplett auf das Kaufformular zu richten.</sup>
 
 #### Aussehen
-Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit eines Formulars. Es gibt verschiedene Grundsätze und Tipps um das Aussehen eines Formulars zu gestalten:
+Das Aussehen eines Formulars ist entscheidend für dessen Benutzerfreundlichkeit. Es gibt verschiedene Grundsätze und Tipps um das Aussehen eines Formulars zu gestalten:
 
 ##### Label
 
-* __Wörter vs. Sätze.__ Sätze machen es dem Benutzer bei komplexeren Fragestellungen einfacher das Feld auszufüllen. Hingegen kann der Benutzer sich bei einfachen Wörtern besser orientieren. Damit gibt es hier keine Grundregel, sondern das Label muss je nach Situation angepasst werden.
+* __Wörter vs. Sätze.__ Sätze machen es dem Benutzer bei komplexeren Fragestellungen einfacher das Feld auszufüllen. Hingegen kann der Benutzer sich bei einfachen Wörtern besser orientieren. Damit gibt es hier keine Grundregel, das Label muss je nach Situation angepasst werden.
 
 ![Anmeldung mit Sätzen bei Amazon.](res/04.jpg)
 
@@ -83,7 +83,7 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 
 * __Position des Labels.__ Auch hier gibt es keine abschliessende Regel und die unterschiedlichen Positionen des Labels bieten verschiedene Vor- und Nachteile. Hier findest du eine kleine Übersicht über die verschiedenen Positionen des Labels: [Überblick über Label-Positionierung](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2011/10/00-Table-webform-alignment.jpg)
 
-* __Nur eine Kolonne.__ Der Aufbau eines Formulars sollte sich nicht über mehrere Spalten ziehen sondern klar dem Verlauf von oben nach unten folgen.
+* __Nur eine Kolonne.__ Der Aufbau eines Formulars sollte sich nicht über mehrere Spalten ziehen, sondern klar dem Verlauf von oben nach unten folgen.
 
 ![Zweispaltige Layouts sind eher ungeeignet.](res/05.jpg)
 
@@ -91,13 +91,13 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 
 ##### Formularfelder
 
-* __Feldtypen richtig einsetzen.__ Beim Erstellen eines Formularfeldes sollte ein wichtiger Gedanke immer sein, welches Feld sich am besten für diese Information eignet. 
+* __Feldtypen richtig einsetzen.__ Beim Erstellen eines Formularfeldes sollte man sich stets folgende Frage stellen: Welches Feld eignet sich am besten für die gewünschte Information? 
 
-* __Gestaltung der Formularfelder.__ HTML5 und CSS3 bieten eine Vielfalt von verschiedenen Varianten um ein Formularfeld zu gestalten. Diese sollten jedoch nur beschränkt eingesetzt werden. Es ist wichtiger dem Benutzer eine einfache und intuitive Oberfläche zu bieten, als ein schön gestaltetes aber benutzerunfreundliches Formular zu designen (Beispiel Pflichtfeld mit *).
+* __Gestaltung der Formularfelder.__ HTML5 und CSS3 bieten eine Vielfalt von verschiedenen Varianten um ein Formularfeld zu gestalten. Diese sollten jedoch nur beschränkt eingesetzt werden. Es ist wichtiger dem Benutzer eine einfache und intuitive Oberfläche zu bieten als ein schön gestaltetes aber benutzerunfreundliches Formular zu designen (Beispiel Pflichtfeld mit *).
 
 ![Da hat es jemand zu gut gemeint.](res/06.jpg)
 
-<sup>Ein zu kreatives Kontaktfomular [www.2advanced.com](http://www.2advanced.com/). Kreativität nie vor Funktionalität.</sup>
+<sup>Ein zu kreatives Kontaktfomular [www.2advanced.com](http://www.2advanced.com/) - Kreativität nie vor Funktionalität.</sup>
 
 
 ##### Aktionen
@@ -106,6 +106,6 @@ Das Aussehen eines Formulars ist entscheidend für die Benutzerfreundlichkeit ei
 
 ![Unterscheiden der Aktionen.](res/07.jpg)
 
-<sup>Unterscheiden der Aktionen [www.hooklinemusic.de](http://www.hooklinemusic.de/). Die Aktionen auf den Buttons sind nicht in eine primäre und eine sekundäre Aktion differenzierbar.</sup>
+<sup>Klare Unterscheidung der Aktionen [www.hooklinemusic.de](http://www.hooklinemusic.de/). Die Aktionen auf den Buttons sind optisch nicht in eine primäre und eine sekundäre Aktion differenzierbar.</sup>
 
 * __Aktionen bennenen.__ Aktionen wie «Submit» oder «Reset» sollten nach den eigentlichen Aktionen beschriftet werden. Beispielsweise «Registrieren», «Anfrage senden» etc.
