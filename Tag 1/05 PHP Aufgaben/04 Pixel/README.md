@@ -82,7 +82,7 @@ Stelle sicher, dass die folgenden Regeln erfüllt werden.
 
 #### Schritt 5
 
-Wir möchten nun über einen weiteren GET-Parameter `pixels` mehrere Koordinaten bestimmen können. Die Koordinaten diene dazu, Tabellen-Zellen zu identifizieren, die schwarz einzufärben werden sollen sind.
+Wir möchten nun über einen weiteren GET-Parameter `pixels` mehrere Koordinaten bestimmen können. Die Koordinaten dienen dazu, Tabellen-Zellen zu identifizieren, die schwarz einzufärben sind.
 
 Die CSS-Klasse `.mark` ist im CSS-File bereits vorbereitet. Diese Klasse kannst du also Zellen vergeben, die markiert werden sollen.
 

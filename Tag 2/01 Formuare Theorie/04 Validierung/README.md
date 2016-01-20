@@ -125,7 +125,7 @@ Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zur�
 
 ### Reguläre Ausdrücke
 
-Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit regulären Ausdrücken validieren.
+Formate, die mit `filter_var` nicht überprüft werden können, lassen sich mit regulären Ausdrücken validieren.
 
 Mit der Funktion `preg_match` und dem regulären Ausdruck `/^\d{2}\.\d{2}\.\d{2,4}$/` lässt sich beispielsweise das Format eines Datums überprüfen.
 
