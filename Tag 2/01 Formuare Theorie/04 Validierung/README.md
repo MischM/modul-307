@@ -121,7 +121,7 @@ if(filter_var($url, FILTER_VALIDATE_URL) === false) {
 }
 ```
 
-Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten sonst ungewöhntliche aber dennoch gültige Email-Adressen als ungültig erkennen.
+Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten sonst ungewöhnliche aber dennoch gültige Email-Adressen als ungültig erkennen.
 
 ### Reguläre Ausdrücke
 
