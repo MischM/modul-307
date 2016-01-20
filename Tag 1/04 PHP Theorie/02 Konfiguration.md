@@ -26,6 +26,8 @@ Für die Konfiguration deiner PHP-Installation stehen diverse Einstellungen zur 
 
 Die wichtigste Sektion in der `phpinfo()`-Ausgabe ist die `Core`-Sektion. Diese Einstellungen gelten für den PHP-Core selbst, also nicht für eines der installierten Module (wie z. B. `mysql` oder `session`).
 
+
+
 #### Häufig gebrauchte Direktiven
 
 Eine Direktive ist eine einzelne Einstellung. Sie setzt sich immer aus einem Namen und einem Wert zusammen.

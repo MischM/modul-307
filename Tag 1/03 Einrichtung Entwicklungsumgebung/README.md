@@ -83,7 +83,7 @@ Um Plugins zu installieren, drücke die Tastenkombination `Ctrl + Shift + P` und
 1. Installer vom Austausch-Laufwerk starten und das Setup ausführen.
 2. Das Programm `Atom` starten.
 
-##### Plugins installieren
+##### Plugins __installieren__
 
 Um Plugins zu installieren, gehe im Menü auf `File -> Settings -> Install`. Du kannst jetzt den Namen eines Plugins eingeben und es über den «Install»-Button installieren.
 
