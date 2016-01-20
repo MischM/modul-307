@@ -10,7 +10,7 @@ Für die Anreise vom Hotel zur Arena steht ein Shuttle-Bus-Service zur Verfügun
 
 Für alle Besucher werden zudem diverse Abendprogramme veranstaltet.
 
-Pro eingeladene Firma können beliebig viele Personen am Event teilnehmen. Um den Verwaltungsaufwand klein zu halten, können die einzelnen Personen nicht individuell wählen wo sie schlafen oder an welchem Abenprogramm sie teilnehmen möchten. Es wird immer die komplette Firma zusammen untergebracht, beziehungsweise nehmen alle Mitarbeiter am gleichen Abendprogramm teil.
+Pro eingeladene Firma können beliebig viele Personen am Event teilnehmen. Um den Verwaltungsaufwand klein zu halten, können die einzelnen Personen nicht individuell wählen wo sie schlafen oder an welchem Abendprogramm sie teilnehmen möchten. Es wird immer die komplette Firma zusammen untergebracht, beziehungsweise nehmen alle Mitarbeiter am gleichen Abendprogramm teil.
 
 ## Aufgabenstellung
 
