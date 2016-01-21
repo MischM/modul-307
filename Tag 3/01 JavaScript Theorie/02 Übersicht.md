@@ -2,13 +2,13 @@
 
 ## Codeschreibweise
 
-Die Syntax ähnelt sehr jender von PHP. Daher wird diese Übersicht etwas kürzer gehalten.
+Die Syntax ähnelt sehr jener von PHP. Daher wird diese Übersicht etwas kürzer gehalten.
 
 Wie in PHP werden alle Anweisungen durch ein Semikolon `;` beendet. Zeilenumbrüche und Leerzeichen sind nicht relevant. Die Gross- und Kleinschreibung wird in JavaScript berücksichtigt! (Case-Sensitive)
 
 ### JavaScript in HTML
 
-Möchtest Du JavaScript in HTML-Code verwenden, umschliesse es mit einem `script`-Tag. Das `script`-Tag ist innerhalb des `body` oder `head` Tags zugelassen.
+Möchtest du JavaScript in HTML-Code verwenden, umschliesse es mit einem `script`-Tag. Das `script`-Tag ist innerhalb des `body` oder `head` Tags zugelassen.
 
 ```html
 <div>
@@ -48,13 +48,13 @@ So kann der Browser die Website zuerst rendern und muss sich erst dann mit der A
 
 ## Konsolenausgabe
 
-Um eine Ausgabe in die Entwicklerkonsole Deines Browser zu machen, nutze `console.log`.
+Um eine Ausgabe in die Entwicklerkonsole deines Browser zu machen, nutze `console.log`.
 
 ```js
 console.log('Hallo Welt!');
 ```
 
-`console` ist hier das Konsolen-Objekt, welches mehrere Methoden zur Verfügung stellt. Via `.` kannst Du auf diese Methoden zugreifen.
+`console` ist hier das Konsolen-Objekt, welches mehrere Methoden zur Verfügung stellt. Via `.` kannst du auf diese Methoden zugreifen.
 
 ```js
 console.error('Fehler, den ich in die Konsole logge');
@@ -188,7 +188,7 @@ wochentage['mo']; // Montag
 
 ## Standardobjekte
 
-In JavaScript stehen diverse Standardobjekte zur Verfügung. Diese sind das Pendant zu PHP's internen Funktionen.
+In JavaScript stehen diverse Standardobjekte zur Verfügung. Diese sind das Pendant zu den internen Funktionen von PHP.
 
 Wird beispielsweise ein String definiert, wird dieser als Instanz eines `String` Objekts erstellt. Dadurch hat man Zugriff auf die diversen Properties und Methoden dieses Objekts.
 
@@ -322,7 +322,7 @@ function demo() {
 
 #### Vergleichs-Operatoren
 
-Wie in PHP kann auch in JS ein typenschwacher `==` und typenstarker `===` Vergleich durgeführt werden. Die Vergleichsregeln unterscheiden sich hier aber von PHP.
+Wie in PHP kann auch in JS ein typenschwacher `==` und typenstarker `===` Vergleich durgeführt werden. Die Vergleichsregeln unterscheiden sich jedoch von PHP.
 
 Siehe [https://dorey.github.io/JavaScript-Equality-Table/](https://dorey.github.io/JavaScript-Equality-Table/)
 
@@ -373,7 +373,7 @@ if(a > b) {
 
 ##### Logische Operatoren
 
-Es stehen die gleichen logischen Operatoren wie in PHP zur Verfügung. Die Schreibweisen `or`, `and` und `xor` gibt es nicht.
+Es stehen die gleichen logischen Operatoren wie in PHP zur Verfügung. Die Schreibweisen `or`, `and` und `xor` existieren jedoch nicht.
 
 * &&
 * ||
@@ -417,7 +417,7 @@ while(zahl <= 10) {
 
 `forEach` steht in JS seit ES5.1 zur Verfügung und ist somit in allen modernern Browsern und IE >= 9 vorhanden.
 
-`forEach` wird als Methode auf einem Array-Objekt ausgeführt. Dabei muss eine so genannte `callback` Funktion definiert werden, die für jedes Element aufgerufen wird.
+`forEach` wird als Methode auf einem Array-Objekt ausgeführt. Dabei muss eine sogenannte `callback` Funktion definiert werden, die für jedes Element aufgerufen wird.
 
 ```js
 var werktage = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
