@@ -4,7 +4,7 @@
 
 [Wikipedia](https://de.wikipedia.org/wiki/JQuery)
 
-Das Arbeiten mit dem DOM in JavaScript ist eine umständliche Angelegenheit. Aus diesem Grund greifen dafür viele Entwickler auf die heute sehr belibte JavaScript-Bibliothek jQuery zurück.
+Das Arbeiten mit dem DOM in JavaScript ist eine umständliche Angelegenheit. Aus diesem Grund greifen dafür viele Entwickler auf die heute sehr belibte JavaScript-Bibliothek «jQuery» zurück.
 
 jQuery ist eine Sammlung von Funktionen, die das Arbeiten mit dem DOM vereinfachen.
 
@@ -54,13 +54,13 @@ $('#list').append('<li>Neuer Punkt</li>');
 
 ## `$`
 
-jQuery wird nach dem Laden in eine Variable namens `$` gespeichert. Über diese Variable erhält man nun Zugriff auf alle jQuery-Funktionen.
+jQuery wird nach dem Laden in eine Variable namens `$` gespeichert. Über diese Variable erhält man Zugriff auf alle jQuery-Funktionen.
 
 ## Der Document-Ready Event
 
 Wenn das DOM im Browser fertig generiert wurde, wird ein `ready` Event ausgeführt. Da wir in jQuery immer nur mit dem fertigen DOM arbeiten möchten, ist jeder jQuery-Code zwingend innerhalb eines `$(document).ready()` Blocks zu platzieren.
 
-Dieser Code wird ausgeführt, sobald vom Browser der `ready` Event ausgelöst wird.
+Dieser Code wird ausgeführt, sobald vom Browser der `ready` Event ausgelöst wurde.
 
 ```js
 $(document).ready(function() {
@@ -110,7 +110,7 @@ Der zweite Parameter ist eine Callback-Funktion, also eine Funktion, die ausgef�
 
 
 ```js
-$('.button').on(eventName, funktion);
+$('.button').on(eventName, Funktion);
 
 $('.button').on('click', function() {
     console.log('Der Button wurde angeklickt.');
@@ -119,15 +119,15 @@ $('.button').on('click', function() {
 
 ## Best practices
 
-Beim Arbeiten mit jQuery gibt es einige Best practices, die man immer im Hinterkopf haben sollte.
+Beim Arbeiten mit jQuery gibt es einige Best Practices, die man immer im Hinterkopf haben sollte.
 
 ### Selektoren zwischenspeichern
 
-Das Auswählen eines DOM-Elements ist mit viel JavaScript-Code verbunden, der bei jeder Verwendung von `$(selector)` ausgeführt werden muss. Dies kann die Performance Deines Scripts beinflussen!
+Das Auswählen eines DOM-Elements ist mit viel JavaScript-Code verbunden, der bei jeder Verwendung von `$(selector)` ausgeführt werden muss. Dies kann die Performance deines Scripts beinflussen!
 
-Damit die Selektoren-Funktionen nicht immer neu ausgeführt werden müssen, sollten sie in einer Variable zwischengespeichert werden, wenn sie öfters verwendet werden.
+Damit die Selektoren-Funktionen nicht immer neu ausgeführt werden müssen, sollten sie in einer Variablen zwischengespeichert werden. Dies empfiehlt sich vor allem bei Selektoren, die öfters verwendet werden.
 
-Wenn Du einen Selektor nur 1x auf Deiner Website verwendest, ist dies natürlich nicht nötig.
+Wenn du einen Selektor nur 1x auf deiner Website verwendest, ist dies natürlich nicht nötig.
 
 ```js
 /**
@@ -170,11 +170,11 @@ var $button   = $('#button');
 $button.text(neuerText);
 ```
 
-Das Dollarzeichen hat in diesem Fall nichts mit jQuery zu tun sondern ist einfach Teil des Variablennamens.
+Das Dollarzeichen hat in diesem Fall nichts mit jQuery zu tun, sondern ist einfach Teil des Variablennamens.
 
 ### Mehrere Operationen aneinanderketten
 
-Im obigen Beispiel mit dem Button ist es nicht zwingend notwendig alle Operationen separat auszuführen. Falls alle Operationen direkt nacheinander und auf dem selben Objekt ausgeführt werden sollen und es die Lesbarkeit des Codes erhöht, können sie aneinandergekettet werden:
+Im obigen Beispiel mit dem Button ist es nicht zwingend notwendig alle Operationen separat auszuführen. Falls alle Operationen direkt nacheinander und auf dem selben Objekt ausgeführt werden sollen, können sie aneinandergekettet werden, sofern dies die Lesbarkeit des Codes erhöht:
 
 ```js
 $button.hide().css('color', '#f00').show().on('click', function() {});
@@ -220,14 +220,14 @@ $('.button').on('click', function() {
 
 ## Nachteile von jQuery
 
-* Rund 80 kb Code, der vom Besucher zusätzlich heruntergeladen werden muss
+* Rund 80 kb Code, der vom Besucher zusätzlich heruntergeladen werden muss.
 * [Über 10'000 Zeilen JavaScript-Code](https://code.jquery.com/jquery.js), die der Browser bei jedem Seitenaufruf verarbeiten muss!
 
-Sei Dir immer bewusst, dass die Verwendung von jQuery die Ladezeiten Deiner Website beinflusst.
+Sei dir immer bewusst, dass die Verwendung von jQuery die Ladezeiten deiner Website beinflusst.
 
 ## Optimale Einbindung
 
-Da jQuery eine relativ grosse Datenmenge zu Deiner Website hinzufügt ist es ratsam, für die Einbindung eine `minified` Version ab einem CDN zu verwenden.
+Da jQuery eine relativ grosse Datenmenge zu deiner Website hinzufügt ist es ratsam, für die Einbindung eine `minified` Version ab einem CDN zu verwenden.
 
 ### Minified
 
@@ -237,13 +237,13 @@ Vergleiche https://code.jquery.com/jquery-2.1.4.js mit https://code.jquery.com/j
 
 ### CDN
 
-Ein Content Delivery Network (kurz CDN) ist ein Service, bei dem eine Datei für Dich auf diversen Servern auf der ganzen Welt gehostet wird. So kann eine Datei beim Abruf immer ab einem Server in der Nähe des Besuchers bezogen werden.
+Ein Content Delivery Network (kurz CDN) ist ein Service, bei dem eine Datei für dich auf diversen Servern auf der ganzen Welt gehostet wird. So kann eine Datei beim Abruf immer ab einem Server in der Nähe des Besuchers bezogen werden.
 
-Ein zusätzlicher Vorteil ist, dass die CDN-Datei womöglich bereits im Browser-Cache Deines Website-Besuchers ist, weil sie von einer anderen Website ebenfalls verwendet wurde.
+Ein zusätzlicher Vorteil ist, dass die CDN-Datei womöglich bereits im Browser-Cache deines Website-Besuchers ist, weil sie von einer anderen Website ebenfalls verwendet wurde.
 
-CDN-Links für alle jQuery-Versionen findest Du auf https://code.jquery.com/.
+CDN-Links für alle jQuery-Versionen findest du auf https://code.jquery.com/.
 
-Die aktuellste Version kannst Du immer über folgenden Link einbinden:
+Die aktuellste Version kannst du immer über folgenden Link einbinden:
 
 ```
 https://code.jquery.com/jquery.min.js
