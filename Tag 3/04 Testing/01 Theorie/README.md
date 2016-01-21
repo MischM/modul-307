@@ -31,7 +31,7 @@ Grundsätzlich können folgende Testarten unterschieden werden:
 
 ### Unittest / Komponententest
 
-Unittests dienen dem Testen einzelner abgrentzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
+Unittests dienen dem Testen einzelner abgrenzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
 
 Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://phpunit.de/).
 
@@ -156,7 +156,7 @@ DANN          wird dieser Benutzer aus der Datenbank gelöscht
 
 Beim manuellen Testing werden die spezifischen Testfälle von einer Person in Handarbeit durchgeführt. 
 
-Wenn Du Deine Website in Deinem Browser aufrufst, ist dies z. B. ein manuell ausgeführter Systemtest. 
+Wenn du deine Website in deinem Browser aufrufst, ist dies zum Beispiel ein manuell ausgeführter Systemtest. 
 
 ### Automatisiertes Testing
 
