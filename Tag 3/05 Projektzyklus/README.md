@@ -102,6 +102,6 @@ Das Produkt wird veröffentlicht, das Testing und die Anpassungen sind jedoch ke
 Was? Wann? Warum? Wo? Wie? Wer? 
 
 ##### Normaler Menschenverstand
-Das UCD ist ein abgeschlossenes Model, sondern nur eine Konzeptvorlage. Wie das Konzept genau umgesetzt wird, liegt in der Hand des Andwenders!
+Das UCD ist ein abgeschlossenes Model, sondern nur eine Konzeptvorlage. Wie das Konzept genau umgesetzt wird, liegt in der Hand des Anwenders!
 
 Praxisbezogene Umsetzung: [Ein Beispiel aus der Praxis.](http://www.mprove.de/script/00/upa/_media/upaposter_85x11.pdf)
