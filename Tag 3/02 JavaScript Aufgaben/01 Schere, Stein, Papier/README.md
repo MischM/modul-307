@@ -15,11 +15,11 @@ Das Script soll direkt nach dem Laden einer HTML-Seite ausgeführt werden. Es is
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
-Erstelle eine einfache HTML-Seite. Erstelle darin ein `script` Tag in dem Du Dein Code platzieren kannst.
+Erstelle eine einfache HTML-Seite. Erstelle darin ein `script` Tag in dem du dein Code platzieren kannst.
 
 Erstelle ein Array mit allen erlaubten Spielzügen (`Schere`, `Stein` und `Papier`).
 
@@ -60,7 +60,7 @@ Wähle ein zufälliges Element aus dem `erlaubt` Array als Spielzug für den Com
 alert('Der Computer spielt ' + spielzugComputer + '.');
 ```
 
-Wie Du ein zufälliges Array-Element auswählen kannst, kann Dir Google sicher verraten. Kannst Du den gefundenen Code auch erklären?
+Wie Du ein zufälliges Array-Element auswählen kannst, kann dir Google sicher verraten. Kannst du den gefundenen Code auch erklären?
 
 #### Schritt 3
 

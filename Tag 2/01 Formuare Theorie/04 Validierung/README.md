@@ -5,9 +5,9 @@ Das Validieren oder «Prüfen» der empfangenen Daten ist enorm wichtig, da uner
 
 Grundsätzlich gilt es die Daten auf folgende Punkte zu überprüfen:
 
-* Sind alle benötigten Daten vorhanden (alle Pflichtfelder ausgefüllt)
-* Sind die Daten logisch, liegen sie in einem gültigen Bereich (Geburtsdatum in der Vergangenheit)
-* Entsprechen die Daten dem gewünschten Format (Email, PLZ, etc.)
+* Sind alle benötigten Daten vorhanden (alle Pflichtfelder ausgefüllt)?
+* Sind die Daten logisch, liegen sie in einem gültigen Bereich (Geburtsdatum in der Vergangenheit)?
+* Entsprechen die Daten dem gewünschten Format (Email, PLZ etc.)?
 
 ## Existenz überprüfen
 
@@ -45,9 +45,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ## Daten bereinigen
 
-Bevor die Daten weiter validiert werden, sollten sie noch bereinigt werden. Leerzeichen am Anfang und Ende einer Eingabe, möchten wir z. B. entfernen. Dafür können wir die `trim`-Funktion verwenden.
+Bevor die Daten weiter validiert werden, sollten sie noch bereinigt werden. Leerzeichen am Anfang und Ende einer Eingabe, möchten wir zum Beispiel entfernen. Dafür können wir die `trim`-Funktion verwenden.
 
-So können wir z. B. verhindern, dass ein Pflichtfeld nur mit Leerzeichen gefüllt wird. Auch Leerzeichen am Ende von Email-Adressen, wie sie von Smartphone-Tastaturen gerne automatisch hinzugefügt werden, führen für den Besucher so nicht zu einer «Ungültige Email-Adresse»-Fehlermeldung.
+So können wir verhindern, dass ein Pflichtfeld nur mit Leerzeichen gefüllt wird. Auch Leerzeichen am Ende von Email-Adressen, wie sie von Smartphone-Tastaturen gerne automatisch hinzugefügt werden, führen für den Besucher so nicht zu einer «Ungültige Email-Adresse»-Fehlermeldung.
 
 ```php
 // '   Franz  ' wird zu 'Franz'
@@ -74,7 +74,7 @@ if(strlen($email) < 1) {
 
 ### Feldspezifische-Überprüfung
 
-Die logische Überprüfung variiert je nach Feld. Ein Geburtsjahr darf z. B. nie in der Zukunft liegen. Bei einem Mindestalter muss es maximal X Jahre in der Vergangenheit liegen. Nutze dazu einfache Vergleiche.
+Die logische Überprüfung variiert je nach Feld. Ein Geburtsjahr darf beispielsweise nie in der Zukunft liegen. Bei einem Mindestalter muss das eingegebene Datum maximal X Jahre in der Vergangenheit liegen. Nutze dazu einfache Vergleiche.
 
 ```php
 if($geburtsjahr > date('Y')) { // date('Y') = aktuelles Jahr (z. B. 2016)
@@ -121,11 +121,11 @@ if(filter_var($url, FILTER_VALIDATE_URL) === false) {
 }
 ```
 
-Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten grundsätzlich gültige aber besondere Email-Adressen als ungültig erkennen.
+Bitte beachte, dass FILTER_VALIDATE_EMAIL bei Eingaben mit Umlauten `false` zurück gibt. Eine Email mit Umlauten ist jedoch theoretisch gültig (kontakt@höhenluft.ch). Die Überprüfung von Email-Adressen ist ohnehin ein heikles Thema. Am besten wird nur überprüft, ob das `@`-Symbol vorhanden ist. Alle anderen Regeln könnten sonst ungewöhnliche aber dennoch gültige Email-Adressen als ungültig erkennen.
 
 ### Reguläre Ausdrücke
 
-Formate, die mit `filter_var` nicht überprüft werden können, lassen sich z. B. mit regulären Ausdrücken validieren.
+Formate, die mit `filter_var` nicht überprüft werden können, lassen sich mit regulären Ausdrücken validieren.
 
 Mit der Funktion `preg_match` und dem regulären Ausdruck `/^\d{2}\.\d{2}\.\d{2,4}$/` lässt sich beispielsweise das Format eines Datums überprüfen.
 

@@ -10,17 +10,17 @@ Softwaretests geben dem Entwickler die Gewissheit, dass bestimmte Komponenten se
 
 ## Ein Beispiel
 
-Angenommen der Code Deines Online-Shops wird zu einem grossen Teil durch automatisierte Tests geprüft.
+Angenommen der Code deines Online-Shops wird zu einem grossen Teil durch automatisierte Tests geprüft.
 
 Ein spezifischer Testfall prüft, ob sich Kunden erfolgreich einloggen können.
 
-Wenn Du jetzt eines Tages den Code für Dein Login komplett neu schreiben möchtest, kannst Du dank den vorhandenen Tests jederzeit überprüfen, ob trotz Deiner getätigen Änderungen das Login noch korrekt funktioniert.
+Wenn du jetzt eines Tages den Code für dein Login komplett neu schreiben möchtest, kannst du dank den vorhandenen Tests jederzeit überprüfen, ob trotz deiner getätigen Änderungen das Login noch korrekt funktioniert.
 
-Löschst Du z. B. versehentlich das Passwort-Eingabefeld, wird Dein Test fehlschlagen und Du weisst sofort, dass ein Problem existiert.
+Löschst du zum Beispiel versehentlich das Passwort-Eingabefeld, wird dein Test fehlschlagen und du weisst sofort, dass ein Problem existiert.
 
-Angenommen Du hast einen schwerwiegenden Bug in Deinem Shop: Die Funktion, die für die Überprüfung des Kundenpasswortes zuständig ist, gibt fälschlicherweise für jedes eingegebene Passwort immer `true` zurück. Die Funktion wird durch keinen Testfall überprüft.
+Angenommen du hast einen schwerwiegenden Bug in deinem Shop: Die Funktion, die für die Überprüfung des Kundenpasswortes zuständig ist, gibt fälschlicherweise für jedes eingegebene Passwort immer `true` zurück. Die Funktion wird durch keinen Testfall überprüft.
 
-Dieser Bug bleibt von Deinem Testfall unbemerkt, da das Login grundsätzlich funktioniert.
+Dieser Bug bleibt von deinem Testfall unbemerkt, da das Login grundsätzlich funktioniert.
 
 
 ## Arten des Testings
@@ -31,7 +31,7 @@ Grundsätzlich können folgende Testarten unterschieden werden:
 
 ### Unittest / Komponententest
 
-Unittests dienen dem Testen einzelner abgrentzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
+Unittests dienen dem Testen einzelner abgrenzbarer Komponenten einer Software. Diese Komponenten werden dabei isoliert und unabhängig vom System in dem sie verwendet werden getestet.
 
 Das beliebteste Testing Framework für Unittests in PHP ist [phpunit](https://phpunit.de/).
 
@@ -156,7 +156,7 @@ DANN          wird dieser Benutzer aus der Datenbank gelöscht
 
 Beim manuellen Testing werden die spezifischen Testfälle von einer Person in Handarbeit durchgeführt. 
 
-Wenn Du Deine Website in Deinem Browser aufrufst, ist dies z. B. ein manuell ausgeführter Systemtest. 
+Wenn du deine Website in deinem Browser aufrufst, ist dies zum Beispiel ein manuell ausgeführter Systemtest. 
 
 ### Automatisiertes Testing
 

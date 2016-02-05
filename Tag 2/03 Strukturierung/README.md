@@ -2,7 +2,7 @@
 
 Selbst mit unserem relativ einfachen Formular wird sehr schnell klar, dass beim Platzieren des kompletten Codes in der `index.php` die Übersicht verloren geht.
 
-Die Strukturierung einer Webapplikation ist ein wichtiger Bestandteil und sollte nicht vernachlässigt werden. Wie Du die Applikation strukturierst, ist Dir überlassen. Es gibt jedoch klare Komponenten, die jede Webapplikation besitz und die irgendwo untergebracht werden müssen.
+Die Strukturierung einer Webapplikation ist ein wichtiger Bestandteil und sollte nicht vernachlässigt werden. Wie du die Applikation strukturierst, ist dir überlassen. Es gibt jedoch klare Komponenten, die jede Webapplikation besitzt und die irgendwo untergebracht werden müssen.
 
 ## Komponenten
 
@@ -14,7 +14,7 @@ In unserem Fall haben wir mit der `index.php` bereits einen Front-Controller ers
 
 ### Router
 
-Wenn der Front-Controller einen Request entgegennimmt, muss er herausfinden, was damit geschehen soll. Dafür wird oft ein `Router` erstellt. Dieser definiert, wie eine spezieifsche Anfrage/URL verarbeitet werden soll.
+Wenn der Front-Controller einen Request entgegennimmt, muss dieser herausfinden, was damit geschehen soll. Dafür wird oft ein `Router` erstellt. Dieser definiert, wie eine spezieifsche Anfrage/URL verarbeitet werden soll.
 
 ### Model, View, und Controller (MVC)
 
@@ -24,7 +24,7 @@ Diese drei Komponenten werden in der für Webapplikationen sehr beliebten MVC-Ar
 
 ### Templates
 
-Ein Template ist die Grundlage für die Darstellung einer Webpage. Diese kann  sich aus verschiedenen Views zusammensetzen. Oft wird zwischen Template und View gar nicht unterschieden. Einfachheitshalber wird alles als View bezeichnet.
+Ein Template ist die Grundlage für die Darstellung einer Webpage. Diese kann sich aus verschiedenen Views zusammensetzen. Oft wird zwischen Template und View gar nicht unterschieden. Einfachheitshalber wird alles als View bezeichnet.
 
 ## Vereinfachte MVC-Architektur für unser Projekt
 
@@ -39,11 +39,11 @@ Es sollen folgende Komponenten vorhanden sein.
 * (Router)
 
 
-## Aufgabe: Umstrukturierung Deines Formulars
+## Aufgabe: Umstrukturierung deines Formulars
 
 ### Schritt 1: Haupttemplate erstellen
 
-Erstelle ein `views` Verzeichnis. Erstelle darin jeweils eine View für Dein Formular und eine für die Bestätigungsnachricht.
+Erstelle ein `views` Verzeichnis. Erstelle darin jeweils eine View für dein Formular und eine für die Bestätigungsnachricht.
 
 Erstelle eine `templates` Verzeichnis. Erstelle darin eine Datei für das Haupttemplate `app.php`.
 
@@ -62,18 +62,18 @@ formular/
  | index.php           # Front-Controller
 ```
 
-Kopiere nun den ganzen Inhalt Deiner `index.php` in das `app.php` Template. Lade das Template in Deiner `index.php` mittels einem `include` Statement.
+Kopiere nun den ganzen Inhalt deiner `index.php` in das `app.php` Template. Lade das Template in deiner `index.php` Datei mittels einem `include` Statement.
 
 ```php
 // index.php
 include 'templates/app.php';
 ```
 
-Wenn Du Dein Formular jetzt aufrufst, sollte immer noch alles funktionieren wie bisher!
+Wenn du dein Formular jetzt aufrufst, sollte immer noch alles funktionieren wie bisher!
 
 ### Schritt 2: Views auslagern
 
-Kopiere nun den HTML-Code für Deine «Bestätigungsnachricht» nach `views/success.php` und ersetze den Code wiederrum mit einem `include` Statement.
+Kopiere nun den HTML-Code für deine «Bestätigungsnachricht» nach `views/success.php` und ersetze den Code wiederrum mit einem `include` Statement.
 
 ```php
 ...
@@ -106,7 +106,7 @@ wird zu...
 
 Lagere den Code für das Formular nach `views/form.php` aus und binde ihn via `include` ein.
 
-Der Hauptteil Deiner `app.php` sollte anschliessend etwa so aussehen:
+Der Hauptteil deiner `app.php` sollte anschliessend etwa so aussehen:
 
 ```php
 ...
@@ -120,7 +120,7 @@ if($success) {
 ...
 ```
 
-Wenn Du Dein Formular jetzt aufrufst, sollte immernoch alles funktionieren wie bisher!
+Wenn du dein Formular jetzt aufrufst, sollte immernoch alles funktionieren wie bisher!
 
 ### Schritt 3: Controller auslagern
 
@@ -144,7 +144,7 @@ formular/
  | index.php           # Front-Controller
 ```
 
-Kopiere die Formular-Verarbeitung aus Deiner `app.php` jetzt in diese Datei.
+Kopiere die Formular-Verarbeitung aus deiner `app.php` jetzt in diese Datei.
 
 ```php
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -152,7 +152,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     ... // Alles hier kopieren
 ```
 
-Den jetzt noch verbleibenden Code aus Deiner `app.php` kannst Du in die `index.php` verschieben. Achte darauf, dass das `include` Statement für das `app.php` Template am Schluss steht!
+Den übrigen Code aus deiner `app.php` kannst du in die `index.php` verschieben. Achte darauf, dass das `include` Statement für das `app.php` Template am Schluss steht!
 
 ```php
 <?php
@@ -178,6 +178,6 @@ include 'templates/app.php';
 ?>
 ```
 
-Wenn Du Dein Formular jetzt aufrufst, sollte immernoch alles funktionieren wie bisher!
+Wenn du dein Formular jetzt aufrufst, sollte immernoch alles funktionieren wie bisher!
 
-Dank des jetzt sehr modularen Codes hast Du es in Zukunft einfacher, ein neues Projekt zu starten, da Du diese Strukur sehr einfach wiederverwenden kannst!
+Dank des jetzt sehr modularen Codes hast du es in Zukunft einfacher, ein neues Projekt zu starten, da du diese Strukur sehr einfach wiederverwenden kannst!

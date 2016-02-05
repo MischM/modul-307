@@ -8,23 +8,23 @@ Erstelle ein PHP-Script, welches aufgrund der mitgegebenen GET-Variablen eine Ta
 
 ### Zielumgebung
 
-Das Script soll eine HTML-Seite generieren. Rufe es also in Deinem Webbrower auf.
+Das Script soll eine HTML-Seite generieren. Rufe es also in deinem Webbrower auf.
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
 Erstelle eine einfache HTML-Seite ohne PHP-Code. Auf der Seite soll eine Tabelle mit 4 Spalten und 4 Zeilen angezeigt werden.
 
-Kopiere das Stylesheet `src/styles.css` in Dein Verzeichnis und binde es in das Dokument ein. 
+Kopiere das Stylesheet `src/styles.css` in dein Verzeichnis und binde es in das Dokument ein.
 
 Du solltest nun eine vertikal und horizontal zentrierte Tabelle erhalten.
 
 #### Schritt 2
 
-Erstelle am Anfang Deines Scripts nun je eine Variable für die Anzahl Spalten (`$cols`) und die Anzahl Zeilen (`$rows`). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen zu generieren.
+Erstelle am Anfang deines Scripts nun je eine Variable für die Anzahl Spalten (`$cols`) und die Anzahl Zeilen (`$rows`). Nutze PHP um die Tabelle dynamisch anhand der Werte der beiden Variablen zu generieren.
 
 ```php
 <?php
@@ -53,7 +53,7 @@ Beide Parameter sollen optional sein und einen Standard-Wert von 4 haben.
 | http://localhost/pixel/index.php?cols=2        |       2 |      4 |
 | http://localhost/pixel/index.php?cols=2&rows=2 |       2 |      2 |
 
-Du kannst über die Superglobale `$_GET` auf Parameter aus der URL zugreiffen.
+Du kannst über die Superglobale `$_GET` auf Parameter aus der URL zugreifen.
 
 ```php
 <?php
@@ -65,7 +65,7 @@ $y = $_GET['y'];
 ?>
 ```
 
-* Wie könntest Du hier den [Null Coalesce Operator](Link zu Doku einfügen, sobald vorhanden!@TODO) verwenden?
+* Wie könntest du hier den [Null Coalesce Operator](Link zu Doku einfügen, sobald vorhanden!@TODO) verwenden?
 
 #### Schritt 4
 
@@ -82,17 +82,17 @@ Stelle sicher, dass die folgenden Regeln erfüllt werden.
 
 #### Schritt 5
 
-Wir möchten nun über einen weiteren GET-Parameter `pixels` mehrere Koordinaten bestimmen können, für Tabellen-Zellen, die schwarz einzufärben sind. 
+Wir möchten nun über einen weiteren GET-Parameter `pixels` mehrere Koordinaten bestimmen können. Die Koordinaten dienen dazu, Tabellen-Zellen zu identifizieren, die schwarz einzufärben sind.
 
-Die CSS-Klasse `.mark` ist im CSS-File bereits vorbereitet. Diese Klasse kannst Du also Zellen vergeben, die markiert werden sollen.
+Die CSS-Klasse `.mark` ist im CSS-File bereits vorbereitet. Diese Klasse kannst du also Zellen vergeben, die markiert werden sollen.
 
 ```html
 <td class="mark"></td> <!-- diese Zelle wird schwarz -->
 ```
 
-Die Pixel-Koordinaten werden als String im Format `x|y` definiert. Möchten wir z. B. die 2. Zelle auf der 3. Zeile markieren, wären die Koordinaten `2|3`.
+Die Pixel-Koordinaten werden als String im Format `x|y` definiert. Möchten wir beispielsweise die 2. Zelle auf der 3. Zeile markieren, wären die Koordinaten `2|3`.
 
-Da wir mehrere Koordinaten an das PHP-Script übergeben möchten, können wir den GET-Parameter `pixels` als Array übergeben. Dies geschieht, indem `[]` an den Parametername angehängt wird. 
+Da wir mehrere Koordinaten an das PHP-Script übergeben möchten, können wir den GET-Parameter `pixels` als Array übergeben. Dies geschieht, indem `[]` an den Parametername angehängt wird.
 
 ```
 http://localhost/pixels/index.php?pixels[]=1|2&pixels[]=2|1
@@ -108,9 +108,9 @@ Erweitere das PHP-Script so, dass über folgende Query-Strings die korrekten Pix
 
 ##### Schritt 6
 
-Mit welchem Query-String erhältst Du diesen Output?
+Mit welchem Query-String erhältst du diesen Output?
 
-![](res/out4.png) 
+![](res/out4.png)
 
 ## Lösung
 

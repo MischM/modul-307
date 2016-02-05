@@ -10,28 +10,28 @@ Für die Anreise vom Hotel zur Arena steht ein Shuttle-Bus-Service zur Verfügun
 
 Für alle Besucher werden zudem diverse Abendprogramme veranstaltet.
 
-Pro eingeladener Firma können beliebig viele Personen am Event teilnehmen. Um den Verwaltungsaufwand klein zu halten, können die einzelnen Personen jedoch nicht individuell wählen, wo sie schlafen möchten oder an welchem Abendprogramm sie teilnehmen möchten. Es wird immer die komplette Firma zusammen untergebracht.
+Pro eingeladene Firma können beliebig viele Personen am Event teilnehmen. Um den Verwaltungsaufwand klein zu halten, können die einzelnen Personen nicht individuell wählen wo sie schlafen oder an welchem Abendprogramm sie teilnehmen möchten. Es wird immer die komplette Firma zusammen untergebracht, beziehungsweise nehmen alle Mitarbeiter am gleichen Abendprogramm teil.
 
 ## Aufgabenstellung
 
 Erstelle eine HTML-Seite mit einem Formular, das folgende Kriterien erfüllt:
 
-* Das Formular hat einen Titel
-* Das Formular hat einen kurzen Begrüssungstext wie z. B. <br />
-  `Füllen Sie folgendes Formular aus um sich für den Event anzumelden.`
-* Der Firmenname kann eingetragen werden
-* Eine Email-Adresse kann eingetragen werden
-* Eine Telefonnummer kann eingetragen werden
-* Die Anzahl teilnehmender Personen kann eingetragen werden
-* Es kann ausgewählt werden, in welchem der beiden Hotels man untergebracht werden will
-* Es kann ausgewählt werden, ob der Shuttle-Bus-Service beansprucht wird
-* Es kann ausgewählt werden, an welchem der folgenden Abendprogramme man teilnehmen möchte
-    - Kein Abendprogramm
+* Das Formular hat einen Titel.
+* Das Formular hat einen kurzen Begrüssungstext wie zum Beispiel: <br />
+  `Füllen Sie folgendes Formular aus um sich für den Event anzumelden.`.
+* Der Firmenname kann eingetragen werden.
+* Eine Email-Adresse kann eingetragen werden.
+* Eine Telefonnummer kann eingetragen werden.
+* Die Anzahl teilnehmender Personen kann eingetragen werden.
+* Es kann ausgewählt werden, in welchem der beiden Hotels man untergebracht werden will.
+* Es kann ausgewählt werden, ob der Shuttle-Bus-Service beansprucht wird.
+* Es kann ausgewählt werden, an welchem der folgenden Abendprogramme man teilnehmen möchte.
+    - kein Abendprogramm
     - Billardturnier
     - Bowlingturnier
     - Weindegustation
-    - Asiatischer Kochkurs
+    - asiatischer Kochkurs
     - Tankzurs für Webentwickler
     - Ying & Yang Yoga Einsteigerkurs
 * Es gibt eine Möglichkeit, um eine Bemerkung zur Anmeldung einzugeben.
-* Als sekundäre Aktion soll ein Link vorhanden sein, um die Anmeldung abzubrechen. Der Link soll den Besucher auf die Firmenstartseite bringen
+* Als sekundäre Aktion soll ein Link vorhanden sein, um die Anmeldung abzubrechen. Der Link soll den Besucher auf die Firmenstartseite bringen.

@@ -9,7 +9,7 @@ Input :  "1,4,2"
 Output:  7
 ```
 
-Erarbeite immer zuerst ein Testcase, der eine Funktionalität überprüft, bevor Du sie implementierst!
+Erarbeite immer zuerst ein Testcase, der eine Funktionalität überprüft, bevor du sie implementierst!
 
 ### Zielumgebung
 
@@ -38,15 +38,15 @@ function calculateSum(string $input)
 }
 ```
 
-Erstelle im `tests` Ordner eine `StringCalculatorTest.php`-Datei. Kopiere den folgenden Code in diese Datei. Die `test()` Funktion wurde für Dich erstellt. Ein Anwendungsbeispiel ist ebenfalls vorhanden. Nimm Dir einen Augenblick Zeit und versuche den Code zu verstehen!
+Erstelle im `tests` Ordner eine `StringCalculatorTest.php`-Datei. Kopiere den folgenden Code in diese Datei. Die `test()` Funktion wurde für dich erstellt. Ein Anwendungsbeispiel ist ebenfalls vorhanden. Nimm dir einen Augenblick Zeit und versuche den Code zu verstehen!
 
-Du kannst die Tests ausführen, in dem Du auf der Kommandozeile folgendes Kommando ausführst:
+Du kannst die Tests ausführen, indem du auf der Kommandozeile folgendes Kommando ausführst:
 
 ```
 php -f StringCalculatorTest.php
 ```
 
-In der Ausgabe werden alle Deine Testfälle mit Ergebnis aufgeführt. Stelle sicher, dass die Ausgabe übereinstimmt:
+In der Ausgabe werden alle deine Testfälle mit Ergebnis aufgeführt. Stelle sicher, dass die Ausgabe übereinstimmt:
 
 ```
 true ist true                                                 -> OK
@@ -108,9 +108,9 @@ test('Ist nur eine Zahl vorhanden, wird diese ausgegeben',
 
 Führe den Test aus. Du wirst eine Fehlermeldung erhalten, da die Funktion noch nicht wie gewünscht funktioniert.
 
-Erweitere Deine `calculateSum`-Funktion nun so weit, bis der Test nicht mehr fehlschlägt!
+Erweitere deine `calculateSum`-Funktion nun so weit, bis der Test nicht mehr fehlschlägt!
 
-**Wichtig:** Denke noch nicht an zukünftige Probleme oder Funktionalitäten der Funktion. Sorge nur dafür, dass der Input der Funktion als Resultat zurückgegeben wird. Nicht mehr, nicht weniger!
+**Wichtig:** Denke noch nicht an zukünftige Probleme oder Funktionalitäten der Funktion. Sorge nur dafür, dass der Input der Funktion als Resultat zurückgegeben wird. Nicht mehr und nicht weniger!
 
 ##### Test-Ausgabe nach Schritt 2
 
@@ -137,9 +137,9 @@ Zwei Zahlen werden richtig summiert                         -> FEHLER
 
 Sorge jetzt dafür, dass der neue Testfall nicht mehr fehlschlägt. 
 
-Um die Summe aller Zahlen zu erhalten, empfehle ich Dir wie folgt vorzugehen:
+Um die Summe aller Zahlen zu erhalten, empfehle ich dir wie folgt vorzugehen:
 
-Mit der Funktion [`explode`](https://secure.php.net/manual/de/function.explode.php) kannst Du den Input-String bei den Kommas «splitten» und die übrigbleibenden Zahlen in ein Array laden.
+Mit der Funktion [`explode`](https://secure.php.net/manual/de/function.explode.php) kannst du den Input-String bei den Kommas «splitten» und die übrigbleibenden Zahlen in ein Array laden.
 
 ```php
 $numbers = explode(',', $input); // = [2, 3] bei $input = "2,3"
@@ -147,7 +147,7 @@ $numbers = explode(',', $input); // = [2, 3] bei $input = "2,3"
 
 Du hast jetzt also ein Array aller Zahlen aus `$input`.
 
-Wenn Du ein Array aus Zahlen hast, kannst Du die Funktion [`array_sum`](https://secure.php.net/manual/de/function.array-sum.php) verwenden, um die Summe aller dieser Zahlen zu erhalten.
+Wenn du ein Array aus Zahlen hast, kannst du die Funktion [`array_sum`](https://secure.php.net/manual/de/function.array-sum.php) verwenden, um die Summe aller dieser Zahlen zu erhalten.
 
 ##### Test-Ausgabe nach Schritt 3
 
@@ -183,7 +183,7 @@ Vier Zahlen werden richtig summiert                         -> OK
 
 Vom Kunden ist eine neue Anforderung an die `calculateSum`-Funktion gestellt worden: Zahlen grösser als 100 sollen bei der Berechnung nicht beachtet werden!
 
-Es scheint so, als müsstest Du überprüfen, ob eine Zahl `> 100` ist. Mit `array_sum` ist dies leider nicht möglich. Wir müssen unseren Code umschreiben.
+Es scheint so, als müsstest du überprüfen, ob eine Zahl `> 100` ist. Mit `array_sum` ist dies leider nicht möglich. Wir müssen unseren Code umschreiben.
 
 Versuche die Summe aller Zahlen anstelle von `array_sum` mit einer `foreach`-Schleife zu berechnen.
 
@@ -193,7 +193,7 @@ foreach($numbers as $number) {
 }
 ```
 
-Dank Deiner Tests kannst Du fortlaufend überprüfen, ob die Funktion trotz Änderungen noch wie erwartet funktioniert.
+Dank deiner Tests kannst Du fortlaufend überprüfen, ob die Funktion trotz Änderungen noch wie erwartet funktioniert.
 
 Ignoriere die neue `> 100`-Funktionalität vorerst noch. Sorge erst einmal dafür, dass die vier existierenden Testfälle mit der `foreach`-Variante immer noch `OK` sind.
 
@@ -224,7 +224,7 @@ Zahlen > 100 werden ignoriert                               -> OK
 
 ... da kommt auch schon die nächste Änderung: Negative Zahlen sollen ebenfalls ignoriert werden.
 
-Schreibe selber einen Test für diese Funktionalität und erweitere Deine Funktion.
+Schreibe selber einen Test für diese Funktionalität und erweitere deine Funktion.
 
 ##### Testausgabe nach Schritt 7
 
@@ -239,7 +239,7 @@ Zahlen < 0 werden ignoriert                                 -> OK
 
 #### Schritt 8 (Zusatzaufgabe)
 
-Kannst Du dafür sorgen, dass die folgenden Testfälle ebenfalls funktionieren?
+Kannst du dafür sorgen, dass die folgenden Testfälle ebenfalls funktionieren?
 
 ```php
 test('Es können maximal 6 Zahlen eingegeben werden',
@@ -264,4 +264,4 @@ test('Alternatives Trennzeichen | funktioniert auch',
 
 Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis. 
 
-Es sind mehrere Lösungen möglich, solange Dein Code allen gegebenen Vorgaben entspricht.
+Es sind mehrere Lösungen möglich, solange dein Code allen gegebenen Vorgaben entspricht.

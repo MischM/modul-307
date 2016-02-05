@@ -2,13 +2,13 @@
 
 ## Aufgabenstellung
 
-Die Login-Funktion für das CMS Deines Lehrbetriebes wurde von einem Partnerunternehmen in Indien entwickelt. Die Funktion tut was sie soll. Die Code-Qualität hingegen lässt zu wünschen übrig.
+Die Login-Funktion für das CMS deines Lehrbetriebes wurde von einem Partnerunternehmen in Indien entwickelt. Die Funktion tut was sie soll. Die Code-Qualität hingegen lässt zu wünschen übrig.
 
-Die Login-Funktion überprüft, ob eine Kombination aus Benutzername und Passwort zu einem registrierten Benutzer gehört. Zudem wird überprüft, ob der Benutzer eine Rolle von `Administrator` oder `Publisher` hat. Nur diese Benutzerrollen dürfen sich einloggen.
+Die Login-Funktion überprüft, ob eine Kombination aus Benutzername und Passwort zu einem registrierten Benutzer gehört. Zudem wird überprüft, ob der Benutzer eine Rolle als `Administrator` oder `Publisher` hat. Nur diese Benutzerrollen dürfen sich einloggen.
 
 Schreibe den Code der Funktion `login` um, damit er besser lesbar ist.
 
-Die registrierten Benutzer werden jeweils aus der Datei `src/users.php`  geladen. In dieser Datei findest Du alle registrierten Benutzer mit Passwort und Rolle als PHP-Array.
+Die registrierten Benutzer werden jeweils aus der Datei `src/users.php`  geladen. In dieser Datei findest du alle registrierten Benutzer mit Passwort und Rolle als PHP-Array.
 
 Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diesem Verzeichnis.
 
@@ -17,7 +17,7 @@ Bearbeite ausschliesslich die Funktion `login` in der Datei `login.php` in diese
 
 Überprüfe nach jeder Änderung mit Hilfe der Testfälle, ob alle Bedingungen immer noch fehlerfrei erfüllt werden.
 
-Um die Tests auszuführen, rufe einfach das `login.php` Script aus Deiner Konsole auf.
+Um die Tests auszuführen, rufe einfach das `login.php` Script aus deiner Konsole auf.
 
 ```
 php -f login.php
@@ -28,7 +28,7 @@ Führe diesen Schritt jetzt gleich aus. Du solltest für alle fünf Tests einen 
 
 ### Lösungsschritte
 
-Ändere das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Ändere das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -41,7 +41,7 @@ Auf den ersten Blick scheinen zwei Elemente mehrfach vorzukommen oder redundant 
 
 ##### A
 
-`$users[$username][...]` kommt wiederhohlt vor. Vereinfache diesen Ausdruck, in dem Du ihn in die Variable `$user` speicherst und alle Vorkommnisse ersetzt.
+`$users[$username][...]` kommt wiederholt vor. Vereinfache diesen Ausdruck, in dem du ihn in die Variable `$user` speicherst und alle Vorkommnisse ersetzt.
 
 ```php
 $user = $users[$username];
@@ -58,7 +58,7 @@ Der Rückgabewert `return 'Login okay!';` kommt zwei Mal vor. Möglicherweise l�
 
 #### Schritt 3
 
-Durch die vielen Einrückungen ist der Code immernoch sehr schlecht zu verstehen. Als Grundregel gilt, dass **nie mehr als 2 Stufen** eingerückt werden sollen. 
+Durch die vielen Einrückungen ist der Code immernoch sehr schlecht zu verstehen. Als Grundregel gilt, dass **nie mehr als 2 Stufen** eingerückt werden sollen.
 
 Nutze «Early Returns» um die Einrückung der kompletten Funktion auf eine Stufe zu reduzieren.
 
@@ -94,6 +94,6 @@ function login($username, $password)
 
 ## Lösung
 
-Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis. 
+Du findest mögliche Lösungen zu allen Schritten im `src` Verzeichnis.
 
 Es sind mehrere Lösungen möglich, solange Dein Code allen gegebenen Vorgaben entspricht.

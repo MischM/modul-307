@@ -1,6 +1,6 @@
 # Informationsgruppierung
 
-Die Übertragung von Informationen mit Hilfe eines Formularfeldes folgt klaren Regeln und Strukturen. Somit lassen sich Formularfelder grundsätzlich in drei hierarchische Stufen unterteilen:
+Die Übertragung von Informationen mit Hilfe eines Formularfeldes folgt klaren Regeln und Strukturen. Somit lassen sich Formularelemente grundsätzlich in drei hierarchische Stufen unterteilen:
 
 1. Formularfelder (Textfeld, Checkbox, Radio-Box...)
 2. Formularfeld-Gruppe (Fieldset)
@@ -35,7 +35,7 @@ Zur Repetition befindet sich unter folgendem Link ein kleines Cheatsheet zum The
 
 ### 2. Formularfeld-Gruppen
 
-Das Tag `fieldset` ermöglicht es dem Benutzer die Formularfelder in Sets/Gruppen zu strukturieren. Ausschlaggebend für die Unterteilung ist die thematische Zusammengehörigkeit der einzlenen Felder.
+Das Tag `fieldset` ermöglicht es dem Benutzer die Formularfelder in Sets/Gruppen zu strukturieren. Ausschlaggebend für die Unterteilung ist die thematische Zusammengehörigkeit der einzelnen Felder.
 
 Die Formularfeld-Gruppen erleichtern zum einen die Navigation innerhalb des Dokuments und erhöhen gleichzeitig die Accessability der Seite.
 

@@ -12,7 +12,7 @@ Definition gemäss ISO 13407 (1999).
 
 ![Not Sure if user is stupid, or design is just bad](src/ux-fry-meme.jpg)
 
-Der Grund um mit der Methode des User Centred Design zu arbeiten ist es, eine benutzerfreundliche Oberfläche zu gestalten. Dabei steht nicht der technologische oder der Design-Aspekt im Vordergrund, sondern die Benutzerfreundlichkeit.
+Der Grund um mit der Methode des User Centred Design zu arbeiten ist es, eine benutzerfreundliche Oberfläche zu gestalten. Dabei stehen nicht technologische oder designtechnische Aspekte im Vordergrund, sondern die Benutzerfreundlichkeit.
 
 > Ein benutzerfreundliche Oberfläche ist einfach zu lernen, intuitiv bedienbar, unterstützt die Aufgaben und Ziele des Benutzers effektiv und effizient und ist motivierend und kurzweilig zum Bedienen.
 
@@ -23,7 +23,7 @@ Freie Übersetzung von [www.usabilityfirst.com](www.usabilityfirst.com)
 
 Folgende drei verkürzten Charakteristiken geben über die Grundsätze des UCD-Prozess Auskunft:
 
-* Frühe Fokusierung auf die Zielgruppe und deren Aufgaben.
+* Frühe Fokussierung auf die Zielgruppe und deren Aufgaben.
 * Systematisches Testing der Oberfläche bei der Zielgruppe und empirische Überprüfung.
 * Das Design wird iterativ erarbeitet und stetig angepasst.
 
@@ -80,7 +80,7 @@ In diesem Schritt werden die gestalterischen Voraussetzungen beispielsweise aus 
 
 In diesem Schritt des Prozesses wird das Designkonzept erarbieten. Die Umsetzung erfolgt dabei meistens in mehreren Schritten, von der einfachen Skizze bis zum kompletten Design.
 
-Bereits hier wird der Kunde beziehungsweise der Nutzer ständig miteinbezogen (UCD).
+Bereits hier wird der Kunde beziehungsweise der Nutzer permanent miteinbezogen (UCD).
 
 #### 4. Evaluierung
 
@@ -102,6 +102,6 @@ Das Produkt wird veröffentlicht, das Testing und die Anpassungen sind jedoch ke
 Was? Wann? Warum? Wo? Wie? Wer? 
 
 ##### Normaler Menschenverstand
-Das UCD ist ein abgeschlossenes Model, sondern nur eine Konzeptvorlage. Wie das Konzept genau umgesetzt wird, liegt in der Hand des Andwenders!
+Das UCD ist ein abgeschlossenes Model, sondern nur eine Konzeptvorlage. Wie das Konzept genau umgesetzt wird, liegt in der Hand des Anwenders!
 
 Praxisbezogene Umsetzung: [Ein Beispiel aus der Praxis.](http://www.mprove.de/script/00/upa/_media/upaposter_85x11.pdf)

@@ -1,23 +1,23 @@
 # Formular verarbeiten und validieren
 
 Nutze als Basis für diese Aufgabe das Anmelde-Formular für den Firmenevent. 
-Stelle sicher, dass Dein Projekt folgende Struktur hat:
+Stelle sicher, dass dein Projekt folgende Struktur hat:
 
 ```php
 formular/
  | css/
  | css/styles.css      # Dateiname nicht relevant
- | index.php           # In dieser Datei sollte Dein Formular sein
+ | index.php           # In dieser Datei sollte dein Formular sein
 ```
 
 ## Aufgabenstellung
 
-Erweitere Deine Formular-Datei so, dass beim Absenden des Formulares die Daten validiert und im Fehlerfall eine Fehlermeldung angezeigt wird.
+Erweitere deine Formular-Datei so, dass beim Absenden des Formulares die Daten validiert und im Fehlerfall eine Fehlermeldung angezeigt wird.
 
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -27,7 +27,7 @@ Bereite die Fehlerausgabe vor. Zu Beginn des Formulares soll bei nicht validen D
 
 #### Schritt 2
 
-Lagere die «Beispielfehler» nun in ein PHP-Array am Anfang Deines Dokumentes aus. Nutze `foreach` um die Fehler als Liste auszugeben. Zeige die Liste nicht an, wenn das Array leer ist!
+Lagere die «Beispielfehler» nun in ein PHP-Array am Anfang deines Dokumentes aus. Nutze `foreach` um die Fehler als Liste auszugeben. Zeige die Liste nicht an, wenn das Array leer ist!
 
 ```php
 $errors = [];  // --> Keine Fehlerliste anzeigen
@@ -46,7 +46,7 @@ $errors = [];
 
 #### Schritt 3
 
-Erstelle am Anfang Deines Dokumentes einen PHP-Block, der mit Hilfe der `var_dump`-Funktion alle via POST-Methode gesendeten Daten ausgibt. Diese Ausgabe soll **nur dann erscheinen**, wenn das Formular auch wirklich abgesendet wurde!
+Erstelle am Anfang deines Dokumentes einen PHP-Block, der mit Hilfe der `var_dump`-Funktion alle via POST-Methode gesendeten Daten ausgibt. Diese Ausgabe soll **nur dann erscheinen**, wenn das Formular auch wirklich abgesendet wurde!
 
 ```php
 // var_dump(...);
@@ -64,7 +64,7 @@ array (size=7)
 
 #### Schritt 4
 
-Dort, wo Du momentan mit `var_dump` die Daten ausgibst, kannst Du diese nun validieren.
+Dort, wo du momentan mit `var_dump` die Daten ausgibst, kannst du diese nun validieren.
 
 Füge für fehlerhafte Eingaben die entsprechende Fehlermeldung zu Deinem `$errors`-Array hinzu.
 Pro Feld soll immer nur ein Fehler angezeigt werden. Falls die Email-Adresse also nicht eingegeben wurde, sollte diese nicht auch noch als fehlerhaft angezeigt werden!
@@ -114,15 +114,15 @@ Die folgenden Testfälle sollte Dein Formular erfüllen.
 
 #### Schritt 5
 
-Wenn das Formular Fehler enthält, muss der Kunde momentan alle seine Daten erneut eintippen. Sorge dafür, dass bereits getätigte Eingaben nach dem Absenden des Formulars automatisch wieder voreingetragen sind.
+Wenn das Formular Fehler enthält, muss der Kunde momentan alle seine Daten erneut eintippen. Sorge dafür, dass bereits getätigte Eingaben nach dem Absenden des Formulars automatisch wieder voreingetragen werden.
 
-Achte darauf, dass auch die Radiobutton und Selectbox-Auswahlen vorselektiert werden.
+Achte darauf, dass auch die Radio-Buttons und Selectbox-Auswahlen vorselektiert werden.
 
 #### Schritt 6
 
 Entferne die Ausgabe des `OK`, wenn das Formular keine Fehler enthält. 
 
-Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werden. Das Formular soll nicht mehr angezeigt werden wenn das Formular korrekt ausgefüllt worden ist.
+Wenn alles okay ist, soll neu eine einfache Bestätigungsmeldung angezeigt werden. Das Formular soll nicht mehr angezeigt werden, wenn das Formular korrekt ausgefüllt worden ist.
 
 > **Anmeldung erfolgreich**
 > 

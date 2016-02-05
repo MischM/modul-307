@@ -12,7 +12,7 @@ Daten, die via `GET`-Methode gesendet werden, werden in der URL als «Query-Stri
 http://www.web.com/script.php?var1=wert1&var2=wert2&var3=wert3
 ```
 
-Die `GET`-Methode verwenden wir, wenn wir von einem Server spezifische Daten beziehen (= engl. `to get`) möchten. So können wir z. B. einem Script mitteilen, welche Datensatz-ID wir laden möchten:
+Die `GET`-Methode verwenden wir, wenn wir von einem Server spezifische Daten beziehen (= engl. `to get`) möchten. So können wir zum Beispiel einem Script mitteilen, welche Datensatz-ID wir laden möchten:
 
 ```
 http://www.web.com/zeige-bild.php?id=4
@@ -25,7 +25,7 @@ Daten, die via `POST`-Methode gesendet werden, werden im Body des HTTP-Requests 
 
 **Dies ist besonders beim Versenden von vertraulichen Daten wie Passwörtern wichtig zu unterscheiden:** Via GET übermittelte Daten sind **Bestandteil der URL** und werden somit auch in Logfiles oder Besucherstatistiken geloggt. Werden die Daten via POST an den Server gesendet, bleibt die URL neutral und die Daten werden separat übermittelt.
 
-Die `POST`-Methode verwenden wir, wenn wir Daten an einen Server senden (= engl. `to post`) möchten. So können wir einem Script z. B. Benutzername und Passwort für ein Login zusenden.
+Die `POST`-Methode verwenden wir, wenn wir Daten an einen Server senden (= engl. `to post`) möchten. So können wir einem Script zum Beispiel den Benutzername und das Passwort für ein Login zusenden.
 
 ```php
 # vom Browser generierter HTTP-Request

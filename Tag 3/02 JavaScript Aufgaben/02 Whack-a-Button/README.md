@@ -7,14 +7,14 @@
 
 Erstelle das Reaktionsspiel «Whack-a-Button» mit Hilfe von jQuery.
 
-Ein Button verschiebt sich nach einer gewissen Zeit, nach dem man mit dem Mauscursor darüber fährt, an eine neue Stelle auf dem Bildschirm. Das Ziel das Spielers ist es, den Button möglichst oft anzuklicken.
+Ein Button verschiebt sich nach einer gewissen Zeit, nachdem man mit dem Mauscursor darüber fährt, an eine neue Stelle auf dem Bildschirm. Das Ziel das Spielers ist es, den Button möglichst oft anzuklicken.
 
 Nach jedem erfolgreichen Klick verschiebt sich der Button schneller an eine neue Stelle, was das Klicken erschwert.
 
 
 ### Lösungsschritte
 
-Entwickle das Script immer nur so weit, bis einer dieser Schritte erfüllt wird. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
+Entwickle das Script immer nur so weit, bis alle Komponenten des jeweiligen Schrittes komplett erfüllt werden. Erweitere es anschliessend, damit der nächste Schritt erfüllt wird.
 
 #### Schritt 1
 
@@ -24,7 +24,7 @@ Erstelle eine einfache HTML-Seite. Füge auf dieser Seite einen Button hinzu und
 <button id="button">Whack me!</button>
 ```
 
-Integriere jQuery via offiziellem CDN-Link in Deinem Dokument:
+Integriere jQuery via offiziellem CDN-Link in deinem Dokument:
 
 ```html
 <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -42,7 +42,7 @@ Erstelle danach ein Code-Block der ausgeführt wird, sobald das DOM `ready` ist:
 
 #### Schritt 2
 
-Erstelle im Code-Block einen jQuery-Selector, der Dein Button auswählt und speichere diesen in die Variable `$button`.
+Erstelle im Code-Block einen jQuery-Selector, der dein Button auswählt und speichere diesen in die Variable `$button`.
 
 ```js
 var $button = ...;
@@ -60,7 +60,7 @@ $button.on('mouseenter', function() {
 });
 ```
 
-Stelle sicher, dass in Deiner Konsole nur die gewünschte Ausgabe erscheint und keine Fehler vorhanden sind.
+Stelle sicher, dass in deiner Konsole nur die gewünschte Ausgabe erscheint und keine Fehler vorhanden sind.
 
 #### Schritt 3
 
@@ -72,7 +72,7 @@ Sorge dafür, dass der Button beim `mouseenter` Event automatisch an die Positio
 
 Anstelle der fixen Position, möchten wir diese nun mit Hilfe von `Math.random()`zufällig neu generieren.
 
-Erweitere Dein Script so, dass der Button beim `mouseenter` immer an eine neue Stelle springt.
+Erweitere dein Script so, dass der Button beim `mouseenter` immer an eine neue Stelle springt.
 
 [`Math.random()` auf MDN](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/math.random)
 
@@ -86,7 +86,7 @@ Sorge dafür, dass der Button sich erst 1 Sekunde nach dem `mouseenter` Event ve
 
 ##### Probleme mit `this`?
 
-`setTimeout` ändert die Bedeutung des `this` Schlüsselwortes. Wenn Du also den Button vorhin über `$(this).css(...)` neu positioniert hast, wird dies innerhalb von `setTimeout` nicht mehr funktionieren, da `this` nicht mehr auf den Button verweist. Dieses Problem kannst Du lösen, in dem Du `this` vor dem `setTimeout` in eine Variable speicherst und diese verwendest:
+`setTimeout` ändert die Bedeutung des `this` Schlüsselwortes. Wenn du also den Button vorhin über `$(this).css(...)` neu positioniert hast, wird dies innerhalb von `setTimeout` nicht mehr funktionieren, da `this` nicht mehr auf den Button verweist. Dieses Problem kannst du lösen, in dem du `this` vor dem `setTimeout` in eine Variable speicherst und diese verwendest:
 
 ```js
 var that = this;

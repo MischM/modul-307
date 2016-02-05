@@ -4,7 +4,7 @@ Ein Nachteil von manuell ausgeführten Tests ist, dass diese sehr viel Zeit in A
 
 Bei automatisiterten Tests hat man die Gewissheit, dass alle Ausführungen der Tests immer einheitlich sind. 
 
-Der zusätzliche Entwicklungsaufwand für die Tests macht man über längere Zeit meist wieder gut. Inbesondere bei zukünftigen Anpassungen an einer Software geben bestehende Tests die Sicherheit, dass die Software auch nach Änderungen noch wie erwartet funktioniert.
+Der zusätzliche Entwicklungsaufwand für die Tests macht man über längere Zeit meist wieder gut. Insbesondere bei zukünftigen Anpassungen an einer Software geben bestehende Tests die Sicherheit, dass die Software auch nach den Änderungen noch wie erwartet funktioniert.
 
 ## Funktionsweise
 

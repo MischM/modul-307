@@ -6,7 +6,7 @@
 
 ## Weiterführende Links (nicht ÜK relevant)
 
-Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige interessante Ressourcen zu weiterführenden Themen.
+Wenn du dich selber weiter mit PHP befassen möchtest, findest du hier einige interessante Ressourcen zu weiterführenden Themen.
 
 ### Hostings
 
@@ -23,7 +23,7 @@ Wenn Du Dich selber weiter mit PHP befassen möchtest, findest Du hier einige in
 
 * [PHP auf Codecademy](https://www.codecademy.com/learn/php): Kompletter Kurs von den Basics bis zu Objektorientierter Programmierung
 * [Neuerungen PHP 7 auf laracasts](https://laracasts.com/series/php7-up-and-running): 7-teilige Videoserie zu Neuerungen in PHP 7
-* [How to Use PHP Namespaces](http://www.sitepoint.com/php-53-namespaces-basics/): Seit PHP 5.3 verfügt PHP über sogenannte «Namespaces». Heute wird dieses Konzept in allen modernen PHP-Projekten verwendet. 
+* [How to Use PHP Namespaces](http://www.sitepoint.com/php-53-namespaces-basics/): Seit PHP 5.3 verfügt PHP über sogenannte «Namespaces». Heute wird dieses Konzept in allen modernen PHP-Projekten verwendet.
 
 ### Tools
 
