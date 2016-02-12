@@ -13,21 +13,32 @@
 
 ### Aufbau einer URL
 
-TBD
+```
+http://www.website.com/suchen.html?q=Suchbegriff&page=1#treffer-5
+```
+
+|          Teil         |      Bezeichnung       |                                                                   Bedeutung                                                                   |
+|-----------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| http://               | Protokoll              | Sagt dem Browser, welches Protokoll er zum Aufruf der URL verwenden soll. Andere Protokolle sind z. B. HTTPS oder FTP.                        |
+| www.website.com       | Domainname             | Sagt dem Browser, zu welchem Server er die Verbindung aufbauen soll. Der Domainname wird via DNS in eine IP-Adresse umgewandelt.              |
+| /suchen.html          | Dateipfad              | Sagt dem Browser, welche Datei er ab dem Server aufrufen soll.                                                                                |
+| ?q=Suchbegriff&page=1 | Query-String/Parameter | Parameter, die der Datei übergeben werden. Beginnend mit `?` werden sie jeweils als `schlüssel=wert`-Paare getrennt von `&` der URL angefügt. |
+| #treffer-5            | Anker                  | Verweist auf eine bestimmte Stelle innerhalb des Dokuments. Diese Stelle kann z. B. mit einem `id="treffer-5"` Attribut in HTML definiert werden. |
 
 ### Aufbau eines HTTP-Requests
 
 ```
-POST /path/script.cgi HTTP/1.0
-From: frog@jmarshall.com
-User-Agent: HTTPTool/1.0
+POST /pfad/zu/script.php HTTP/1.0
+User-Agent: Chrome/31.0
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 32
 
-home=Cosby&favorite+flavor=flies
+suchbegriff=test&encoding=utf8
 ```
 
-TBD
+Ein HTTP-Request besteht aus einem Header und einem Body. Im Header werden Informationen wie die HTTP-Methode (`POST`) oder die zu ladende Datei definiert. Es können auch weitere Details zum Inhalt des Requests angegeben werden (beispielsweise ein `Content-Type`).
+
+Im Body eines HTTP-Requests können Daten an den Server mitgesendet werden. Die Daten werden hier im gleichen `Query-String`-Format übergeben, wie man sie auch direkt in der URL übergeben kann.
 
 #### Basis Beispiel: Aufruf einer Website
 
